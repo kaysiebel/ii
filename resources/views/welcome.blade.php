@@ -87,7 +87,7 @@
                 Laravel
             </div>
 
-            TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST
+            TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST
 
             <div class="links">
                 <a href="https://laravel.com/docs">Docs</a>
