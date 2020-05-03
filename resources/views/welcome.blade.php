@@ -9,12 +9,12 @@
 <body>
     <!-- <section class="page-content"> -->
 
-    <section class="header-section">
-        <div class="header flex">i!</div>
+    <section class="header-section border-radius">
+        <div class="header flex center">i!</div>
     </section>
 
     <section class="main-container">
-        <div class="flex flex-wrap">
+        <div class="flex flex-wrap center">
 
             <div class="card margin-16 border-radius shadow">
                 <img class="border-bottom-fat" src="https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg" alt="...">
@@ -25,10 +25,9 @@
                 </div>
             </div>
 
-
             <div class="card margin-16 border-radius shadow">
                 <img class="border-bottom-fat" src="https://openclipart.org/image/800px/svg_to_png/320185/classicstaremblem-1682.png" alt="...">
-                <div class="card-content">
+                <div class="card-content grid center">
 
                     <p class="card-text padding-8 margin-8">
                         "Artikel-Name"</p>
@@ -99,7 +98,7 @@
 
             <div class="card margin-16 border-radius shadow">
                 <img class="border-bottom-fat" src="https://openclipart.org/image/800px/svg_to_png/320195/tropicalhouse-1831.png" alt="...">
-                <div class="card-content">
+                <div class="card-content grid center">
 
                     <p class="card-text padding-8 margin-8">
                         "Artikel-Name"</p>
@@ -167,14 +166,11 @@
                 </div>
             </div>
 
-            <!-- <div>
-            <button class="ripple">Button</button>
-        </div> -->
 
         </div>
     </section>
 
-    <section class="footer-section">
+    <section class="footer-section border-radius">
         <div class="footer">
             <a href="#index">
 
@@ -227,7 +223,7 @@
             background-color: var(--dark);
             color: var(--light);
             cursor: pointer;
-            width: 100%;
+            width: 280px;
             border: none;
             text-align: center;
             outline: none;
@@ -274,6 +270,7 @@
             background: linear-gradient(to right, var(--darkest), var(--light) 10%, var(--light) 90%, var(--darkest));
             color: var(--darkest);
             text-align: center;
+            font-family: geneva;
             font-size: 2em;
             border-radius: 12px;
         }
@@ -314,11 +311,6 @@
             --dark: #0a5c8f;
         }
 
-        /* div::selection {
-            background: var(--darker);
-            color: var(--light);
-        } */
-
         .center {
             justify-content: center;
             align-self: center;
@@ -326,12 +318,8 @@
             align-content: center;
         }
 
-        /* .grid-container {} */
-
         .flex {
             display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
         .flex-wrap {
@@ -343,16 +331,16 @@
             margin-bottom: 52px;
         }
 
-        /* .grid-content {
+        .grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: auto;
-            color: var(--dark);
-        } */
+        }
 
         .card {
             width: 300px;
             background: var(--light);
+            padding-bottom: 8px;
+            border: inset 4px var(--dark);
+
         }
 
         .card-text {
@@ -383,7 +371,7 @@
         }
 
         .shadow {
-            box-shadow: 0 0 20px var(--darker);
+            box-shadow: 0 0 20px var(--dark);
         }
 
         /* padding margin  */
