@@ -1,0 +1,31 @@
+//
+body {
+    margin: 0;
+    top: 0;
+    background-color: var(--darkest);
+}
+
+:root {
+    --lightest: whitesmoke;
+    --lighter: mintcream;
+    --light: azure;
+    --darkest: #031927;
+    --darker: #052e47;
+    --dark: #0a5c8f;
+}
+
+.main-container {
+    margin-top: 52px;
+    margin-bottom: 52px;
+}
+
+.grid {
+    display: grid;
+}
+
+/* .page-content {
+    background-color: var(--darkest);
+    margin: 0;
+    top: 0;
+    filter: hue-rotate(180deg);
+} */

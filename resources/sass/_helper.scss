@@ -1,0 +1,60 @@
+.center {
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.border {
+    border: 12px;
+    border: medium solid var(--darker);
+}
+
+.border-bottom-fat {
+    border-bottom: 12px solid var(--dark);
+}
+
+.border-bottom {
+    border-bottom: 4px solid var(--light);
+}
+
+.border-radius {
+    border-radius: 12px;
+}
+
+.shadow {
+    box-shadow: 0 0 20px var(--dark);
+}
+
+/* padding margin  */
+.margin-4 {
+    margin: 4px;
+}
+
+.margin-8 {
+    margin: 8px;
+}
+
+.margin-16 {
+    margin: 16px;
+}
+
+.padding-4 {
+    padding: 4px;
+}
+
+.padding-8 {
+    padding: 8px;
+}
+
+.padding-12 {
+    padding: 12px;
+}
