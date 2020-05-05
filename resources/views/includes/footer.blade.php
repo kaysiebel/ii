@@ -1,15 +1,15 @@
 <section class="footer-section border-radius">
     <div class="footer">
 
-        <a href="/create">
+        <a href="/">
             <img class="footer-item" src="https://image.flaticon.com/icons/svg/77/77196.svg">
-            <a href="#">
+            <a href="/create">
                 <img class="footer-item" src="https://image.flaticon.com/icons/svg/77/77173.svg">
                 <a href="#index">
                     <img class="footer-item" src="https://image.flaticon.com/icons/svg/77/77139.svg">
                     <a href="#index">
                         <img class="footer-item" src="https://image.flaticon.com/icons/svg/77/77143.svg">
-                        <a href="#index">
+                        <a href="/test">
                             <img class="footer-item" src="https://image.flaticon.com/icons/svg/77/77196.svg">
 </section>
 
