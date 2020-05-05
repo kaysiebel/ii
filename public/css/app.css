@@ -2,6 +2,7 @@ body {
   margin: 0;
   top: 0;
   background-color: var(--darkest);
+  font-family: "roboto", sans-serif;
 }
 
 :root {
@@ -98,19 +99,18 @@ img {
   border: none;
   text-align: center;
   outline: none;
-  font-size: 15px;
+  font-size: 18px;
+  padding: 4px 24px 4px 24px;
 }
 
 .accordion-top {
-  height: 8px;
-  border-top-left-radius: 200%;
-  border-top-right-radius: 200%;
+  border-top-left-radius: 120px;
+  border-top-right-radius: 120px;
 }
 
 .accordion-bottom {
-  height: 8px;
-  border-bottom-left-radius: 200%;
-  border-bottom-right-radius: 200%;
+  border-bottom-left-radius: 120px;
+  border-bottom-right-radius: 120px;
 }
 
 .accordion-panel {
@@ -137,25 +137,14 @@ img {
 }
 
 .card-create {
-  min-height: 500px;
   background: var(--light);
   color: var(--dark);
-  font-family: "roboto", sans-serif;
-}
-
-.create-head {
-  font-size: rem;
-}
-
-.create-content {
-  padding: 12px 12px 0 12px;
 }
 
 .create-label {
   font-size: 18px;
   text-align: right;
   margin-right: 20px;
-  /* padding-left: 20px; */
 }
 
 .create-input {

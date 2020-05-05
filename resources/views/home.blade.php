@@ -20,9 +20,9 @@
                 <p class="card-text padding-8 margin-8">
                     "Artikel-Name"</p>
 
-                <div class="accordion-styling accordion-top border-bottom padding-4 active"></div>
+                <div class="accordion-styling accordion-top border-bottom active"></div>
 
-                <div class="accordion accordion-styling ripple border-bottom padding-4">Überblick</div>
+                <div class="accordion accordion-styling ripple border-bottom">Überblick</div>
                 <div class="accordion-panel border-bottom">
                     <p class="">
                         Bestand: 1000 Stück</p>
@@ -30,7 +30,7 @@
                         Lager-Ort: Halle 3</p>
                 </div>
 
-                <div class="accordion accordion-styling ripple border-bottom padding-4">Stück-Angaben</div>
+                <div class="accordion accordion-styling ripple border-bottom">Stück-Angaben</div>
                 <div class="accordion-panel border-bottom">
                     <p class="">
                         Gewicht</p>
@@ -44,7 +44,7 @@
                         Gebinde-Größe</p>
                 </div>
 
-                <div class="accordion accordion-styling ripple border-bottom padding-4">Gebinde-Angaben</div>
+                <div class="accordion accordion-styling ripple border-bottom">Gebinde-Angaben</div>
                 <div class="accordion-panel border-bottom">
                     <p class="">
                         Einheiten/Stück</p>
@@ -60,13 +60,13 @@
                         Höchst-Bestand</p>
                 </div>
 
-                <div class="accordion accordion-styling ripple border-bottom padding-4">Lagerort</div>
+                <div class="accordion accordion-styling ripple border-bottom">Lagerort</div>
                 <div class="accordion-panel border-bottom">
                     <p class="">
                         Max-Gewicht</p>
                 </div>
 
-                <div class="accordion accordion-styling ripple border-bottom padding-4">i!</div>
+                <div class="accordion accordion-styling ripple border-bottom">i!</div>
                 <div class="accordion-panel border-bottom">
                     <p class="">
                         Gesamt-Gewicht/Stück</p>
@@ -82,7 +82,7 @@
                         Durchschnittsbestand</p>
                 </div>
 
-                <div class="accordion-styling accordion-bottom border-bottom padding-4"></div>
+                <div class="accordion-styling accordion-bottom border-bottom"></div>
 
             </div>
         </div>
