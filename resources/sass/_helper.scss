@@ -13,9 +13,36 @@
     flex-wrap: wrap;
 }
 
+.input {
+    padding: 12px;
+    border: 1px solid var(--lightest);
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-auto-rows: 32px;
+}
+
+.width-small {
+    width: 100px;
+}
+
+.width-xsmall {
+    width: 40px;
+}
+
+.left {
+    justify-content: left;
+}
+
 .border {
     border: 12px;
     border: medium solid var(--darker);
+}
+
+.border-thin {
+    border: 1px solid var(--lightest);
 }
 
 .border-bottom-fat {

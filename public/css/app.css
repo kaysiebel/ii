@@ -95,7 +95,6 @@ img {
   background-color: var(--dark);
   color: var(--light);
   cursor: pointer;
-  width: 280px;
   border: none;
   text-align: center;
   outline: none;
@@ -137,6 +136,33 @@ img {
   transition: background 0s;
 }
 
+.card-create {
+  min-height: 500px;
+  background: var(--light);
+  color: var(--dark);
+  font-family: "roboto", sans-serif;
+}
+
+.create-head {
+  font-size: rem;
+}
+
+.create-content {
+  padding: 12px 12px 0 12px;
+}
+
+.create-label {
+  font-size: 18px;
+  text-align: right;
+  margin-right: 20px;
+  /* padding-left: 20px; */
+}
+
+.create-input {
+  height: 28px;
+  border: 2px solid var(--dark);
+}
+
 .center {
   justify-content: center;
   align-self: center;
@@ -152,9 +178,36 @@ img {
   flex-wrap: wrap;
 }
 
+.input {
+  padding: 12px;
+  border: 1px solid var(--lightest);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-auto-rows: 32px;
+}
+
+.width-small {
+  width: 100px;
+}
+
+.width-xsmall {
+  width: 40px;
+}
+
+.left {
+  justify-content: left;
+}
+
 .border {
   border: 12px;
   border: medium solid var(--darker);
+}
+
+.border-thin {
+  border: 1px solid var(--lightest);
 }
 
 .border-bottom-fat {
