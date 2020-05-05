@@ -91,7 +91,7 @@ img {
   width: 100%;
 }
 
-.accordion {
+.accordion-styling {
   background-color: var(--dark);
   color: var(--light);
   cursor: pointer;
@@ -102,10 +102,21 @@ img {
   font-size: 15px;
 }
 
+.accordion-top {
+  height: 8px;
+  border-top-left-radius: 200%;
+  border-top-right-radius: 200%;
+}
+
+.accordion-bottom {
+  height: 8px;
+  border-bottom-left-radius: 200%;
+  border-bottom-right-radius: 200%;
+}
+
 .accordion-panel {
   background-color: var(--light);
   color: var(--darkest);
-  padding: 0 18px;
   display: none;
   overflow: hidden;
 }

@@ -8,19 +8,12 @@
             <img class="border-bottom-fat" src="https://openclipart.org/image/800px/svg_to_png/320195/tropicalhouse-1831.png" alt="...">
             <div class="card-content grid center">
 
-                <p class="card-text padding-8 margin-8">
-                    "Artikel-Name"</p>
+                <form class="create-content" action="">
 
-                <button class="accordion ripple border-bottom padding-4">Überblick</button>
-                <div class="accordion-panel border-bottom">
-                    <p class="">
-                        Bestand: 1000 Stück</p>
-                    <p class="">
-                        Lager-Ort: Halle 3</p>
-                </div>
-                <form class="create-content grid" action="">
-                    <button class="accordion ripple border-bottom padding-4">Artikel-Daten</button>
-                    <div class="accordion-panel border-bottom">
+                    <div class="accordion-styling accordion-top border-bottom padding-4 active"></div>
+
+                    <div class="accordion accordion-styling ripple border-bottom padding-4">Artikel-Daten</div>
+                    <div class="accordion-panel border-bottom" style="display: block;">
 
                         <div class="input-large grid left">
                             <label class="create-label" for="Artikel-Name">Name</label>
@@ -38,7 +31,7 @@
                         </div>
                     </div>
 
-                    <button class="accordion ripple border-bottom padding-4">Stück- Angaben</button>
+                    <div class="accordion accordion-styling ripple border-bottom padding-4">Stück- Angaben</div>
                     <div class="accordion-panel border-bottom">
 
                         <div class="input-large grid left">
@@ -68,7 +61,7 @@
 
                     </div>
 
-                    <button class="accordion ripple border-bottom padding-4">Gebinde-Angaben</button>
+                    <div class="accordion accordion-styling ripple border-bottom padding-4">Gebinde-Angaben</div>
                     <div class="accordion-panel border-bottom">
 
                         <div class="input-large grid left">
@@ -104,12 +97,7 @@
 
                     </div>
 
-                    <button class="accordion ripple border-bottom padding-4">Lagerort</button>
-                    <div class="accordion-panel border-bottom">
-                        <p class="">
-                            Max-Gewicht</p>
-                    </div>
-
+                    <div class="accordion-styling accordion-bottom border-bottom padding-4"></div>
                     <input type="submit" value="Submit">
                 </form>
 
@@ -128,13 +116,8 @@
     }
 
     .create-head {
-        font-size: 2rem;
-        padding-bottom: 20px;
-    }
+        font-size: rem;
 
-    .create-title {
-        font-size: 1rem;
-        padding-bottom: 8px;
     }
 
     .create-label {
@@ -145,17 +128,12 @@
     .create-input {
         height: 24px;
         border: 2px solid var(--dark);
-        width: 270px;
-        /* margin: 0 0 20px 0; */
     }
 
-
     .input-large {
-        /* min-width: 380px; */
         text-align: left;
         padding: 12px;
         border: 1px solid var(--lightest);
-        /* margin: 10px 0 10px 0; */
     }
 
     .left {
