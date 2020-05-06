@@ -33,6 +33,10 @@ Route::get('/consumption', function () {
     return view('consumption');
 });
 
+Route::get('/stock', function () {
+    return view('stock');
+});
+
 // Route::get('/back', function () {
 //     return Redirect::back();
 // });
