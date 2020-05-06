@@ -5,15 +5,6 @@
     <div class="flex flex-wrap center">
 
         <div class="card margin-16 border-radius shadow">
-            <img class="border-bottom-fat" src="https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg" alt="...">
-            <div class="card-content">
-                <p class="card-text padding-8 margin-8">
-                    Lorem
-                </p>
-            </div>
-        </div>
-
-        <div class="card margin-16 border-radius shadow">
             <img class="border-bottom-fat" src="https://openclipart.org/image/800px/svg_to_png/320195/tropicalhouse-1831.png" alt="...">
             <div class="card-content grid center">
 
@@ -176,6 +167,15 @@
 
                 <div class="accordion-styling accordion-bottom border-bottom"></div>
 
+            </div>
+        </div>
+
+        <div class="card margin-16 border-radius shadow">
+            <img class="border-bottom-fat" src="https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg" alt="...">
+            <div class="card-content">
+                <p class="card-text padding-8 margin-8">
+                    Lorem
+                </p>
             </div>
         </div>
 

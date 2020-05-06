@@ -4,7 +4,7 @@
 <section class="main-container">
     <div class="flex flex-wrap center">
         <div class="card margin-16 border-radius shadow">
-            <img class="border-bottom-fat" src="https://openclipart.org/image/800px/svg_to_png/320195/tropicalhouse-1831.png" alt="...">
+            <img class="border-bottom-fat" src="https://openclipart.org/image/800px/svg_to_png/304879/1533738350.png" alt="...">
 
             <div class="grid center">
                 <div class="info-large accordion-top padding-8 margin-8">Bestandsübersicht
