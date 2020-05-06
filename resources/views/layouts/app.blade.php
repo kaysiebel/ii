@@ -6,7 +6,7 @@
     <!-- <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </link> -->
     <link rel="stylesheet" href="http://ii.test/css/app.css">
-    <link rel="stylesheet" href="/css/app.css">
+    <!-- <link rel="stylesheet" href="/css/app.css"> -->
     <title>i!</title>
 </head>
 

@@ -72,7 +72,8 @@
                     <div class="grid-table">
 
                         <div class="grid center">
-                            <div class="info border-radius padding-8">+ Eingänge +
+                            <div class="info border-radius padding-8 ripple">
+                                <a href="/entries">+ Eingänge +</a>
                             </div>
 
                             <table class="table">
@@ -109,7 +110,8 @@
                         </div>
 
                         <div class="grid center">
-                            <div class="info border-radius padding-8">- Ausgänge -
+                            <div class="info border-radius padding-8 ripple">
+                                <a href="/consumption">- Verbrauch -</a>
                             </div>
 
                             <table class="table">
@@ -141,11 +143,19 @@
                                     <td class="col">10.05.2020</td>
                                     <td class="col col2">2000</td>
                                 </tr>
-
                             </table>
-                        </div>
 
+                        </div>
                     </div>
+
+                    <div class="mininav margin-8">
+                        <a href="new-entry">
+                            <img class="link-item" src="https://image.flaticon.com/icons/svg/189/189689.svg"></a>
+
+                        <a href="new-consumption">
+                            <img class="link-item" src="https://image.flaticon.com/icons/svg/334/334047.svg"></a>
+                    </div>
+
                 </div>
 
                 <div class="accordion accordion-styling ripple border-bottom">i!</div>

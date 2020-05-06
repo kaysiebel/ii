@@ -7,8 +7,20 @@
             <img class="border-bottom-fat" src="https://openclipart.org/image/800px/svg_to_png/320195/tropicalhouse-1831.png" alt="...">
 
             <div class="grid center">
-                <div class="info info-large border-radius padding-8">+ Eingänge +
+                <div class="info-large accordion-top padding-8">- Verbrauch -
                 </div>
+
+                <div class="mininav margin-8">
+                    <a href="javascript:history.back()">
+                        <img class="link-item" src="https://image.flaticon.com/icons/png/512/318/318276.png"></a>
+
+                    <a href="new-entry">
+                        <img class="link-item" src="https://image.flaticon.com/icons/svg/189/189689.svg"></a>
+
+                    <a href="new-consumption">
+                        <img class="link-item" src="https://image.flaticon.com/icons/svg/334/334047.svg"></a>
+                </div>
+
                 <table class="table table-large">
                     <tr>
                         <th class="table-header">Datum</th>
@@ -61,21 +73,4 @@
     </div>
 </section>
 
-<style>
-    .table-large {
-        width: 300px;
-    }
-
-    .info-large {
-        color: var(--light);
-        background: var(--dark);
-        width: auto;
-        margin: 16px 6px 4px 6px;
-        text-align: center;
-    }
-
-    .text-align-right {
-        text-align: right;
-    }
-</style>
 @endsection

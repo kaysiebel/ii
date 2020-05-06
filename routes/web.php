@@ -24,3 +24,15 @@ Route::get('/create', function () {
 Route::get('/test', function () {
     return view('test');
 });
+
+Route::get('/entries', function () {
+    return view('entries');
+});
+
+Route::get('/consumption', function () {
+    return view('consumption');
+});
+
+// Route::get('/back', function () {
+//     return Redirect::back();
+// });
