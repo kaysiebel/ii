@@ -66,6 +66,88 @@
                         Max-Gewicht</p>
                 </div>
 
+                <div class="accordion accordion-styling ripple border-bottom">Materialbewegungen</div>
+                <div class="accordion-panel border-bottom">
+
+                    <div class="grid-table">
+
+                        <div class="grid center">
+                            <div class="info border-radius padding-8">+ Eingänge +
+                            </div>
+
+                            <table class="table">
+                                <tr>
+                                    <th class="table-header">Datum</th>
+                                    <th class="table-header">Menge</th>
+                                </tr>
+                                <tr>
+                                    <td class="col">01.05.2020</td>
+                                    <td class="col col2">4000</td>
+                                </tr>
+                                <tr>
+                                    <td class="col">02.05.2020</td>
+                                    <td class="col col2">2000</td>
+                                </tr>
+                                <tr>
+                                    <td class="col">04.05.2020</td>
+                                    <td class="col col2">4000</td>
+                                </tr>
+                                <tr>
+                                    <td class="col">05.05.2020</td>
+                                    <td class="col col2">1000</td>
+                                </tr>
+                                <tr>
+                                    <td class="col">08.05.2020</td>
+                                    <td class="col col2">4000</td>
+                                </tr>
+                                <tr>
+                                    <td class="col">10.05.2020</td>
+                                    <td class="col col2">2000</td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                        <div class="grid center">
+                            <div class="info border-radius padding-8">- Ausgänge -
+                            </div>
+
+                            <table class="table">
+                                <tr>
+                                    <th class="table-header">Datum</th>
+                                    <th class="table-header">Menge</th>
+                                </tr>
+                                <tr>
+                                    <td class="col">01.05.2020</td>
+                                    <td class="col col2">4000</td>
+                                </tr>
+                                <tr>
+                                    <td class="col">02.05.2020</td>
+                                    <td class="col col2">2000</td>
+                                </tr>
+                                <tr>
+                                    <td class="col">04.05.2020</td>
+                                    <td class="col col2">4000</td>
+                                </tr>
+                                <tr>
+                                    <td class="col">05.05.2020</td>
+                                    <td class="col col2">1000</td>
+                                </tr>
+                                <tr>
+                                    <td class="col">08.05.2020</td>
+                                    <td class="col col2">4000</td>
+                                </tr>
+                                <tr>
+                                    <td class="col">10.05.2020</td>
+                                    <td class="col col2">2000</td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+
                 <div class="accordion accordion-styling ripple border-bottom">i!</div>
                 <div class="accordion-panel border-bottom">
                     <p class="">
@@ -89,4 +171,5 @@
 
     </div>
 </section>
+
 @endsection

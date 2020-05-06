@@ -85,47 +85,4 @@
     </div>
 </section>
 
-<style>
-    .grid-table {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-auto-rows: auto;
-    }
-
-    .col {
-        /* background: var(--dark);
-        color: var(--light); */
-        background: var(--light);
-        color: var(--darker);
-        border: 2px solid var(--light);
-        border-radius: 2px;
-    }
-
-
-    .col2 {
-        text-align: right;
-    }
-
-    .table {
-        background: var(--dark);
-        border-radius: 4px;
-    }
-
-    .table-header {
-        color: var(--light);
-        background: var(--dark);
-        font-size: 16px;
-        text-align: left;
-        padding: 6px 2px;
-    }
-
-    .info {
-        font-size: 20px;
-        text-align: center;
-        color: var(--light);
-        background: var(--dark);
-        width: 90%;
-        margin: 12px 0 4px 0;
-    }
-</style>
 @endsection
