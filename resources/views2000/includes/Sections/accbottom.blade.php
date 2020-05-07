@@ -1,0 +1,1 @@
+<div class="accordion-styling accordion-bottom border-bottom"></div>

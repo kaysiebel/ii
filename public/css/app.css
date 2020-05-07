@@ -95,13 +95,6 @@ a {
   width: auto;
 }
 
-.card {
-  width: 320px;
-  background: var(--light);
-  padding-bottom: 8px;
-  border: inset 4px var(--dark);
-}
-
 .card-text {
   color: var(--darkest);
   text-align: center;

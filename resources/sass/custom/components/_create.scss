@@ -1,0 +1,15 @@
+.card-create {
+    background: var(--light);
+    color: var(--dark);
+}
+
+.create-label {
+    font-size: 18px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.create-input {
+    height: 28px;
+    border: 2px solid var(--dark);
+}
