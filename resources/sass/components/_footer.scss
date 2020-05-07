@@ -1,31 +1,16 @@
-.footer-section {
+footer {
+    background: var(--darker);
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
     position: fixed;
     bottom: 0;
-    width: 100vw;
-    background: var(--darkest);
-}
-
-.footer {
-    margin: 8px;
-    margin-bottom: 2px;
-    height: 40px;
-    background: linear-gradient(
-        to right,
-        var(--darkest),
-        var(--light) 10%,
-        var(--light) 90%,
-        var(--darkest)
-    );
-    color: var(--darkest);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 }
 
 .footer-item {
     text-decoration: none;
-    color: var(--darkest);
-    height: 32px;
+    height: 36px;
+    margin: 4px;
     width: auto;
+    background: var(--light);
 }
