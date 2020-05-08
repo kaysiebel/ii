@@ -3,7 +3,7 @@
 
     <div class="accordion-grid ripple-light">
         <p class="accordion-item">
-            Bestand</p>
+            Soll- Bestand</p>
         <p class="accordion-item">
             1000</p>
     </div>

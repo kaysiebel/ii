@@ -113,16 +113,16 @@ footer {
   border: 2px solid var(--dark);
 }
 
-.grid-table {
+.table-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: auto;
-  gap: 8px;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  background: var(--light);
+  justify-items: center;
 }
 
 .col {
   background: var(--light);
-  color: var(--darker);
   border: 2px solid var(--light);
   border-radius: 2px;
 }
@@ -131,9 +131,16 @@ footer {
   text-align: right;
 }
 
+.link {
+  display: grid;
+  justify-items: center;
+  margin: 14px 0 8px 0;
+}
+
 .table {
-  background: var(--dark);
+  background: var(--darker);
   border-radius: 4px;
+  width: 190px;
 }
 
 .table-large {
@@ -142,17 +149,18 @@ footer {
 
 .table-header {
   color: var(--light);
-  background: var(--dark);
-  font-size: 16px;
-  text-align: left;
-  padding: 6px 2px;
+  background-image: linear-gradient(var(--darker) 20%, var(--dark));
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 8px 2px;
 }
 
 .info {
   color: var(--light);
-  background: var(--dark);
-  width: 80%;
-  margin: 6px 6px 4px 6px;
+  background-image: linear-gradient(var(--darker) 20%, var(--dark));
+  border-radius: 4px;
+  padding: 6px;
+  top: 6px;
   text-align: center;
 }
 
@@ -180,8 +188,8 @@ footer {
 }
 
 .bar-container {
-  border-left: 1px inset var(--dark);
-  border-right: 1px inset var(--dark);
+  border-left: 3px inset var(--darkest);
+  border-right: 3px inset var(--darkest);
 }
 
 .bar-title {
@@ -200,6 +208,7 @@ footer {
   padding: 4px;
   background: var(--light);
   width: 390px;
+  margin-top: 6px;
 }
 
 .bar-header {
@@ -224,11 +233,12 @@ footer {
   text-align: center;
   outline: none;
   font-size: 1.3rem;
-  padding: 4px 24px 4px 24px;
+  padding: 8px 24px 4px 24px;
 }
 
 .accordion-panel {
   font-size: 1.3rem;
+  background-color: var(--light);
   color: var(--darker);
   width: 100%;
   display: none;

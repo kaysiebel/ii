@@ -14,8 +14,9 @@
 }
 
 .bar-container {
-    border-left: 1px inset var(--dark);
-    border-right: 1px inset var(--dark);
+    border-left: 3px inset var(--darkest);
+    border-right: 3px inset var(--darkest);
+    // background: var(--light);
 }
 
 .bar-title {
@@ -34,7 +35,8 @@
     padding: 4px;
     background: var(--light);
     width: 390px;
-    // border: 1px inset var(--dark);
+    // border-top: 20px inset var(--darker);
+    margin-top: 6px;
 }
 
 .bar-header {

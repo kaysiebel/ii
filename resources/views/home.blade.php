@@ -1,54 +1,295 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="main-container">
-    <div class="flex flex-wrap center">
 
-        <div class="card margin-16 border-radius shadow">
-            <img class="border-bottom-fat" src="https://openclipart.org/image/800px/svg_to_png/320195/tropicalhouse-1831.png" alt="...">
-            <div class="card-content grid center">
+<section class="page-container">
 
-                <p class="card-text padding-8 margin-8">
-                    "Artikel-Name"</p>
-
-                @include('includes/sections/acctop')
-
-                @include('includes/sections/home/overview')
-                @include('includes/sections/home/piece')
-                @include('includes/sections/home/unit')
-                @include('includes/sections/home/location')
-                @include('includes/sections/home/entry')
-                @include('includes/sections/home/magic')
-
-                @include('includes/sections/accbottom')
-
+    <div class="bar-container">
+        <div class="bar-grid acc ripple">
+            <img class="bar-img" src="https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg" alt="...">
+            <div class="bar-header">
+                <p class="bar-title">Name des Artikels</p>
+                <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
+            </div>
+            <div class="dot-container">
+                <div class="bar-dot">&nbsp;</div>
             </div>
         </div>
 
-        @include('includes/sections/placeholder')
-
-        <div class="card margin-16 border-radius shadow">
-            <img class="border-bottom-fat" src="https://openclipart.org/image/800px/svg_to_png/320195/tropicalhouse-1831.png" alt="...">
-            <div class="card-content grid center">
-
-                <p class="card-text padding-8 margin-8">
-                    "Artikel-Name"</p>
-
-                @include('includes/sections/acctop')
-
-                @include('includes/sections/home/overview')
-                @include('includes/sections/home/piece')
-                @include('includes/sections/home/unit')
-                @include('includes/sections/home/location')
-                @include('includes/sections/home/entry')
-                @include('includes/sections/home/magic')
-
-                @include('includes/sections/accbottom')
-
-            </div>
+        <div class="accordion-panel">
+            @include('includes/sections/home/overview')
+            @include('includes/sections/home/piece')
+            @include('includes/sections/home/unit')
+            @include('includes/sections/home/location')
+            @include('includes/sections/home/entry')
+            @include('includes/sections/home/magic')
         </div>
-
     </div>
+
+    <div class="bar-container">
+        <div class="bar-grid acc ripple">
+            <img class="bar-img" src="https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg" alt="...">
+            <div class="bar-header">
+                <p class="bar-title">Name des Artikels</p>
+                <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
+            </div>
+            <div class="dot-container">
+                <div class="bar-dot">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="accordion-panel">
+            @include('includes/sections/home/overview')
+            @include('includes/sections/home/piece')
+            @include('includes/sections/home/unit')
+            @include('includes/sections/home/location')
+            @include('includes/sections/home/entry')
+            @include('includes/sections/home/magic')
+        </div>
+    </div>
+
+    <div class="bar-container">
+        <div class="bar-grid acc ripple">
+            <img class="bar-img" src="https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg" alt="...">
+            <div class="bar-header">
+                <p class="bar-title">Name des Artikels</p>
+                <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
+            </div>
+            <div class="dot-container">
+                <div class="bar-dot">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="accordion-panel">
+            @include('includes/sections/home/overview')
+            @include('includes/sections/home/piece')
+            @include('includes/sections/home/unit')
+            @include('includes/sections/home/location')
+            @include('includes/sections/home/entry')
+            @include('includes/sections/home/magic')
+        </div>
+    </div>
+
+    <div class="bar-container">
+        <div class="bar-grid acc ripple">
+            <img class="bar-img" src="https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg" alt="...">
+            <div class="bar-header">
+                <p class="bar-title">Name des Artikels</p>
+                <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
+            </div>
+            <div class="dot-container">
+                <div class="bar-dot">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="accordion-panel">
+            @include('includes/sections/home/overview')
+            @include('includes/sections/home/piece')
+            @include('includes/sections/home/unit')
+            @include('includes/sections/home/location')
+            @include('includes/sections/home/entry')
+            @include('includes/sections/home/magic')
+        </div>
+    </div>
+
+    <div class="bar-container">
+        <div class="bar-grid acc ripple">
+            <img class="bar-img" src="https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg" alt="...">
+            <div class="bar-header">
+                <p class="bar-title">Name des Artikels</p>
+                <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
+            </div>
+            <div class="dot-container">
+                <div class="bar-dot">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="accordion-panel">
+            @include('includes/sections/home/overview')
+            @include('includes/sections/home/piece')
+            @include('includes/sections/home/unit')
+            @include('includes/sections/home/location')
+            @include('includes/sections/home/entry')
+            @include('includes/sections/home/magic')
+        </div>
+    </div>
+
+    <div class="bar-container">
+        <div class="bar-grid acc ripple">
+            <img class="bar-img" src="https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg" alt="...">
+            <div class="bar-header">
+                <p class="bar-title">Name des Artikels</p>
+                <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
+            </div>
+            <div class="dot-container">
+                <div class="bar-dot">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="accordion-panel">
+            @include('includes/sections/home/overview')
+            @include('includes/sections/home/piece')
+            @include('includes/sections/home/unit')
+            @include('includes/sections/home/location')
+            @include('includes/sections/home/entry')
+            @include('includes/sections/home/magic')
+        </div>
+    </div>
+
+    <div class="bar-container">
+        <div class="bar-grid acc ripple">
+            <img class="bar-img" src="https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg" alt="...">
+            <div class="bar-header">
+                <p class="bar-title">Name des Artikels</p>
+                <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
+            </div>
+            <div class="dot-container">
+                <div class="bar-dot">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="accordion-panel">
+            @include('includes/sections/home/overview')
+            @include('includes/sections/home/piece')
+            @include('includes/sections/home/unit')
+            @include('includes/sections/home/location')
+            @include('includes/sections/home/entry')
+            @include('includes/sections/home/magic')
+        </div>
+    </div>
+
+    <div class="bar-container">
+        <div class="bar-grid acc ripple">
+            <img class="bar-img" src="https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg" alt="...">
+            <div class="bar-header">
+                <p class="bar-title">Name des Artikels</p>
+                <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
+            </div>
+            <div class="dot-container">
+                <div class="bar-dot">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="accordion-panel">
+            @include('includes/sections/home/overview')
+            @include('includes/sections/home/piece')
+            @include('includes/sections/home/unit')
+            @include('includes/sections/home/location')
+            @include('includes/sections/home/entry')
+            @include('includes/sections/home/magic')
+        </div>
+    </div>
+
+    <div class="bar-container">
+        <div class="bar-grid acc ripple">
+            <img class="bar-img" src="https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg" alt="...">
+            <div class="bar-header">
+                <p class="bar-title">Name des Artikels</p>
+                <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
+            </div>
+            <div class="dot-container">
+                <div class="bar-dot">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="accordion-panel">
+            @include('includes/sections/home/overview')
+            @include('includes/sections/home/piece')
+            @include('includes/sections/home/unit')
+            @include('includes/sections/home/location')
+            @include('includes/sections/home/entry')
+            @include('includes/sections/home/magic')
+        </div>
+    </div>
+
+    <div class="bar-container">
+        <div class="bar-grid acc ripple">
+            <img class="bar-img" src="https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg" alt="...">
+            <div class="bar-header">
+                <p class="bar-title">Name des Artikels</p>
+                <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
+            </div>
+            <div class="dot-container">
+                <div class="bar-dot">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="accordion-panel">
+            @include('includes/sections/home/overview')
+            @include('includes/sections/home/piece')
+            @include('includes/sections/home/unit')
+            @include('includes/sections/home/location')
+            @include('includes/sections/home/entry')
+            @include('includes/sections/home/magic')
+        </div>
+    </div>
+
+    <div class="bar-container">
+        <div class="bar-grid acc ripple">
+            <img class="bar-img" src="https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg" alt="...">
+            <div class="bar-header">
+                <p class="bar-title">Name des Artikels</p>
+                <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
+            </div>
+            <div class="dot-container">
+                <div class="bar-dot">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="accordion-panel">
+            @include('includes/sections/home/overview')
+            @include('includes/sections/home/piece')
+            @include('includes/sections/home/unit')
+            @include('includes/sections/home/location')
+            @include('includes/sections/home/entry')
+            @include('includes/sections/home/magic')
+        </div>
+    </div>
+
+    <div class="bar-container">
+        <div class="bar-grid acc ripple">
+            <img class="bar-img" src="https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg" alt="...">
+            <div class="bar-header">
+                <p class="bar-title">Name des Artikels</p>
+                <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
+            </div>
+            <div class="dot-container">
+                <div class="bar-dot">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="accordion-panel">
+            @include('includes/sections/home/overview')
+            @include('includes/sections/home/piece')
+            @include('includes/sections/home/unit')
+            @include('includes/sections/home/location')
+            @include('includes/sections/home/entry')
+            @include('includes/sections/home/magic')
+        </div>
+    </div>
+
+    <div class="bar-container">
+        <div class="bar-grid acc ripple">
+            <img class="bar-img" src="https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg" alt="...">
+            <div class="bar-header">
+                <p class="bar-title">Name des Artikels</p>
+                <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
+            </div>
+            <div class="dot-container">
+                <div class="bar-dot">&nbsp;</div>
+            </div>
+        </div>
+
+        <div class="accordion-panel">
+            @include('includes/sections/home/overview')
+            @include('includes/sections/home/piece')
+            @include('includes/sections/home/unit')
+            @include('includes/sections/home/location')
+            @include('includes/sections/home/entry')
+            @include('includes/sections/home/magic')
+        </div>
+    </div>
+
 </section>
 
 @endsection

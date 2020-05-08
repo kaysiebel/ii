@@ -1,4 +1,4 @@
-<div class="accordion acc">Gebinde-Angaben</div>
+<div class="accordion acc ripple">Gebinde-Angaben</div>
 <div class="accordion-panel">
 
     <div class="accordion-grid ripple-light">
