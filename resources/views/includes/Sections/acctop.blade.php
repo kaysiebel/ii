@@ -1,1 +1,0 @@
-<div class="accordion-styling accordion-top border-bottom active"></div>

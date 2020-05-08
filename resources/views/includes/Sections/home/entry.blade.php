@@ -1,10 +1,10 @@
-<div class="accordion accordion-styling ripple border-bottom">Materialbewegungen</div>
-<div class="accordion-panel border-bottom">
+<div class="accordion acc ripple">Materialbewegungen</div>
+<div class="accordion-panel">
 
     <div class="grid-table">
 
         <div class="grid center">
-            <div class="info border-radius padding-8 ripple">
+            <div class="info ripple">
                 <a href="/entries">+ Eingänge +</a>
             </div>
 

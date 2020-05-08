@@ -1,5 +1,11 @@
-<div class="accordion accordion-styling ripple border-bottom">Lagerort</div>
-<div class="accordion-panel border-bottom">
-    <p class="">
-        Max-Gewicht</p>
+<div class="accordion acc ripple">Lagerort</div>
+<div class="accordion-panel">
+
+    <div class="accordion-grid ripple-light">
+        <p class="accordion-item">
+            Max Gewicht</p>
+        <p class="accordion-item">
+            5000 Kg</p>
+    </div>
+
 </div>

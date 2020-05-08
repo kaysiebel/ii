@@ -1,5 +1,5 @@
 html {
-  font-size: 0.2rem;
+  font-size: 1rem;
 }
 
 body {
@@ -7,7 +7,7 @@ body {
   grid-template-rows: 44px auto 44px;
   background: var(--darkest);
   font-family: "roboto", sans-serif;
-  color: var(--darkest);
+  color: var(--darker);
   height: 100vh;
   margin: 0;
 }
@@ -67,15 +67,15 @@ a {
 }
 
 header {
-  font-size: 10rem;
-  background: var(--darker);
+  font-size: 2.2rem;
+  background-image: linear-gradient(var(--darkest) 20%, var(--darker));
   color: var(--lighter);
   font-family: geneva;
   text-align: center;
 }
 
 footer {
-  background: var(--darker);
+  background-image: linear-gradient(var(--darker) 50%, var(--darkest));
   display: flex;
   justify-content: space-around;
   width: 100vw;
@@ -95,54 +95,6 @@ footer {
   color: var(--darkest);
   text-align: center;
   font-size: 2rem;
-}
-
-img {
-  width: 100%;
-}
-
-.accordion-styling {
-  background-color: var(--dark);
-  color: var(--light);
-  cursor: pointer;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 18px;
-  padding: 4px 24px 4px 24px;
-}
-
-.accordion-top {
-  border-top-left-radius: 120px;
-  border-top-right-radius: 120px;
-}
-
-.accordion-bottom {
-  border-bottom-left-radius: 120px;
-  border-bottom-right-radius: 120px;
-}
-
-.accordion-panel {
-  background-color: var(--light);
-  color: var(--darkest);
-  display: none;
-  overflow: hidden;
-}
-
-.ripple {
-  background-position: center;
-  transition: background 0.5s;
-}
-
-.ripple:hover {
-  background: var(--light) radial-gradient(circle, transparent 1%, var(--dark) 10%) center/15000%;
-  color: var(--darkest);
-}
-
-.ripple:active {
-  background-color: var(--lightly);
-  background-size: 100%;
-  transition: background 0s;
 }
 
 .card-create {
@@ -227,13 +179,17 @@ img {
   background: var(--green);
 }
 
+.bar-container {
+  border-left: 1px inset var(--dark);
+  border-right: 1px inset var(--dark);
+}
+
 .bar-title {
-  font-size: 8em;
+  font-size: 1.6rem;
   margin: 0;
 }
 
 .bar-text {
-  font-size: 4em;
   margin-top: 6px;
 }
 
@@ -243,8 +199,7 @@ img {
   grid-auto-rows: 64px;
   padding: 4px;
   background: var(--light);
-  border: 1px solid var(--dark);
-  width: 398px;
+  width: 390px;
 }
 
 .bar-header {
@@ -258,7 +213,67 @@ img {
   height: 60px;
   border-radius: 90px;
   border: 2px solid var(--dark);
+  background-image: linear-gradient(var(--darker) 30%, var(--dark));
+  box-shadow: 0 1px 6px var(--dark);
+}
+
+.accordion {
+  background-image: linear-gradient(var(--darker) 30%, var(--dark));
+  color: var(--light);
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  font-size: 1.3rem;
+  padding: 4px 24px 4px 24px;
+}
+
+.accordion-panel {
+  font-size: 1.3rem;
+  color: var(--darker);
+  width: 100%;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion-item {
+  display: grid;
+  align-items: center;
+  height: 40px;
+  margin: 0;
+  padding: 8px;
+}
+
+.accordion-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: var(--light);
+}
+
+.ripple {
+  background-position: center;
+  transition: background 0.5s;
+}
+
+.ripple:hover {
+  background: var(--light) radial-gradient(circle, transparent 1%, var(--dark) 10%) center/15000%;
+  color: var(--darkest);
+}
+
+.ripple:active {
+  background-color: var(--dark);
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.ripple-light {
+  background-position: center;
+  transition: background 0.5s;
+}
+
+.ripple-light:hover {
+  background-image: linear-gradient(var(--dark), var(--light) 14%);
+  color: var(--darkest);
 }
 
 .center {

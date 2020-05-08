@@ -1,5 +1,5 @@
 html {
-    font-size: 0.2rem;
+    font-size: 1rem;
 }
 
 body {
@@ -7,7 +7,7 @@ body {
     grid-template-rows: 44px auto 44px;
     background: var(--darkest);
     font-family: "roboto", sans-serif;
-    color: var(--darkest);
+    color: var(--darker);
     height: 100vh;
     margin: 0;
 }

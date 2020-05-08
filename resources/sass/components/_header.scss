@@ -1,6 +1,7 @@
 header {
-    font-size: 10rem;
-    background: var(--darker);
+    font-size: 2.2rem;
+    // background: var(--darker);
+    background-image: linear-gradient(var(--darkest) 20%, var(--darker));
     color: var(--lighter);
     font-family: geneva;
     text-align: center;
