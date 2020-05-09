@@ -1,33 +1,31 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="main-container">
-    <div class="flex flex-wrap center">
 
-        <div class="card margin-16 border-radius shadow">
+<section class="page-container">
 
-            <form class="" action="">
-                <label class="create-label">Upload Image</label>
-                <img class="border-bottom-fat" src="https://openclipart.org/image/800px/svg_to_png/320195/tropicalhouse-1831.png" />
-                <input class="ripple" type="file" name="image">
-            </form>
-
-            <div class="grid center">
-                <form class="create-content" action="">
-                    @include('includes/sections/create/articledata')
-                    <!-- has toggled active accordion header! -->
-
-                    @include('includes/sections/create/piecedata')
-                    @include('includes/sections/create/unitdata')
-
-                    @include('includes/sections/accbottom')
-                    <input class="ripple" type="submit" value="Submit">
-                </form>
+    <div class="bar-container">
+        <div class="bar-grid-create active">
+            <img class="bar-img" src="https://openclipart.org/image/800px/svg_to_png/320195/tropicalhouse-1831.png" alt="...">
+            <div class="bar-header">
+                <p class="bar-title">Hier können neue Artikel angelegt werden</p>
             </div>
-
         </div>
 
+        <div class="accordion-panel" style=" display: block;">
+            <div class="file-btn-container">
+                <form action="">
+                    <label class="file-lable">Upload Image</label>
+                    <img src="" />
+                    <input class="ripple" type="file" name="image">
+                </form>
+            </div>
+            @include('includes/sections/create/articledata')
+            @include('includes/sections/create/piecedata')
+            @include('includes/sections/create/unitdata')
+        </div>
     </div>
+
 </section>
 
 @endsection

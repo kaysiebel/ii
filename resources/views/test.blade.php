@@ -2,11 +2,12 @@
 
 @section('content')
 
+
 <section class="page-container">
 
     <div class="bar-container">
         <div class="bar-grid acc ripple">
-            <img class="bar-img" src="https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg" alt="...">
+            <img class="bar-img" src="https://openclipart.org/image/800px/svg_to_png/320195/tropicalhouse-1831.png" alt="...">
             <div class="bar-header">
                 <p class="bar-title">Name des Artikels</p>
                 <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
@@ -17,27 +18,17 @@
         </div>
 
         <div class="accordion-panel">
-            @include('includes/sections/home/overview')
-            @include('includes/sections/home/piece')
-            @include('includes/sections/home/unit')
-            @include('includes/sections/home/location')
-            @include('includes/sections/home/entry')
-            @include('includes/sections/home/magic')
+            <form action="">
+                <label class="create-label">Upload Image</label>
+                <img src="" />
+                <input class="ripple" type="file" name="image">
+            </form>
+            @include('includes/sections/create/articledata')
+            @include('includes/sections/create/piecedata')
+            @include('includes/sections/create/unitdata')
         </div>
     </div>
 
 </section>
-
-
-<!-- <div class="bar-grid acc ripple">
-        <img class="bar-img" src="https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg" alt="...">
-        <div class="bar-header">
-            <p class="bar-title">Name des Artikels</p>
-            <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
-        </div>
-        <div class="dot-container">
-            <div class="bar-dot">&nbsp;</div>
-        </div>
-    </div> -->
 
 @endsection

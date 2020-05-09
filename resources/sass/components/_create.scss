@@ -1,15 +1,74 @@
-.card-create {
-    background: var(--light);
-    color: var(--dark);
-}
+// .card-create {
+//     background: var(--light);
+//     color: var(--dark);
+// }
 
 .create-label {
-    font-size: 18px;
+    font-size: 1.2rem;
     text-align: right;
     margin-right: 20px;
 }
 
 .create-input {
-    height: 28px;
+    height: 36px;
+    background-image: linear-gradient(var(--darker) 30%, var(--dark));
+    color: var(--light);
+    font-size: 1rem;
+    // border: 2px solid var(--darkest);
+}
+
+.create-grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: center;
+    align-items: center;
+    background: var(--light);
+    height: 60px;
+}
+
+.create-grid-small {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: center;
+    align-items: center;
+    background: var(--light);
+    height: 60px;
+}
+
+.bar-grid-create {
+    display: grid;
+    grid-template-columns: 20% auto;
+    // grid-auto-rows: 64px;
+    padding: 4px;
+    background: var(--light);
+    width: 390px;
+    // border-top: 20px inset var(--darker);
+    margin-top: 6px;
+}
+
+.file-btn {
+    display: flex;
+    height: 20px;
+    background: linear-gradient(var(--darker) 30%, var(--dark));
+    color: var(--light);
+    font-size: 0.7rem;
+
+    width: 100px;
     border: 2px solid var(--dark);
+    border-radius: 90px;
+    z-index: 10;
+}
+
+.file-label {
+    width: 100px;
+}
+
+.file-btn {
+    max-width: 200px;
+}
+
+.file-btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

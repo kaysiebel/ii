@@ -1,5 +1,6 @@
 html {
   font-size: 1rem;
+  font-weight: 510;
 }
 
 body {
@@ -97,20 +98,70 @@ footer {
   font-size: 2rem;
 }
 
-.card-create {
-  background: var(--light);
-  color: var(--dark);
-}
-
 .create-label {
-  font-size: 18px;
+  font-size: 1.2rem;
   text-align: right;
   margin-right: 20px;
 }
 
 .create-input {
-  height: 28px;
+  height: 36px;
+  background-image: linear-gradient(var(--darker) 30%, var(--dark));
+  color: var(--light);
+  font-size: 1rem;
+}
+
+.create-grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  justify-content: center;
+  align-items: center;
+  background: var(--light);
+  height: 60px;
+}
+
+.create-grid-small {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  justify-content: center;
+  align-items: center;
+  background: var(--light);
+  height: 60px;
+}
+
+.bar-grid-create {
+  display: grid;
+  grid-template-columns: 20% auto;
+  padding: 4px;
+  background: var(--light);
+  width: 390px;
+  margin-top: 6px;
+}
+
+.file-btn {
+  display: flex;
+  height: 20px;
+  background: linear-gradient(var(--darker) 30%, var(--dark));
+  color: var(--light);
+  font-size: 0.7rem;
+  width: 100px;
   border: 2px solid var(--dark);
+  border-radius: 90px;
+  z-index: 10;
+}
+
+.file-label {
+  width: 100px;
+}
+
+.file-btn {
+  max-width: 200px;
+}
+
+.file-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .table-grid {
@@ -134,13 +185,13 @@ footer {
 .link {
   display: grid;
   justify-items: center;
-  margin: 14px 0 8px 0;
+  margin: 12px 0 8px 0;
 }
 
 .table {
   background: var(--darker);
   border-radius: 4px;
-  width: 190px;
+  width: 174px;
 }
 
 .table-large {
@@ -160,7 +211,6 @@ footer {
   background-image: linear-gradient(var(--darker) 20%, var(--dark));
   border-radius: 4px;
   padding: 6px;
-  top: 6px;
   text-align: center;
 }
 
@@ -168,7 +218,7 @@ footer {
   color: var(--light);
   background: var(--dark);
   width: auto;
-  margin-top: 12px;
+  margin-top: 8px;
   text-align: center;
 }
 
@@ -240,7 +290,7 @@ footer {
   font-size: 1.3rem;
   background-color: var(--light);
   color: var(--darker);
-  width: 100%;
+  border: 8px solid var(--light);
   display: none;
   overflow: hidden;
 }
@@ -248,9 +298,7 @@ footer {
 .accordion-item {
   display: grid;
   align-items: center;
-  height: 40px;
-  margin: 0;
-  padding: 8px;
+  padding: 0 8px;
 }
 
 .accordion-grid {
@@ -282,7 +330,7 @@ footer {
 }
 
 .ripple-light:hover {
-  background-image: linear-gradient(var(--dark), var(--light) 14%);
+  background-image: linear-gradient(var(--light), var(--dark) 10%, var(--light) 12%, var(--light) 88%, var(--dark) 90%, var(--light));
   color: var(--darkest);
 }
 

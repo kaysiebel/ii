@@ -1,19 +1,39 @@
-<div class="accordion-styling accordion-top border-bottom padding-4 active"></div>
-<div class="accordion accordion-styling ripple border-bottom">Artikel-Daten</div>
-<div class="accordion-panel border-bottom" style="display: block;">
+<div class="accordion acc ripple active">Artikel- Angaben</div>
+<div class="accordion-panel" style="display: block;">
 
-    <div class="input grid-2 center">
-        <label class="create-label" for="Artikel-Name">Name</label>
-        <input class="create-input" type="text" name="Artikel-Name" placeholder="erforderlich">
+    <!-- <div class="file">
+        <form action="">
+            <label class="create-label">Upload Image</label>
+            <img src="" />
+            <input class="ripple" type="file" name="image">
+        </form>
+    </div> -->
+
+    <div class="create-grid ripple-light">
+        <div class="accordion-item">
+            <label class="create-label" for="Artikel-Name">Name</label>
+        </div>
+        <div class="accordion-item">
+            <input class="create-input" type="text" name="Artikel-Name" placeholder="erforderlich">
+        </div>
     </div>
 
-    <div class="input grid-2 center">
-        <label class="create-label" for="Anfangs-Bestand">Anfangs- Bestand</label>
-        <input class="create-input width-small" type="text" name="Anfangs-Bestand" placeholder="erforderlich">
+    <div class="create-grid ripple-light">
+        <div class="accordion-item">
+            <label class="create-label" for="Anfangs-Bestand">Anfangs- Bestand</label>
+        </div>
+        <div class="accordion-item">
+            <input class="create-input width-small" type="text" name="Anfangs-Bestand" placeholder="erforderlich">
+        </div>
     </div>
 
-    <div class="input grid-2 center">
-        <label class="create-label" for="Lagerplatz">Lagerplatz</label>
-        <input class="create-input" type="text" name="Lagerplatz" placeholder="verzichtbar">
+    <div class="create-grid ripple-light">
+        <div class="accordion-item">
+            <label class="create-label" for="Lagerplatz">Lagerplatz</label>
+        </div>
+        <div class="accordion-item">
+            <input class="create-input" type="text" name="Lagerplatz" placeholder="verzichtbar">
+        </div>
     </div>
+
 </div>

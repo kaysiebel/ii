@@ -22,7 +22,7 @@
 .link {
     display: grid;
     justify-items: center;
-    margin: 14px 0 8px 0;
+    margin: 12px 0 8px 0;
 }
 
 // .table-container {
@@ -34,7 +34,7 @@
 .table {
     background: var(--darker);
     border-radius: 4px;
-    width: 190px;
+    width: 174px;
 }
 
 .table-large {
@@ -54,7 +54,7 @@
     background-image: linear-gradient(var(--darker) 20%, var(--dark));
     border-radius: 4px;
     padding: 6px;
-    top: 6px;
+    // top: 6px;
 
     text-align: center;
 }
@@ -63,6 +63,6 @@
     color: var(--light);
     background: var(--dark);
     width: auto;
-    margin-top: 12px;
+    margin-top: 8px;
     text-align: center;
 }

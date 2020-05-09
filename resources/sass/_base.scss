@@ -1,5 +1,8 @@
 html {
     font-size: 1rem;
+    // outline: none;
+    // text-shadow: 1px 1px var(--dark);
+    font-weight: 510;
 }
 
 body {
@@ -38,6 +41,10 @@ a:visited {
 a {
     text-decoration: none;
 }
+
+// input[type="file"] {
+//     display: none;
+// }
 
 .mininav {
     display: flex;
