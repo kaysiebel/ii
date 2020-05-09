@@ -1,13 +1,13 @@
 <div class="accordion acc ripple active">Artikel- Angaben</div>
 <div class="accordion-panel" style="display: block;">
 
-    <!-- <div class="file">
+    <div class="file-btn-container">
         <form action="">
-            <label class="create-label">Upload Image</label>
+            <label class="file-lable">Upload Image</label>
             <img src="" />
             <input class="ripple" type="file" name="image">
         </form>
-    </div> -->
+    </div>
 
     <div class="create-grid ripple-light">
         <div class="accordion-item">

@@ -13,13 +13,6 @@
         </div>
 
         <div class="accordion-panel" style=" display: block;">
-            <div class="file-btn-container">
-                <form action="">
-                    <label class="file-lable">Upload Image</label>
-                    <img src="" />
-                    <input class="ripple" type="file" name="image">
-                </form>
-            </div>
             @include('includes/sections/create/articledata')
             @include('includes/sections/create/piecedata')
             @include('includes/sections/create/unitdata')

@@ -37,6 +37,22 @@ Route::get('/stock', function () {
     return view('stock');
 });
 
+Route::get('/search', function () {
+    return view('search');
+});
+
+Route::get('/settings', function () {
+    return view('settings');
+});
+
+Route::get('/list', function () {
+    return view('list');
+});
+
+Route::get('/categories', function () {
+    return view('categories');
+});
+
 // Route::get('/back', function () {
 //     return Redirect::back();
 // });

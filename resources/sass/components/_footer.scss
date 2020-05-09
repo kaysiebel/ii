@@ -2,7 +2,7 @@ footer {
     background-image: linear-gradient(var(--darker) 50%, var(--darkest));
     display: flex;
     justify-content: space-around;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     bottom: 0;
 }
@@ -12,5 +12,4 @@ footer {
     height: 36px;
     margin: 4px;
     width: auto;
-    background: var(--light);
 }

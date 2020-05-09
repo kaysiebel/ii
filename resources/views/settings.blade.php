@@ -3,19 +3,27 @@
 @section('content')
 
 <section class="page-container">
-
     <div class="bar-container">
-        <div class="bar-full">
+
+        <div class="bar-full acc ripple active">
             <div class="bar-header">
-                <p class="bar-title">Bestands- Übersicht</p>
+                <p class="bar-title">Settings</p>
             </div>
         </div>
 
         <div class="accordion-panel" style=" display: block;">
-            @include('includes/sections/stocktable')
-        </div>
-    </div>
+            <div class="settings-container">hallo
 
+            </div>
+        </div>
+
+    </div>
 </section>
+
+<style>
+    .settings-container {
+        width: 100%
+    }
+</style>
 
 @endsection

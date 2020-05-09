@@ -46,29 +46,6 @@
     margin-top: 6px;
 }
 
-.file-btn {
-    display: flex;
-    height: 20px;
-    background: linear-gradient(var(--darker) 30%, var(--dark));
-    color: var(--light);
-    font-size: 0.7rem;
-
-    width: 100px;
-    border: 2px solid var(--dark);
-    border-radius: 90px;
-    z-index: 10;
-}
-
 .file-label {
     width: 100px;
-}
-
-.file-btn {
-    max-width: 200px;
-}
-
-.file-btn-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

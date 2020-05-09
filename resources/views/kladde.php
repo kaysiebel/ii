@@ -17,7 +17,7 @@
         </div>
 
         <!-- <div class="accordion-panel acc"> -->
-        <div id='main-accordion' class='main-accordion' style="display: none;">
+        <div id='main-accordion' class='main-accordion'>
             <div class="accordion ripple">Test1</div>
             <div class="accordion-panel">
                 <p class="accordion-item">
@@ -54,6 +54,12 @@
 
 @endsection
 
+
+
+
+
+
+
 <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
 <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'></script>
 <!-- <link href='https://code.jquery.com/ui/1.12.1/themes/cupertino/jquery-ui.css' rel='stylesheet'> -->
@@ -67,4 +73,24 @@
         });
 
     })
+</script>
+
+<!-- APP  -->
+<script>
+    let acc = document.getElementsByClassName("acc");
+    let i;
+
+    for (i = 0; i < acc.length; i++) {
+
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            let panel = this.nextElementSibling;
+
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
 </script>

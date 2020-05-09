@@ -6,7 +6,6 @@ html {
 body {
   display: grid;
   grid-template-rows: 44px auto 44px;
-  background: var(--darkest);
   font-family: "roboto", sans-serif;
   color: var(--darker);
   height: 100vh;
@@ -18,14 +17,10 @@ main {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  border: 2px solid var(--darker);
-}
-
-.page-container {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  width: 100vw;
+  border: 2px solid var(--darker);
+  background: var(--darkest);
+  min-width: 360px;
 }
 
 .grid {
@@ -79,7 +74,7 @@ footer {
   background-image: linear-gradient(var(--darker) 50%, var(--darkest));
   display: flex;
   justify-content: space-around;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   bottom: 0;
 }
@@ -89,7 +84,6 @@ footer {
   height: 36px;
   margin: 4px;
   width: auto;
-  background: var(--light);
 }
 
 .card-text {
@@ -138,30 +132,8 @@ footer {
   margin-top: 6px;
 }
 
-.file-btn {
-  display: flex;
-  height: 20px;
-  background: linear-gradient(var(--darker) 30%, var(--dark));
-  color: var(--light);
-  font-size: 0.7rem;
-  width: 100px;
-  border: 2px solid var(--dark);
-  border-radius: 90px;
-  z-index: 10;
-}
-
 .file-label {
   width: 100px;
-}
-
-.file-btn {
-  max-width: 200px;
-}
-
-.file-btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .table-grid {
@@ -195,14 +167,15 @@ footer {
 }
 
 .table-large {
-  width: 300px;
+  width: 100%;
+  font-size: 1.4rem;
 }
 
 .table-header {
   color: var(--light);
   background-image: linear-gradient(var(--darker) 20%, var(--dark));
   font-size: 1.2rem;
-  text-align: center;
+  text-align: left;
   padding: 8px 2px;
 }
 
@@ -240,6 +213,7 @@ footer {
 .bar-container {
   border-left: 3px inset var(--darkest);
   border-right: 3px inset var(--darkest);
+  height: 100%;
 }
 
 .bar-title {
@@ -257,6 +231,18 @@ footer {
   grid-auto-rows: 64px;
   padding: 4px;
   background: var(--light);
+  width: 390px;
+  margin-top: 6px;
+}
+
+.bar-full {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  background-image: linear-gradient(var(--darker) 30%, var(--dark));
+  color: var(--light);
+  font-size: 1.4rem;
   width: 390px;
   margin-top: 6px;
 }
@@ -334,19 +320,32 @@ footer {
   color: var(--darkest);
 }
 
-.center {
-  justify-content: center;
-  align-self: center;
-  align-items: center;
-  align-content: center;
+.btn {
+  height: 24px;
+  background: linear-gradient(var(--darker) 30%, var(--dark));
+  color: var(--light);
+  font-size: 0.7rem;
+  width: 100px;
+  border: 2px solid var(--dark);
+  border-radius: 90px;
 }
 
-.flex {
+.search-btn {
+  height: 36px;
+  background: linear-gradient(var(--darker) 30%, var(--dark));
+  color: var(--light);
+  font-size: 0.7rem;
+  width: 100px;
+  border: 2px solid lightgray;
+  border-top-right-radius: 90px;
+  border-bottom-right-radius: 90px;
+}
+
+.btn-container {
+  margin: 8px;
   display: flex;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .input {

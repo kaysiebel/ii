@@ -23,14 +23,14 @@
 </body>
 
 <script>
-    var acc = document.getElementsByClassName("acc");
-    var i;
+    let acc = document.getElementsByClassName("acc");
+    let i;
 
     for (i = 0; i < acc.length; i++) {
 
         acc[i].addEventListener("click", function() {
             this.classList.toggle("active");
-            var panel = this.nextElementSibling;
+            let panel = this.nextElementSibling;
 
             if (panel.style.display === "block") {
                 panel.style.display = "none";

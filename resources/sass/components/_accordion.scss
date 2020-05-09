@@ -1,16 +1,16 @@
 .accordion {
-    // background-image: linear-gradient(var(--darkest) 1%, var(--darker));
     background-image: linear-gradient(var(--darker) 30%, var(--dark));
     color: var(--light);
     cursor: pointer;
-    // border-left: 1px inset var(--dark);
-    // border-right: 1px inset var(--dark);
     text-align: center;
     outline: none;
-
-    // margin: 1px 0;
     font-size: 1.3rem;
     padding: 8px 24px 4px 24px;
+
+    // background-image: linear-gradient(var(--darkest) 1%, var(--darker));
+    // border-right: 1px inset var(--dark);
+    // border-left: 1px inset var(--dark);
+    // margin: 1px 0;
 }
 
 .accordion-panel {
@@ -29,11 +29,11 @@
 .accordion-item {
     display: grid;
     align-items: center;
+    padding: 0 8px;
     // background: var(--light);
 
     // height: 40px;
     // margin: 0;
-    padding: 0 8px;
 }
 
 .accordion-grid {
