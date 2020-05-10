@@ -1,4 +1,4 @@
-<div class="accordion acc ripple">Stück- Angaben</div>
+<div class="accordion ripple">Stück- Angaben</div>
 <div class="accordion-panel">
 
     <div class="create-grid-small ripple-light">

@@ -16,55 +16,17 @@
             </div>
         </div>
 
-        <!-- <div class="accordion-panel acc"> -->
-        <div id='main-accordion' class='main-accordion' style="display: none;">
-            <div class="accordion ripple">Test1</div>
-            <div class="accordion-panel">
-                <p class="accordion-item">
-                    Max Gewicht</p>
-                <p class="accordion-item">
-                    5000 Kg</p>
-            </div>
-            <div class="accordion ripple">Test1</div>
-            <div class="accordion-panel">
-                <p class="accordion-item">
-                    Max Gewicht</p>
-                <p class="accordion-item">
-                    5000 Kg</p>
-            </div>
-            <div class="accordion ripple">Test1</div>
-            <div class="accordion-panel">
-                <p class="accordion-item">
-                    Max Gewicht</p>
-                <p class="accordion-item">
-                    5000 Kg</p>
-            </div>
-            <div class="accordion ripple">Test1</div>
-            <div class="accordion-panel">
-                <p class="accordion-item">
-                    Max Gewicht</p>
-                <p class="accordion-item">
-                    5000 Kg</p>
-            </div>
-
+        <div id="main-accordion" class="main-accordion panel" style="display: none;">
+            @include('includes/sections/home/overview')
+            @include('includes/sections/home/piece')
+            @include('includes/sections/home/unit')
+            @include('includes/sections/home/location')
+            @include('includes/sections/home/entry')
+            @include('includes/sections/home/magic')
+            @include('includes/sections/home/edit')
         </div>
-        <!-- </div> -->
+    </div>
 
 </section>
 
 @endsection
-
-<script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
-<script src='https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'></script>
-<!-- <link href='https://code.jquery.com/ui/1.12.1/themes/cupertino/jquery-ui.css' rel='stylesheet'> -->
-
-<script>
-    $(document).ready(function() {
-
-        $('#main-accordion').accordion({
-            active: false,
-            collapsible: true
-        });
-
-    })
-</script>

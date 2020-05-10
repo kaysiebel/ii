@@ -1,4 +1,4 @@
-<div class="accordion acc ripple">Materialbewegungen</div>
+<div class="accordion ripple">Materialbewegungen</div>
 <div class="accordion-panel">
 
     <div class="table-grid">

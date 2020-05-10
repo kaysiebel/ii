@@ -1,3 +1,3 @@
 <a href="/create">
-    <div class="accordion acc ripple">Edit</div>
+    <div class="accordion ripple">Edit</div>
 </a>

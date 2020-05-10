@@ -36,6 +36,12 @@
     // margin: 0;
 }
 
+.panel {
+    font-size: 1.3rem;
+    background-color: var(--light);
+    border: 4px solid var(--light);
+}
+
 .accordion-grid {
     display: flex;
     justify-content: space-between;

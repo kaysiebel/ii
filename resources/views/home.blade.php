@@ -16,7 +16,7 @@
             </div>
         </div>
 
-        <div class="accordion-panel">
+        <div id="main-accordion" class="main-accordion panel" style="display: none;">
             @include('includes/sections/home/overview')
             @include('includes/sections/home/piece')
             @include('includes/sections/home/unit')

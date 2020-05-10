@@ -16,8 +16,8 @@
             </div>
         </div>
 
-        <!-- <div class="accordion-panel acc"> -->
-        <div id='main-accordion' class='main-accordion'>
+        <div id="main-accordion" class="main-accordion" style="display: none;">
+            <!-- <div class="accordion-panel acc" style="display: none;"> -->
             <div class="accordion ripple">Test1</div>
             <div class="accordion-panel">
                 <p class="accordion-item">
@@ -29,6 +29,12 @@
             <div class="accordion-panel">
                 <p class="accordion-item">
                     Max Gewicht</p>
+                <p class="accordion-item">
+                    5000 Kg</p>
+                <p class="accordion-item">
+                    5000 Kg</p>
+                <p class="accordion-item">
+                    5000 Kg</p>
                 <p class="accordion-item">
                     5000 Kg</p>
             </div>
@@ -48,17 +54,11 @@
             </div>
 
         </div>
-        <!-- </div> -->
+    </div>
 
 </section>
 
 @endsection
-
-
-
-
-
-
 
 <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
 <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'></script>
@@ -69,7 +69,9 @@
 
         $('#main-accordion').accordion({
             active: false,
-            collapsible: true
+            collapsible: true,
+            heightStyle: "content"
+
         });
 
     })

@@ -15,8 +15,6 @@ body {
 main {
   overflow: scroll;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   border: 2px solid var(--darker);
   background: var(--darkest);
@@ -285,6 +283,12 @@ footer {
   display: grid;
   align-items: center;
   padding: 0 8px;
+}
+
+.panel {
+  font-size: 1.3rem;
+  background-color: var(--light);
+  border: 4px solid var(--light);
 }
 
 .accordion-grid {

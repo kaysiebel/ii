@@ -1,5 +1,5 @@
-<div class="accordion acc ripple active">Artikel- Angaben</div>
-<div class="accordion-panel" style="display: block;">
+<div class="accordion ripple">Artikel- Angaben</div>
+<div class="accordion-panel">
 
     <div class="file-btn-container">
         <form action="">

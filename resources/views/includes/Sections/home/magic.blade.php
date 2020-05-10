@@ -1,4 +1,4 @@
-<div class="accordion acc ripple">i!</div>
+<div class="accordion ripple">i!</div>
 <div class="accordion-panel">
 
     <div class="accordion-grid ripple-light">
