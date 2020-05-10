@@ -47,7 +47,7 @@
 <script>
     $(document).ready(function() {
 
-        $('#main-accordion').accordion({
+        $('.main-accordion').accordion({
             active: false,
             collapsible: true,
             heightStyle: "content",

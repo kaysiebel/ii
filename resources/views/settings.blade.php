@@ -20,10 +20,4 @@
     </div>
 </section>
 
-<style>
-    .settings-container {
-        width: 100%
-    }
-</style>
-
 @endsection

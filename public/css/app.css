@@ -15,10 +15,16 @@ body {
 main {
   overflow: scroll;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   border: 2px solid var(--darker);
   background: var(--darkest);
   min-width: 360px;
+}
+
+.settings-container {
+  width: 100%;
 }
 
 .grid {
