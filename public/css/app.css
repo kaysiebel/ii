@@ -39,6 +39,16 @@ a {
   text-decoration: none;
 }
 
+.canvas-sm {
+  height: 200px;
+  width: 100%;
+}
+
+.canvas-l {
+  height: 400;
+  width: 100%;
+}
+
 .mininav {
   display: flex;
   justify-content: space-around;
@@ -78,16 +88,30 @@ footer {
   background-image: linear-gradient(var(--darker) 50%, var(--darkest));
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   position: fixed;
   bottom: 0;
+  height: 48px;
 }
 
 .footer-item {
   text-decoration: none;
-  height: 36px;
+  height: 30px;
   margin: 4px;
   width: auto;
+  opacity: 0.6;
+}
+
+.footer-item:hover {
+  scale: 1.1;
+  opacity: 1;
+  background-image: linear-gradient(transparent, #03192780 30%);
+  transition: 0.2s;
+}
+
+.footer-item:active {
+  fill: black;
 }
 
 .card-text {
@@ -107,6 +131,7 @@ footer {
   background-image: linear-gradient(var(--darker) 30%, var(--dark));
   color: var(--light);
   font-size: 1rem;
+  max-width: 180px;
 }
 
 .create-grid {
@@ -129,10 +154,10 @@ footer {
 
 .bar-grid-create {
   display: grid;
-  grid-template-columns: 20% auto;
+  grid-template-columns: 20% 80%;
   padding: 4px;
   background: var(--light);
-  width: 390px;
+  width: 394px;
   margin-top: 6px;
 }
 
@@ -289,6 +314,8 @@ footer {
   display: grid;
   align-items: center;
   padding: 0 8px;
+  margin: 12;
+  font-size: 1.2rem;
 }
 
 .panel {
@@ -309,9 +336,10 @@ footer {
   transition: background 0.5s;
 }
 
-.ripple:hover {
+.accordion:hover {
   background: var(--light) radial-gradient(circle, transparent 1%, var(--dark) 10%) center/15000%;
   color: var(--darkest);
+  transform: scale(1, 1.2);
 }
 
 .ripple:active {
@@ -349,6 +377,10 @@ footer {
   border: 2px solid lightgray;
   border-top-right-radius: 90px;
   border-bottom-right-radius: 90px;
+}
+
+.file-btn {
+  max-width: 200px;
 }
 
 .btn-container {

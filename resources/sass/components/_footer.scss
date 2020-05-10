@@ -2,14 +2,31 @@ footer {
     background-image: linear-gradient(var(--darker) 50%, var(--darkest));
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     position: fixed;
     bottom: 0;
+    height: 48px;
 }
 
 .footer-item {
     text-decoration: none;
-    height: 36px;
+    height: 30px;
     margin: 4px;
     width: auto;
+    opacity: 0.6;
+}
+
+.footer-item:hover {
+    scale: 1.1;
+    opacity: 1;
+    background-image: linear-gradient(transparent, #03192780 30%);
+    transition: 0.2s;
+    // box-shadow: 0 0 30px black;
+
+    // background: linear-gradient(to right, transparent, var(--light) 10%, var(--light) 90%, transparent);
+}
+
+.footer-item:active {
+    fill: black;
 }

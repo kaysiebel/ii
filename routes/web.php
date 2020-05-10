@@ -53,6 +53,10 @@ Route::get('/categories', function () {
     return view('categories');
 });
 
+Route::get('/statistic', function () {
+    return view('statistic');
+});
+
 // Route::get('/back', function () {
 //     return Redirect::back();
 // });

@@ -1,7 +1,7 @@
 <div class="accordion ripple">Artikel- Angaben</div>
 <div class="accordion-panel">
 
-    <div class="file-btn-container">
+    <div class="btn-container">
         <form action="">
             <label class="file-lable">Upload Image</label>
             <img src="" />

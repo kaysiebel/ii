@@ -42,5 +42,4 @@
         <p class="accordion-item">
             N/A</p>
     </div>
-
 </div>
