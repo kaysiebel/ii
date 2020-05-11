@@ -35,7 +35,7 @@
     grid-auto-rows: 64px;
     padding: 4px;
     background: var(--light);
-    width: 390px;
+    min-width: 336px;
     // border-top: 20px inset var(--darker);
     margin-top: 6px;
 }

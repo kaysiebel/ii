@@ -16,6 +16,7 @@ body {
     color: var(--darker);
     height: 100vh;
     margin: 0;
+
     // filter: invert(0) hue-rotate(360deg);
     // too much resources... :(
 }
@@ -28,7 +29,8 @@ main {
     justify-content: center;
     border: 2px solid var(--darker);
     background: var(--darkest);
-    min-width: 360px;
+    // min-width: 360px;
+    width: 100vw;
 }
 
 .settings-container {

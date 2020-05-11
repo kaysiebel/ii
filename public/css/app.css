@@ -19,7 +19,7 @@ main {
   justify-content: center;
   border: 2px solid var(--darker);
   background: var(--darkest);
-  min-width: 360px;
+  width: 100vw;
 }
 
 .settings-container {
@@ -258,7 +258,7 @@ footer {
   grid-auto-rows: 64px;
   padding: 4px;
   background: var(--light);
-  width: 390px;
+  min-width: 336px;
   margin-top: 6px;
 }
 
