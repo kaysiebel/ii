@@ -13,7 +13,7 @@
 
         <div class="accordion-panel" style=" display: block;">
             <form class="btn-container" action="" method="get">
-                <input type="text" class="create-input" placeholder="Teil des Artikel- Namens" name="search">
+                <input type="text" class="create-input" placeholder="Artikel Name" name="search">
                 <button class="search-btn ripple" type="submit"><i class="">los</i></button>
             </form>
         </div>

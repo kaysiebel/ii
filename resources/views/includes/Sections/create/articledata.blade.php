@@ -32,7 +32,7 @@
             <label class="create-label" for="Lagerplatz">Lagerplatz</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input" type="text" name="Lagerplatz" placeholder="verzichtbar">
+            <input class="create-input" type="text" name="Lagerplatz" placeholder="optional">
         </div>
     </div>
 

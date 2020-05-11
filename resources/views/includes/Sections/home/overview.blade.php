@@ -3,9 +3,9 @@
 
     <div class="accordion-grid ripple-light">
         <p class="accordion-item">
-            Soll- Bestand</p>
+            Bestell- Bestand</p>
         <p class="accordion-item">
-            1000</p>
+            10.000</p>
     </div>
 
     <div class="accordion-grid ripple-light">

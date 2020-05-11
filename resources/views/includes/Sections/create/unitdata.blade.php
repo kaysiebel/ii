@@ -6,7 +6,7 @@
             <label class="create-label" for="Gebinde-Einheit">Gebinde- Einheit</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input width-xsmall" type="text" name="Gebinde-Einheit" placeholder="verzichtbar">
+            <input class="create-input width-xsmall" type="text" name="Gebinde-Einheit" placeholder="Einheit">
         </div>
     </div>
 
@@ -15,7 +15,7 @@
             <label class="create-label" for="Bestand">Bestand</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input width-small" type="text" name="Bestand" placeholder="verzichtbar">
+            <input class="create-input width-small" type="text" name="Bestand" placeholder="Menge">
         </div>
     </div>
 
@@ -24,7 +24,7 @@
             <label class="create-label" for="Gewicht">Gewicht</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input width-xsmall" type="text" name="Gewicht" placeholder="verzichtbar">
+            <input class="create-input width-xsmall" type="text" name="Gewicht" placeholder="Kg">
         </div>
     </div>
 
@@ -33,7 +33,7 @@
             <label class="create-label" for="Mindest-Bestand">Mindest- Bestand</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input width-small" type="text" name="Mindest-Bestand" placeholder="verzichtbar">
+            <input class="create-input width-small" type="text" name="Mindest-Bestand" placeholder="Menge">
         </div>
     </div>
 
@@ -42,7 +42,7 @@
             <label class="create-label" for="Bestell-Bestand">Bestell- Bestand</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input width-small" type="text" name="Bestell-Bestand" placeholder="verzichtbar">
+            <input class="create-input width-small" type="text" name="Bestell-Bestand" placeholder="Menge">
         </div>
     </div>
 
@@ -51,7 +51,7 @@
             <label class="create-label" for="Höchst-Bestand">Höchst- Bestand</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input width-small" type="text" name="Höchst-Bestand" placeholder="verzichtbar">
+            <input class="create-input width-small" type="text" name="Höchst-Bestand" placeholder="Menge">
         </div>
     </div>
 

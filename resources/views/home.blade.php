@@ -9,7 +9,7 @@
             <img class="bar-img" src="https://picsum.photos/200/200 " alt="...">
             <div class="bar-header">
                 <p class="bar-title">Name des Artikels</p>
-                <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
+                <p class="bar-text">Soll- Bestand: 12.000 Stück</p>
             </div>
             <div class="dot-container">
                 <div class="bar-dot">&nbsp;</div>
@@ -33,7 +33,7 @@
             <img class="bar-img" src="https://source.unsplash.com/random/600x300 " alt="...">
             <div class="bar-header">
                 <p class="bar-title">Name des Artikels</p>
-                <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
+                <p class="bar-text">Soll- Bestand: 8.000 Stück</p>
             </div>
             <div class="dot-container">
                 <div class="bar-dot">&nbsp;</div>
@@ -57,7 +57,7 @@
                 <img class="bar-img" src="https://picsum.photos/200/300 " alt="...">
                 <div class="bar-header">
                     <p class="bar-title">Name des Artikels</p>
-                    <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
+                    <p class="bar-text">Soll- Bestand: 2.000 Stück</p>
                 </div>
                 <div class="dot-container">
                     <div class="bar-dot">&nbsp;</div>
@@ -81,7 +81,7 @@
                 <img class="bar-img" src="https://picsum.photos/200/200 " alt="...">
                 <div class="bar-header">
                     <p class="bar-title">Name des Artikels</p>
-                    <p class="bar-text">Soll- Bestand: 20.000 Stück</p>
+                    <p class="bar-text">Soll- Bestand: 6.000 Stück</p>
                 </div>
                 <div class="dot-container">
                     <div class="bar-dot">&nbsp;</div>

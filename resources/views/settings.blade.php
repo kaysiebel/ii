@@ -12,7 +12,7 @@
         </div>
 
         <div class="accordion-panel" style=" display: block;">
-            <div class="settings-container">hallo
+            <div class="settings-container">
 
             </div>
         </div>
