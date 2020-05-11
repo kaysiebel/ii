@@ -1,18 +1,15 @@
 .table-grid {
     display: grid;
     grid-template-columns: 50% 50%;
-    // grid-auto-rows: 40px auto;
-    width: 100%;
-    // gap: 8px;
-    background: var(--light);
     justify-items: center;
+    width: 100%;
+    background: var(--light);
 }
 
 .col {
-    background: var(--light);
-    // color: var(--darker);
-    border: 2px solid var(--light);
     border-radius: 2px;
+    border: 2px solid var(--light);
+    background: var(--light);
 }
 
 .col2 {
@@ -25,45 +22,37 @@
     margin: 12px 0 8px 0;
 }
 
-// .table-container {
-//     display: grid
-//     justify-items: center;
-//     align-content: center;
-// }
-
 .table {
     background: var(--darker);
     border-radius: 4px;
-    width: 162px;
+    width: 160px;
 }
 
 .table-large {
     width: 100%;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .table-header {
-    color: var(--light);
-    background-image: linear-gradient(var(--darker) 20%, var(--dark));
+    padding: 8px 2px;
     font-size: 1.2rem;
     text-align: left;
-    padding: 8px 2px;
+    color: var(--light);
+    background-image: linear-gradient(var(--darker) 20%, var(--dark));
 }
 
 .info {
+    padding: 6px;
+    border-radius: 4px;
+    text-align: center;
     color: var(--light);
     background-image: linear-gradient(var(--darker) 20%, var(--dark));
-    border-radius: 4px;
-    padding: 6px;
-    // top: 6px;
-
-    text-align: center;
 }
 
 .info-large {
     color: var(--light);
     background: var(--dark);
-    width: auto;
-    margin-top: 8px;
     text-align: center;
+    margin-top: 8px;
+    width: auto;
 }

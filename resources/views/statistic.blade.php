@@ -2,92 +2,78 @@
 
 @section('content')
 
-<section class="page-container">
-    <div class="bar-container">
+<div class="bar-container">
 
-        <div class="bar-full acc ripple active">
-            <div class="bar-header">
-                <p class="bar-title">Statistik</p>
-            </div>
+    <div class="bar-full acc ripple active">
+        <div class="bar-header">
+            <p class="bar-title">Statistik</p>
         </div>
+    </div>
 
-        <div class="accordion-panel" style=" display: block;">
-            <div class="settings-container">
-                <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <div class="accordion-panel" style=" display: block;">
+        <div class="settings-container">
 
+            <canvas id="myChart" width="332" height="360"></canvas>
+            <script>
+                var ctx = document.getElementById('myChart').getContext('2d');
+                var mixedChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        datasets: [{
+                            label: 'Bestand',
+                            data: [12000, 10700, 10700, 9400, 8400, 10400, 8700, 9000, ],
+                            // Changes this dataset to become a line
+                            type: 'line',
+                            backgroundColor: 'rgba(10, 92, 143, 0.1',
+                            borderColor: 'rgba(10, 92, 143, 1)',
+                            borderWidth: 2
+                        }, {
+                            label: 'Eingänge',
+                            data: [4000, 0, 2000, 0, 0, 4000, 0, 1000, ],
+                            backgroundColor: 'rgba(150, 188, 58, 0.6',
+                            borderColor: 'rgba(150, 188, 58, 1)',
+                            borderWidth: 2
+                        }, {
+                            label: 'Verbrauch',
+                            data: [1000, 1300, 2000, 1300, 1000, 2000, 1700, 1300, ],
+                            // Changes this dataset to become a line
+                            type: 'bar',
+                            backgroundColor: 'rgba(220, 0, 0, 0.6',
+                            borderColor: 'rgba(220, 0, 0, 1)',
+                            borderWidth: 2
+                        }],
+                        labels: ["01.05.", "02.05.", "03.05", "04.05", "05.05", "6.05.", "7.05.", "8.05.", ]
+                    },
 
-                <canvas id="myChart" width="332" height="360"></canvas>
-                <script>
-                    var ctx = document.getElementById('myChart').getContext('2d');
-                    var mixedChart = new Chart(ctx, {
-                        type: 'bar',
-                        data: {
-                            datasets: [{
-                                label: 'Bestand',
-                                data: [12000, 10700, 10700, 9400, 8400, 10400, 8700, 9000, ],
-
-                                // Changes this dataset to become a line
-                                type: 'line',
-                                backgroundColor: 'rgba(10, 92, 143, 0.1',
-                                borderColor: 'rgba(10, 92, 143, 1)',
-                                borderWidth: 2
-                            }, {
-                                label: 'Verbrauch',
-                                data: [1000, 1300, 2000, 1300, 1000, 2000, 1700, 1300, ],
-
-                                // Changes this dataset to become a line
-                                type: 'bar',
-                                backgroundColor: 'rgba(220, 0, 0, 0.6',
-                                borderColor: 'rgba(220, 0, 0, 1)',
-                                borderWidth: 2
-                            }, {
-                                label: 'Eingänge',
-                                data: [4000, 0, 2000, 0, 0, 4000, 0, 1000, ],
-                                backgroundColor: 'rgba(150, 188, 58, 0.6',
-                                borderColor: 'rgba(150, 188, 58, 1)',
-                                borderWidth: 2
-                            }],
-                            labels: ["01.05.", "02.05.", "03.05", "04.05", "05.05", "6.05.", "7.05.", "8.05.", ]
-                        },
-
-                        // var myChart = new Chart(ctx, {
-                        //     type: 'bar',
-                        //     data: {
-                        //         labels: ["01.05.", "02.05.", "04.05", "05.05", "08.05", "10.05."],
-                        //         datasets: [{
-                        //             label: 'Eingänge',
-                        // data: [4000, 2000, 4000, 1000, 4000, 2000],
-                        // backgroundColor: 'rgba(150, 188, 58, 0.6',
-                        // borderColor: 'rgba(150, 188, 58, 1)',
-                        // borderWidth: 1
-                        //         }]
-                        //     },
-                        options: {
-                            scales: {
-                                yAxes: [{
-                                    ticks: {
-                                        beginAtZero: true
-                                    }
-                                }]
-                            }
+                    // var myChart = new Chart(ctx, {
+                    //     type: 'bar',
+                    //     data: {
+                    //         labels: ["01.05.", "02.05.", "04.05", "05.05", "08.05", "10.05."],
+                    //         datasets: [{
+                    //             label: 'Eingänge',
+                    // data: [4000, 2000, 4000, 1000, 4000, 2000],
+                    // backgroundColor: 'rgba(150, 188, 58, 0.6',
+                    // borderColor: 'rgba(150, 188, 58, 1)',
+                    // borderWidth: 1
+                    //         }]
+                    //     },
+                    options: {
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
                         }
-                    });
-                </script>
+                    }
+                });
+            </script>
 
-            </div>
-            <div class="mininav margin-8">
-                <a href="javascript:history.back()">
-                    <img class="link-item" src="https://image.flaticon.com/icons/png/512/318/318276.png"></a>
-
-                <a href="new-entry">
-                    <img class="link-item" src="https://image.flaticon.com/icons/svg/189/189689.svg"></a>
-
-                <a href="new-consumption">
-                    <img class="link-item" src="https://image.flaticon.com/icons/svg/334/334047.svg"></a>
-            </div>
         </div>
+        @include('includes/mininav')
 
     </div>
-</section>
+
+</div>
 
 @endsection

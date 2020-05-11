@@ -1,16 +1,11 @@
 @import "base";
+@import "helper";
 
-//unique
 @import "components/header";
 @import "components/footer";
-@import "components/card";
 @import "components/create";
 @import "components/table";
 @import "components/bar";
 @import "components/accordion";
 @import "components/ripple";
 @import "components/button";
-
-//helper
-@import "helper";
-// @import "test";

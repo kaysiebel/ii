@@ -1,23 +1,27 @@
+.input {
+    padding: 12px;
+    border: 1px solid var(--lightest);
+}
+
 .btn {
-    // display: flex;
     height: 24px;
-    background: linear-gradient(var(--darker) 30%, var(--dark));
-    color: var(--light);
-    font-size: 0.7rem;
     width: 100px;
+    font-size: 0.7rem;
+    color: var(--light);
+    background: linear-gradient(var(--darker) 30%, var(--dark));
     border: 2px solid var(--dark);
     border-radius: 90px;
 }
 
 .search-btn {
     height: 36px;
-    background: linear-gradient(var(--dark) 50%, var(--light));
-    color: var(--light);
     font-size: 0.7rem;
+    color: var(--light);
     width: 100px;
     border: 2px solid lightgray;
     border-top-right-radius: 90px;
     border-bottom-right-radius: 90px;
+    background: linear-gradient(var(--dark) 50%, var(--light));
 }
 
 .file-btn {

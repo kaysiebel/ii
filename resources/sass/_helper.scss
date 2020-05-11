@@ -1,12 +1,11 @@
-.input {
-    padding: 12px;
-    border: 1px solid var(--lightest);
+.canvas-sm {
+    height: 200px;
+    width: 100%;
 }
 
-.grid-2 {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    grid-auto-rows: 32px;
+.canvas-l {
+    height: 400;
+    width: 100%;
 }
 
 .width-small {
@@ -15,10 +14,6 @@
 
 .width-xsmall {
     width: 60px;
-}
-
-.left {
-    justify-content: left;
 }
 
 .text-align-right {

@@ -8,8 +8,6 @@
         radial-gradient(circle, transparent 1%, var(--dark) 10%) center/15000%;
     color: var(--darkest);
     transform: scale(1, 1.2);
-    // max-width: 390px;
-    // height: 200%;
 }
 
 .ripple:active {
@@ -33,5 +31,4 @@
         var(--light)
     );
     color: var(--darkest);
-    // transition: background 0.5s;
 }

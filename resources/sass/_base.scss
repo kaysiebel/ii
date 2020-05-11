@@ -1,82 +1,27 @@
 html {
     font-family: "roboto", sans-serif;
     font-size: 16px;
-
-    // outline: none;
-    // text-shadow: 1px 1px var(--dark);
     font-weight: 510;
 }
-
-// :not(img) {
-//     filter: hue-rotate(180deg);
-// }
 
 body {
     display: grid;
     grid-template-rows: 48px auto 48px;
-
     color: var(--darker);
     height: 100vh;
     width: 100vw;
     margin: 0;
-
-    // filter: invert(0) hue-rotate(360deg);
+    // filter: invert(0) hue-rotate(300deg);
     // too much resources... :(
 }
 
 main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     overflow: scroll;
-    display: flex;
-    flex-wrap: wrap;
-    // align-items: center;
-    justify-content: center;
-    // border: 2px solid var(--darker);
     background: var(--darkest);
-    margin: 0;
-    padding: 0;
-
-    //for mobile
-    // min-width: 360px;
-
-    // height: 100vh;
 }
-
-.settings-container {
-    width: 100%;
-}
-
-.page-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100vw;
-}
-
-.grid {
-    display: grid;
-}
-
-a:visited {
-    color: var(--light);
-}
-
-a {
-    text-decoration: none;
-}
-
-.canvas-sm {
-    height: 200px;
-    width: 100%;
-}
-
-.canvas-l {
-    height: 400;
-    width: 100%;
-}
-
-// input[type="file"] {
-//     display: none;
-// }
 
 .mininav {
     display: flex;
@@ -85,7 +30,15 @@ a {
 
 .link-item {
     height: 30px;
-    width: 100%;
+    width: 30px;
+}
+
+a:visited {
+    color: var(--light);
+}
+
+a {
+    text-decoration: none;
 }
 
 :root {
