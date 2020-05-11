@@ -16,7 +16,6 @@ main {
   overflow: scroll;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   border: 2px solid var(--darker);
   background: var(--darkest);
@@ -242,7 +241,6 @@ footer {
 .bar-container {
   border-left: 3px inset var(--darkest);
   border-right: 3px inset var(--darkest);
-  height: 100%;
 }
 
 .bar-title {
