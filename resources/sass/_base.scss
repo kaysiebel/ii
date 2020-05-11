@@ -11,10 +11,11 @@ html {
 
 body {
     display: grid;
-    grid-template-rows: 44px auto 44px;
+    grid-template-rows: 48px auto 48px;
     font-family: "roboto", sans-serif;
     color: var(--darker);
     height: 100vh;
+    width: 100vw;
     margin: 0;
 
     // filter: invert(0) hue-rotate(360deg);
@@ -27,10 +28,15 @@ main {
     flex-wrap: wrap;
     // align-items: center;
     justify-content: center;
-    border: 2px solid var(--darker);
+    // border: 2px solid var(--darker);
     background: var(--darkest);
+    margin: 0;
+    padding: 0;
+
+    //for mobile
     // min-width: 360px;
-    width: 100vw;
+
+    // height: 100vh;
 }
 
 .settings-container {

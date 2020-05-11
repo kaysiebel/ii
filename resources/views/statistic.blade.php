@@ -16,7 +16,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
 
-                <canvas id="myChart" width="380" height="400"></canvas>
+                <canvas id="myChart" width="332" height="360"></canvas>
                 <script>
                     var ctx = document.getElementById('myChart').getContext('2d');
                     var mixedChart = new Chart(ctx, {
