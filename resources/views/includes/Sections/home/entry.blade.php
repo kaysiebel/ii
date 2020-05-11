@@ -4,8 +4,8 @@
     <div class="table-grid">
 
         <div class="table-container">
-            <div class="link">
-                <a class="info ripple" href="/entries">
+            <div class="link ripple">
+                <a class="info" href="/entries">
                     + Eingänge +
                 </a>
             </div>
@@ -43,7 +43,7 @@
         </div>
 
         <div class="table-container">
-            <div class="link">
+            <div class="link ripple">
                 <a class="info ripple" href="/consumption">
                     - Verbrauch -
                 </a>

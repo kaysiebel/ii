@@ -368,7 +368,7 @@ footer {
 
 .search-btn {
   height: 36px;
-  background: linear-gradient(var(--darker) 30%, var(--dark));
+  background: linear-gradient(var(--dark) 50%, var(--light));
   color: var(--light);
   font-size: 0.7rem;
   width: 100px;
