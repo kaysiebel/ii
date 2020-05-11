@@ -89,7 +89,6 @@ header {
   color: var(--lighter);
   font-family: geneva;
   text-align: center;
-  height: 48px;
 }
 
 footer {
@@ -98,8 +97,6 @@ footer {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  position: fixed;
-  bottom: 0;
   height: 48px;
 }
 
@@ -281,7 +278,6 @@ footer {
   background-image: linear-gradient(var(--darker) 30%, var(--dark));
   color: var(--light);
   font-size: 1.2rem;
-  width: 340px;
   margin-top: 6px;
 }
 
