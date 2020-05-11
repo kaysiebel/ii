@@ -84,6 +84,9 @@ a {
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2.2rem;
   background-image: linear-gradient(var(--darkest) 20%, var(--darker));
   color: var(--lighter);
@@ -136,7 +139,6 @@ footer {
   background-image: linear-gradient(var(--darker) 30%, var(--dark));
   color: var(--light);
   font-size: 1rem;
-  max-width: 180px;
 }
 
 .create-grid {
@@ -155,15 +157,6 @@ footer {
   align-items: center;
   background: var(--light);
   height: 60px;
-}
-
-.bar-grid-create {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  padding: 4px;
-  background: var(--light);
-  width: 360;
-  margin-top: 6px;
 }
 
 .file-label {
@@ -248,7 +241,7 @@ footer {
   border-left: 3px solid var(--darkest);
   border-right: 3px solid var(--darkest);
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
   min-width: 348px;
 }
 
@@ -265,6 +258,14 @@ footer {
   display: grid;
   grid-template-columns: 20% auto 40px;
   grid-auto-rows: 64px;
+  padding: 4px;
+  background: var(--light);
+  margin-top: 6px;
+}
+
+.bar-grid-create {
+  display: grid;
+  grid-template-columns: 20% 80%;
   padding: 4px;
   background: var(--light);
   margin-top: 6px;

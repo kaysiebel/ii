@@ -18,7 +18,7 @@
     border-right: 3px solid var(--darkest);
     // display: block;
     width: 100%;
-    max-width: 400px;
+    max-width: 420px;
     min-width: 348px;
 }
 
@@ -42,6 +42,17 @@
 
     // min-width: 352px;
     // max-width: 360px; //NICHT FÜR MOBILE GEEIGNET!
+}
+
+.bar-grid-create {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    // grid-auto-rows: 64px;
+    padding: 4px;
+    background: var(--light);
+    // min-width: 360px;
+    // border-top: 20px inset var(--darker);
+    margin-top: 6px;
 }
 
 .bar-full {
