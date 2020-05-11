@@ -1,5 +1,7 @@
 html {
-    font-size: 1rem;
+    font-family: "roboto", sans-serif;
+    font-size: 16px;
+
     // outline: none;
     // text-shadow: 1px 1px var(--dark);
     font-weight: 510;
@@ -12,7 +14,7 @@ html {
 body {
     display: grid;
     grid-template-rows: 48px auto 48px;
-    font-family: "roboto", sans-serif;
+
     color: var(--darker);
     height: 100vh;
     width: 100vw;
@@ -43,12 +45,13 @@ main {
     width: 100%;
 }
 
-// .page-container {
-//     display: flex;
-//     flex-wrap: wrap;
+.page-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-//     // width: 100vh;
-// }
+    width: 100vw;
+}
 
 .grid {
     display: grid;

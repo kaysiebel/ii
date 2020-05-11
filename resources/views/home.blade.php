@@ -2,7 +2,7 @@
 
 @section('content')
 
-<section class="page-container-home">
+<section class="page-container">
 
     <div class="bar-container">
         <div class="bar-grid acc ripple">
