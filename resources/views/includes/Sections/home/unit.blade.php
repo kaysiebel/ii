@@ -17,9 +17,9 @@
 
     <div class="accordion-grid ripple-light">
         <p class="accordion-item">
-            Gebinde- Größe</p>
+            Soll- Bestand</p>
         <p class="accordion-item">
-            12 Stück</p>
+            1.200</p>
     </div>
 
     <div class="accordion-grid ripple-light">
