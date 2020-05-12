@@ -5,42 +5,42 @@
         <p class="accordion-item">
             Gebinde- Größe</p>
         <p class="accordion-item">
-            12 Stück</p>
+            {{ $article->unit_size }} Stk</p>
     </div>
 
     <div class="accordion-grid ripple-light">
         <p class="accordion-item">
             Gewicht</p>
         <p class="accordion-item">
-            12 Kg</p>
+            {{ $article->unit_weight }} Kg</p>
     </div>
 
     <div class="accordion-grid ripple-light">
         <p class="accordion-item">
             Soll- Bestand</p>
         <p class="accordion-item">
-            1.200</p>
+            {{ $article->unit_start_stock }}</p>
     </div>
 
     <div class="accordion-grid ripple-light">
         <p class="accordion-item">
             Mindest- Bestand</p>
         <p class="accordion-item">
-            40</p>
+            {{ $article->unit_min_stock }}</p>
     </div>
 
     <div class="accordion-grid ripple-light">
         <p class="accordion-item">
             Bestell- Bestand</p>
         <p class="accordion-item">
-            26</p>
+            {{ $article->unit_order_stock }}</p>
     </div>
 
     <div class="accordion-grid ripple-light">
         <p class="accordion-item">
             Höchst- Bestand</p>
         <p class="accordion-item">
-            90</p>
+            {{ $article->unit_max_stock }}</p>
     </div>
 
 </div>

@@ -5,7 +5,7 @@
         <p class="accordion-item">
             Max Gewicht</p>
         <p class="accordion-item">
-            5000 Kg</p>
+            {{ $article->location_maxweight }} Kg</p>
     </div>
 
 </div>

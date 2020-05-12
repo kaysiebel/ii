@@ -17,16 +17,6 @@ Route::get('/articles', 'ArticleController@index');
 Route::get('/articles/create', 'ArticleController@create');
 Route::post('/articles', 'ArticleController@store');
 
-
-// Route::get('/', function () {
-//     return view('home');
-// });
-
-
-// Route::get('/create', function () {
-//     return view('create');
-// });
-
 Route::get('/test', function () {
     return view('test');
 });
@@ -62,7 +52,3 @@ Route::get('/categories', function () {
 Route::get('/statistic', function () {
     return view('statistic');
 });
-
-// Route::get('/back', function () {
-//     return Redirect::back();
-// });

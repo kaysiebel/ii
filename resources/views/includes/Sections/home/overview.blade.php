@@ -5,14 +5,14 @@
         <p class="accordion-item">
             Bestell- Bestand</p>
         <p class="accordion-item">
-            10.000</p>
+            {{ $article->piece_order_stock }}</p>
     </div>
 
     <div class="accordion-grid ripple-light">
         <p class="accordion-item">
             Lagerort</p>
         <p class="accordion-item">
-            Halle 3</p>
+            {{ $article->location }}</p>
     </div>
 
 </div>

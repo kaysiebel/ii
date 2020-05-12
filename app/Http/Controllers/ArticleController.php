@@ -44,7 +44,7 @@ class ArticleController extends Controller
         }
         $article->create($data);
 
-        return redirect()->route('articles');
+        return view('/articles');
     }
 
     /**
