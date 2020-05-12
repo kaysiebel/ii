@@ -26,7 +26,7 @@
     </div>
 </div>
 
-@for($i = 1; $i < 2; $i++) <div class="bar-container">
+@for($i = 1; $i < 16; $i++) <div class="bar-container">
     <div class="bar-grid acc ripple">
         <img class="bar-img" src="https://source.unsplash.com/random/600x300 " alt="...">
         <div class="bar-header">
