@@ -13,13 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/articles', 'ArticleController@index');
+Route::get('/articles/create', 'ArticleController@create');
+Route::post('/articles', 'ArticleController@store');
 
-Route::get('/create', function () {
-    return view('create');
-});
+
+// Route::get('/', function () {
+//     return view('home');
+// });
+
+
+// Route::get('/create', function () {
+//     return view('create');
+// });
 
 Route::get('/test', function () {
     return view('test');

@@ -33,6 +33,10 @@ main {
     width: 30px;
 }
 
+.red {
+    color: var(--red);
+}
+
 a:visited {
     color: var(--light);
 }

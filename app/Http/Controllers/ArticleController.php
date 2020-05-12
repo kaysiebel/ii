@@ -14,7 +14,9 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        //
+        $articles = \App\Article::all();
+
+        return view('articles.index', compact('articles'));
     }
 
     /**
@@ -24,7 +26,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        //
+        return view('articles.create');
     }
 
     /**
@@ -33,9 +35,16 @@ class ArticleController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Article $article)
     {
-        //
+        $data = $this->validateData();
+        if ($request->has('image')) {
+            $path = $request->file('image')->store('/articles/images', 'public');
+            $data['image'] = $path;
+        }
+        $article->create($data);
+
+        return redirect()->route('articles');
     }
 
     /**
@@ -81,5 +90,26 @@ class ArticleController extends Controller
     public function destroy(Article $article)
     {
         //
+    }
+
+    private function validateData()
+    {
+        return request()->validate([
+            'name' => 'required|min:3',
+            'piece_start_stock' => 'required|numeric|between:0,9999999.99',
+            'piece_min_stock' => 'numeric|between:0,99999.99',
+            'piece_max_stock' => 'numeric|between:0,99999.99',
+            'piece_order_stock' => 'numeric|between:0,99999.99',
+            'piece_weight' => 'numeric|between:0,99999.99',
+            'unit_start_stock' => 'numeric|between:0,9999999.99',
+            'unit_min_stock' => 'numeric|between:0,99999.99',
+            'unit_max_stock' => 'numeric|between:0,99999.99',
+            'unit_order_stock' => 'numeric|between:0,99999.99',
+            'unit_weight' => 'numeric|between:0,99999.99',
+            'unit_size' => 'numeric|between:0,9999.99',
+            'location' => 'min:3',
+            'location_maxweight' => 'numeric|between:0,99999.99',
+            'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
+        ]);
     }
 }

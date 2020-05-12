@@ -10,12 +10,14 @@
         </div>
     </div>
 
-    <form action="/articles" method="post">
+    <form action="/articles" method="post" enctype="multipart/form-data">
         <div class="main-accordion panel" style="display: block;">
             @include('includes/sections/create/articledata')
             @include('includes/sections/create/piecedata')
             @include('includes/sections/create/unitdata')
+            @csrf
         </div>
+        <button>new article</button>
     </form>
 </div>
 

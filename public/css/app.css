@@ -31,6 +31,10 @@ main {
   width: 30px;
 }
 
+.red {
+  color: var(--red);
+}
+
 a:visited {
   color: var(--light);
 }
@@ -430,7 +434,7 @@ footer {
   max-width: 200px;
 }
 
-.btn-container {
+.create-container {
   margin: 8px;
   display: flex;
   justify-content: center;
