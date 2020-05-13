@@ -18,6 +18,17 @@ class ArticleController extends Controller
 
         return view('articles.index', compact('articles'));
     }
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function stock()
+    {
+        $articles = \App\Article::all();
+
+        return view('stock', compact('articles'));
+    }
 
     /**
      * Show the form for creating a new resource.

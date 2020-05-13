@@ -13,42 +13,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/articles', 'ArticleController@index');
-Route::get('/articles/create', 'ArticleController@create');
-Route::post('/articles', 'ArticleController@store');
+Route::get('/articles',             'ArticleController@index')->name('index');
+Route::get('/stock',                'ArticleController@stock')->name('stock');
+Route::get('/articles/create',      'ArticleController@create')->name('create');
+Route::post('/articles',            'ArticleController@store');
 
 Route::get('/test', function () {
     return view('test');
-});
+})->name('test');
 
 Route::get('/entries', function () {
     return view('entries');
-});
+})->name('enries');
 
 Route::get('/consumption', function () {
     return view('consumption');
-});
-
-Route::get('/stock', function () {
-    return view('stock');
-});
+})->name('consumption');
 
 Route::get('/search', function () {
     return view('search');
-});
+})->name('search');
 
 Route::get('/settings', function () {
     return view('settings');
-});
-
-Route::get('/list', function () {
-    return view('list');
-});
-
-Route::get('/categories', function () {
-    return view('categories');
-});
-
-Route::get('/statistic', function () {
-    return view('statistic');
-});
+})->name('settings');

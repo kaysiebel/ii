@@ -2,11 +2,9 @@
 <div class="accordion-panel">
 
     <div class="create-container">
-        <!-- <form action=""> -->
         <label class="file-lable">Upload Image</label>
         <img src="" />
         <input class="ripple" type="file" name="image">
-        <!-- </form> -->
     </div>
 
     <div class="create-grid ripple-light">
