@@ -15,7 +15,6 @@ class CreateConsumptionsTable extends Migration
     {
         Schema::create('consumptions', function (Blueprint $table) {
             $table->bigIncrements('id');
-            // $table->unsignedBigInteger('article_id');
             $table->foreignId('article_id')->constrained();
             $table->timestamps();
             $table->decimal('amount_consumption', 10, 3);

@@ -14,7 +14,7 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $articles = \App\Article::all();
+        $articles = Article::all();
 
         return view('articles.index', compact('articles'));
     }
@@ -108,19 +108,19 @@ class ArticleController extends Controller
         return request()->validate([
             'name' => 'required|min:3',
             'piece_start_stock' => 'required|numeric|between:0,9999999.99',
-            'piece_min_stock' => 'numeric|between:0,99999.99',
-            'piece_max_stock' => 'numeric|between:0,99999.99',
+            'piece_min_stock' => 'nullable|numeric|between:0,99999.99',
+            'piece_max_stock' => 'nullable|numeric|between:0,99999.99',
             'piece_order_stock' => 'nullable|numeric|between:0,99999.99',
-            'piece_weight' => 'numeric|between:0,99999.99',
-            'unit_start_stock' => 'numeric|between:0,9999999.99',
-            'unit_min_stock' => 'numeric|between:0,99999.99',
-            'unit_max_stock' => 'numeric|between:0,99999.99',
-            'unit_order_stock' => 'numeric|between:0,99999.99',
-            'unit_weight' => 'numeric|between:0,99999.99',
-            'unit_size' => 'numeric|between:0,9999.99',
-            'location' => 'min:3',
-            'location_maxweight' => 'numeric|between:0,99999.99',
-            'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
+            'piece_weight' => 'nullable|numeric|between:0,99999.99',
+            'unit_start_stock' => 'nullable|numeric|between:0,9999999.99',
+            'unit_min_stock' => 'nullable|numeric|between:0,99999.99',
+            'unit_max_stock' => 'nullable|numeric|between:0,99999.99',
+            'unit_order_stock' => 'nullable|numeric|between:0,99999.99',
+            'unit_weight' => 'nullable|numeric|between:0,99999.99',
+            'unit_size' => 'nullable|numeric|between:0,9999.99',
+            'location' => 'nullable|min:3',
+            'location_maxweight' => 'nullable|numeric|between:0,99999.99',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048'
         ]);
     }
 }

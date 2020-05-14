@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Entry extends Model
 {
     protected $fillable = [
-        // 'article_id',
+        'article_id',
         'amount_entry'
     ];
 

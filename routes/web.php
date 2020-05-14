@@ -18,16 +18,13 @@ Route::get('/stock',                'ArticleController@stock')->name('stock');
 Route::get('/articles/create',      'ArticleController@create')->name('create');
 Route::post('/articles',            'ArticleController@store');
 
-Route::post('/consumptions', 'ConsumptionController@store');
+Route::post('/consumptions',        'ConsumptionController@store');
 
-Route::get('/', function () {
-    $consumption = new \App\Consumption([
-        'amount_consumption' => 1111
-    ]);
+Route::post('/entries',             'EntryController@store');
 
-    dd($consumption);
-});
-
+Route::get('/statistic', function () {
+    return view('statistic');
+})->name('statistic');
 
 Route::get('/test', function () {
     return view('test');

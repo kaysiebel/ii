@@ -26,7 +26,6 @@ class ConsumptionController extends Controller
      */
     public function create()
     {
-        //
     }
 
     /**
@@ -42,19 +41,8 @@ class ConsumptionController extends Controller
         $article = Article::find($article_id);
         $consumption = Consumption::create($data);
         $article->consumptions()->save($consumption);
-        // $article_id->array_push($data);
-        // $request->this('article_id');
 
-        // $consumption->create($data);
-        return view('/articles');
-
-        // $this->validateData();
-        // $article = Article::create([
-        //     'amount_consumption' => $request->input('amount_consumption')
-        // ]);
-        // $article->consumptions()->create($request->input('consumptions'));
-
-        // return redirect()->route('index');
+        return redirect()->route('index');
     }
 
     /**

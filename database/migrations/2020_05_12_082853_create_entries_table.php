@@ -15,9 +15,9 @@ class CreateEntriesTable extends Migration
     {
         Schema::create('entries', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('article_id');
+            $table->foreignId('article_id')->constrained();
             $table->timestamps();
-            $table->decimal('amount_entry', 10, 3)->default(0);
+            $table->decimal('amount_entry', 10, 3);
         });
     }
 

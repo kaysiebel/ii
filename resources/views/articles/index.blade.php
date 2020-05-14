@@ -6,7 +6,7 @@
 
 <div class="bar-container">
     <div class="bar-grid acc ripple">
-        <img class="bar-img" src="https://picsum.photos/200/200 " alt="...">
+        <img class="bar-img" src="{{ $article->image }} " alt="...">
         <div class="bar-header">
             <p class="bar-title">{{ $article->name }}</p>
             <p class="bar-text">IST- Bestand: {{ $article->piece_start_stock }}</p>
@@ -20,6 +20,13 @@
         @csrf
         <input type="text" placeholder="Stück" name="amount_consumption" autocomplete="off">
         <button>consumption</button>
+        <input type="hidden" name="article_id" value="{{ $article->id }}">
+    </form>
+
+    <form action="/entries" method="POST">
+        @csrf
+        <input type="text" placeholder="Stück" name="amount_entry" autocomplete="off">
+        <button>entry</button>
         <input type="hidden" name="article_id" value="{{ $article->id }}">
     </form>
 
