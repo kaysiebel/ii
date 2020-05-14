@@ -16,20 +16,6 @@
         </div>
     </div>
 
-    <form action="/consumptions" method="POST">
-        @csrf
-        <input type="text" placeholder="Stück" name="amount_consumption" autocomplete="off">
-        <button>consumption</button>
-        <input type="hidden" name="article_id" value="{{ $article->id }}">
-    </form>
-
-    <form action="/entries" method="POST">
-        @csrf
-        <input type="text" placeholder="Stück" name="amount_entry" autocomplete="off">
-        <button>entry</button>
-        <input type="hidden" name="article_id" value="{{ $article->id }}">
-    </form>
-
     <div class="main-accordion panel" style="display: none;">
         @include('includes/sections/home/overview')
         @include('includes/sections/home/piece')

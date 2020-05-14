@@ -11,6 +11,6 @@ class EntrySeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory('App\Entry', 200)->create();
     }
 }

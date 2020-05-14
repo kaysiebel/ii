@@ -11,6 +11,6 @@ class ConsumptionSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory('App\Consumption', 200)->create();
     }
 }

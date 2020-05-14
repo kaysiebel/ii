@@ -17,7 +17,7 @@
                 </tr>
                 <tr>
                     <td class="col">01.05.2020</td>
-                    <td class="col col2">4000</td>
+                    <td class="col col2">{{ $article->entries->first->entry_id }}</td>
                 </tr>
                 <tr>
                     <td class="col">02.05.2020</td>
@@ -83,12 +83,25 @@
 
     </div>
 
-    <div class="mininav margin-8">
-        <a href="new-entry">
-            <img class="link-item" src="https://image.flaticon.com/icons/svg/189/189689.svg"></a>
-
-        <a href="new-consumption">
-            <img class="link-item" src="https://image.flaticon.com/icons/svg/334/334047.svg"></a>
+    <div class="margin-8">
+        <div class="">
+            <form action="/entries" method="POST">
+                <img class="link-item" src="https://image.flaticon.com/icons/svg/189/189689.svg">
+                @csrf
+                <input type="text" placeholder="Stück" name="amount_entry" autocomplete="off">
+                <button>Eingang buchen</button>
+                <input type="hidden" name="article_id" value="{{ $article->id }}">
+            </form>
+        </div>
+        <div>
+            <form action="/consumptions" method="POST">
+                <img class="link-item" src="https://image.flaticon.com/icons/svg/334/334047.svg">
+                @csrf
+                <input type="text" placeholder="Stück" name="amount_consumption" autocomplete="off">
+                <button>Verbrauch buchen</button>
+                <input type="hidden" name="article_id" value="{{ $article->id }}">
+            </form>
+        </div>
     </div>
 
 </div>
