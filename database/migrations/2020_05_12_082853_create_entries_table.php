@@ -14,8 +14,10 @@ class CreateEntriesTable extends Migration
     public function up()
     {
         Schema::create('entries', function (Blueprint $table) {
-            $table->id();
+            $table->bigIncrements('id');
+            $table->unsignedBigInteger('article_id');
             $table->timestamps();
+            $table->decimal('amount_entry', 10, 3)->default(0);
         });
     }
 

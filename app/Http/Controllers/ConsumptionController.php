@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Consumption;
+use App\Article;
+
 use Illuminate\Http\Request;
 
 class ConsumptionController extends Controller
@@ -14,7 +16,7 @@ class ConsumptionController extends Controller
      */
     public function index()
     {
-        //
+        return view('consumptions.create');
     }
 
     /**
@@ -35,7 +37,24 @@ class ConsumptionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $this->validateData();
+        $article_id = $request->input('article_id');
+        $article = Article::find($article_id);
+        $consumption = Consumption::create($data);
+        $article->consumptions()->save($consumption);
+        // $article_id->array_push($data);
+        // $request->this('article_id');
+
+        // $consumption->create($data);
+        return view('/articles');
+
+        // $this->validateData();
+        // $article = Article::create([
+        //     'amount_consumption' => $request->input('amount_consumption')
+        // ]);
+        // $article->consumptions()->create($request->input('consumptions'));
+
+        // return redirect()->route('index');
     }
 
     /**
@@ -81,5 +100,13 @@ class ConsumptionController extends Controller
     public function destroy(Consumption $consumption)
     {
         //
+    }
+
+    private function validateData()
+    {
+        return request()->validate([
+            'amount_consumption' => 'numeric|between:0,99999.99',
+            'article_id' => 'numeric'
+        ]);
     }
 }

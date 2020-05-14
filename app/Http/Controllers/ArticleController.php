@@ -110,7 +110,7 @@ class ArticleController extends Controller
             'piece_start_stock' => 'required|numeric|between:0,9999999.99',
             'piece_min_stock' => 'numeric|between:0,99999.99',
             'piece_max_stock' => 'numeric|between:0,99999.99',
-            'piece_order_stock' => 'numeric|between:0,99999.99',
+            'piece_order_stock' => 'nullable|numeric|between:0,99999.99',
             'piece_weight' => 'numeric|between:0,99999.99',
             'unit_start_stock' => 'numeric|between:0,9999999.99',
             'unit_min_stock' => 'numeric|between:0,99999.99',
