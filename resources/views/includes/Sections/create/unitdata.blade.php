@@ -6,7 +6,7 @@
             <label class="create-label" for="unit_size">Gebinde- Größe</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input width-xsmall" type="text" placeholder="Einheiten" name="unit_size" autocomplete="off" value="{{ old('unit_size') }}">
+            <input class="create-input width-xsmall" type="text" placeholder="Einheiten" name="unit_size" autocomplete="off" value="{{ old('unit_size') ?? $article->unit_size }}">
         </div>
     </div>
 
@@ -19,7 +19,7 @@
             <label class="create-label" for="unit_start_stock">Ist-Bestand</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input width-small" type="text" placeholder="Menge" name="unit_start_stock" autocomplete="off" value="{{ old('unit_start_stock') }}">
+            <input class="create-input width-small" type="text" placeholder="Menge" name="unit_start_stock" autocomplete="off" value="{{ old('unit_start_stock') ?? $article->unit_start_stock }}">
         </div>
     </div>
 
@@ -32,7 +32,7 @@
             <label class="create-label" for="unit_weight">Gewicht</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input width-xsmall" type="text" placeholder="Kg" name="unit_weight" autocomplete="off" value="{{ old('unit_weight') }}">
+            <input class="create-input width-xsmall" type="text" placeholder="Kg" name="unit_weight" autocomplete="off" value="{{ old('unit_weight')?? $article->unit_weight }}">
         </div>
     </div>
 
@@ -45,7 +45,7 @@
             <label class="create-label" for="unit_min_stock">Mindest- Bestand</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input width-small" type="text" placeholder="Menge" name="unit_min_stock" autocomplete="off" value="{{ old('unit_min_stock') }}">
+            <input class="create-input width-small" type="text" placeholder="Menge" name="unit_min_stock" autocomplete="off" value="{{ old('unit_min_stock')?? $article->unit_min_stock }}">
         </div>
     </div>
 
@@ -58,7 +58,7 @@
             <label class="create-label" for="unit_order_stock">Bestell- Bestand</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input width-small" type="text" placeholder="Menge" name="unit_order_stock" autocomplete="off" value="{{ old('unit_order_stock') }}">
+            <input class="create-input width-small" type="text" placeholder="Menge" name="unit_order_stock" autocomplete="off" value="{{ old('unit_order_stock')?? $article->unit_order_stock }}">
         </div>
     </div>
 
@@ -71,7 +71,7 @@
             <label class="create-label" for="unit_max_stock">Höchst- Bestand</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input width-small" type="text" placeholder="Menge" name="unit_max_stock" autocomplete="off" value="{{ old('unit_max_stock') }}">
+            <input class="create-input width-small" type="text" placeholder="Menge" name="unit_max_stock" autocomplete="off" value="{{ old('unit_max_stock')?? $article->unit_max_stock }}">
         </div>
     </div>
 

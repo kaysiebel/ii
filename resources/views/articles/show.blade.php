@@ -2,7 +2,7 @@
 
 @section('content')
 
-@foreach($articles as $article)
+@foreach($article as $article)
 
 <div class="bar-container">
     <div class="bar-grid acc ripple">
@@ -26,7 +26,6 @@
         @include('includes/sections/home/location')
         @include('includes/sections/home/edit')
     </div>
-    <a href="/articles/{{ $article->id }}/edit">eeeeeedit</a>
 
 </div>
 

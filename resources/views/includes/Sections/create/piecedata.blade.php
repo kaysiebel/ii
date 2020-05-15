@@ -6,7 +6,7 @@
             <label class="create-label" for="piece_min_stock">Mindest- Bestand</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input width-small" type="text" placeholder="Stück" name="piece_min_stock" autocomplete="off" value="{{ old('piece_min_stock') }}">
+            <input class="create-input width-small" type="text" placeholder="Stück" name="piece_min_stock" autocomplete="off" value="{{ old('piece_min_stock') ?? $article->piece_min_stock }}">
         </div>
     </div>
 
@@ -19,7 +19,7 @@
             <label class="create-label" for="piece_order_stock">Bestell- Bestand</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input width-small" type="text" placeholder="Stück" name="piece_order_stock" autocomplete="off" value="{{ old('piece_order_stock') }}">
+            <input class="create-input width-small" type="text" placeholder="Stück" name="piece_order_stock" autocomplete="off" value="{{ old('piece_order_stock') ?? $article->piece_order_stock }}">
         </div>
     </div>
 
@@ -32,7 +32,7 @@
             <label class="create-label" for="piece_max_stock">Höchst- Bestand</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input width-small" type="text" placeholder="Stück" name="piece_max_stock" autocomplete="off" value="{{ old('piece_max_stock') }}">
+            <input class="create-input width-small" type="text" placeholder="Stück" name="piece_max_stock" autocomplete="off" value="{{ old('piece_max_stock') ?? $article->piece_max_stock }}">
         </div>
     </div>
 
@@ -45,7 +45,7 @@
             <label class="create-label" for="piece_weight">Gewicht</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input width-xsmall" type="text" placeholder="Kg" name="piece_weight" autocomplete="off" value="{{ old('piece_weight') }}">
+            <input class="create-input width-xsmall" type="text" placeholder="Kg" name="piece_weight" autocomplete="off" value="{{ old('piece_weight') ?? $article->piece_weight }}">
         </div>
     </div>
 

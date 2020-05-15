@@ -22,15 +22,12 @@
 
     <div class="create-grid ripple-light">
         <div class="accordion-item">
-            <label class="create-label" for="piece_start_stock">Anfangs- Bestand</label>
+            <div class="create-label">Anfangs- Bestand</div>
         </div>
         <div class="accordion-item">
-            <input class="create-input width-small" type="text" placeholder="erforderlich" name="piece_start_stock" autocomplete="off" value="{{ old('piece_start_stock') }}">
+            <input class="create-input width-small" type="hidden" placeholder="erforderlich" name="piece_start_stock" autocomplete="off" value="{{ old('piece_start_stock') ?? $article->piece_start_stock }}">
+            <div class="create-label">kann nur ein mal vergeben werden!</div>
         </div>
-    </div>
-
-    <div class="create-container">
-        @error('piece_start_stock') <p class="red">{{ $message }}</p> @enderror
     </div>
 
     <div class="create-grid ripple-light">

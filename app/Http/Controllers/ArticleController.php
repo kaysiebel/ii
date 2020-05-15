@@ -37,7 +37,8 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return view('articles.create');
+        $article = new Article();
+        return view('articles.create', compact('article'));
     }
 
     /**
@@ -66,7 +67,9 @@ class ArticleController extends Controller
      */
     public function show(Article $article)
     {
-        //
+        $article = Article::find($article);
+        // $article = Article::where('id', $article)->firstOrFail(); <- doesn't work :(
+        return view('articles.show', compact('article'));
     }
 
     /**
@@ -77,7 +80,10 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)
     {
-        //
+        // return view('articles/update', [
+        //     'article' => $article
+        // ]);
+        return view('articles.edit', compact('article'));
     }
 
     /**
@@ -89,7 +95,14 @@ class ArticleController extends Controller
      */
     public function update(Request $request, Article $article)
     {
-        //
+        $data = $this->validateData();
+        if ($request->has('image')) {
+            $path = $request->file('image')->store('/articles/images', 'public');
+            $data['image'] = $path;
+        }
+        $article->update($data);
+
+        return view('/articles/index');
     }
 
     /**
@@ -100,7 +113,9 @@ class ArticleController extends Controller
      */
     public function destroy(Article $article)
     {
-        //
+        $article->delete();
+
+        return view('/articles');
     }
 
     private function validateData()

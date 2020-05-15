@@ -3,6 +3,13 @@
 
     <div class="accordion-grid ripple-light">
         <p class="accordion-item">
+            Soll- Bestand</p>
+        <p class="accordion-item">
+            {{ $article->piece_start_stock }} Stk</p>
+    </div>
+
+    <div class="accordion-grid ripple-light">
+        <p class="accordion-item">
             Mindest-Bestand</p>
         <p class="accordion-item">
             {{ $article->piece_min_stock }} Stk</p>

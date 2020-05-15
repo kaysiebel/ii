@@ -1,1 +1,1 @@
-<div class="accordion ripple">Edit</div>
+    <div class="accordion ripple">Edit</div>
