@@ -12,7 +12,7 @@
             <label class="create-label" for="name">Artikel- Name</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input" type="text" name="name" placeholder="erforderlich" autocomplete="off" value="{{ old('article->name') ?? $article->name }}">
+            <input class="create-input" type="text" name="name" placeholder="erforderlich" autocomplete="off" value="{{ old('name') ?? $article->name }}">
         </div>
     </div>
 
@@ -25,7 +25,7 @@
             <label class="create-label" for="piece_start_stock">Anfangs- Bestand</label>
         </div>
         <div class="accordion-item">
-            <input class="create-input width-small" type="text" placeholder="erforderlich" name="piece_start_stock" autocomplete="off" value="{{ old('piece_start_stock') }}">
+            <input class="create-input width-small" type="text" placeholder="erforderlich" name="piece_start_stock" autocomplete="off" value="{{ old('piece_start_stock') ?? $article->piece_start_stock }}">
         </div>
     </div>
 
