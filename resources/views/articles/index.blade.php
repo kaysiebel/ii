@@ -26,7 +26,6 @@
         @include('includes/sections/home/location')
         @include('includes/sections/home/edit')
     </div>
-    <a href="/articles/{{ $article->id }}/edit">eeeeeedit</a>
 
 </div>
 

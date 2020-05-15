@@ -21,6 +21,6 @@ $factory->define(Article::class, function (Faker $faker) {
         'unit_size' => $faker->numberBetween(2, 10000),
         'location' => $faker->name,
         'location_maxweight' => $faker->numberBetween(1000, 9900),
-        // 'image' => $faker->imageUrl(),
+        'image' => $faker->imageUrl(),
     ];
 });

@@ -19,6 +19,7 @@ main {
   justify-content: center;
   overflow: scroll;
   background: var(--darkest);
+  padding: 0 3px 0 3px;
 }
 
 .mininav {

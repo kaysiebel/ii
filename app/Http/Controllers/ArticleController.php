@@ -56,7 +56,7 @@ class ArticleController extends Controller
         }
         $article->create($data);
 
-        return view('/articles');
+        return redirect('/articles');
     }
 
     /**
@@ -102,7 +102,7 @@ class ArticleController extends Controller
         }
         $article->update($data);
 
-        return view('/articles/index');
+        return redirect('/articles');
     }
 
     /**
@@ -115,7 +115,7 @@ class ArticleController extends Controller
     {
         $article->delete();
 
-        return view('/articles');
+        return redirect('/articles');
     }
 
     private function validateData()
