@@ -17,7 +17,7 @@
                 </tr>
                 <tr>
                     <td class="col">01.05.2020</td>
-                    <td class="col col2">{{ $article->entries->first->entry_id }}</td>
+                    <td class="col col2">{{ $article->entry->first->id }}</td>
                 </tr>
                 <tr>
                     <td class="col">02.05.2020</td>
