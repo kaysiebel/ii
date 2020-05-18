@@ -1,11 +1,13 @@
 .canvas-sm {
     height: 200px;
     width: 100%;
+    background: var(--light);
 }
 
 .canvas-l {
-    height: 400;
+    height: 600px;
     width: 100%;
+    background: var(--light);
 }
 
 .width-small {
@@ -56,6 +58,10 @@
 
 .margin-16 {
     margin: 16px;
+}
+
+.margin-top-16 {
+    margin-top: 16px;
 }
 
 .padding-4 {

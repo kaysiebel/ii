@@ -18,7 +18,7 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   overflow: scroll;
-  background: var(--darkest);
+  background-image: linear-gradient(var(--darkest), var(--black));
   padding: 0 3px 0 3px;
 }
 
@@ -48,6 +48,8 @@ a {
   --lightest: whitesmoke;
   --lighter: mintcream;
   --light: azure;
+  --lightly: #def6fc;
+  --black: #030a10;
   --darkest: #031927;
   --darker: #052e47;
   --dark: #0a5c8f;
@@ -64,11 +66,13 @@ a {
 .canvas-sm {
   height: 200px;
   width: 100%;
+  background: var(--light);
 }
 
 .canvas-l {
-  height: 400;
+  height: 600px;
   width: 100%;
+  background: var(--light);
 }
 
 .width-small {
@@ -120,6 +124,10 @@ a {
 
 .margin-16 {
   margin: 16px;
+}
+
+.margin-top-16 {
+  margin-top: 16px;
 }
 
 .padding-4 {
@@ -188,7 +196,6 @@ footer {
   justify-content: center;
   align-items: center;
   height: 60px;
-  background: var(--light);
 }
 
 .create-grid-small {
@@ -197,7 +204,6 @@ footer {
   justify-content: center;
   align-items: center;
   height: 60px;
-  background: var(--light);
 }
 
 .file-label {
@@ -209,7 +215,6 @@ footer {
   grid-template-columns: 50% 50%;
   justify-items: center;
   width: 100%;
-  background: var(--light);
 }
 
 .col {
@@ -348,11 +353,17 @@ footer {
   background-image: linear-gradient(var(--darker) 30%, var(--dark));
 }
 
+.accordion:hover {
+  background: var(--light) radial-gradient(circle, transparent 1%, var(--dark) 10%) center/15000%;
+  color: var(--darkest);
+  transform: scale(1, 1.2);
+}
+
 .accordion-panel {
   font-size: 1.2rem;
-  background-color: var(--light);
   color: var(--darker);
-  border: 8px solid var(--light);
+  background-color: var(--light);
+  background-image: linear-gradient(80deg, var(--light) 1px, var(--light) 260px, var(--lightly) 260px, var(--lightly) 420px);
   display: none;
   overflow: hidden;
 }
@@ -368,25 +379,18 @@ footer {
 .panel {
   font-size: 1.3rem;
   border: 4px solid var(--light);
-  background-color: var(--light);
+  background: var(--light);
 }
 
 .accordion-grid {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: var(--light);
 }
 
 .ripple {
   background-position: center;
   transition: background 0.5s;
-}
-
-.accordion:hover {
-  background: var(--light) radial-gradient(circle, transparent 1%, var(--dark) 10%) center/15000%;
-  color: var(--darkest);
-  transform: scale(1, 1.2);
 }
 
 .ripple:active {
@@ -411,13 +415,25 @@ footer {
 }
 
 .btn {
-  height: 24px;
-  width: 100px;
-  font-size: 0.7rem;
+  min-width: 100px;
+  padding: 1px 12px;
+  font-size: 1.1rem;
   color: var(--light);
-  background: linear-gradient(var(--darker) 30%, var(--dark));
-  border: 2px solid var(--dark);
+  background: linear-gradient(var(--darker) 30%, var(--dark) 70%);
+  border: 2px solid var(--darker);
   border-radius: 90px;
+  cursor: pointer;
+}
+
+.btn:active {
+  background: radial-gradient(circle, var(--light) 60%, var(--dark) 90%);
+  color: var(--darkest);
+  transform: scale(1.03, 1.03);
+  transition: transform 0.2s ease;
+}
+
+.btn:hover {
+  background: radial-gradient(circle, var(--dark) 60%, var(--darker) 90%);
 }
 
 .search-btn {
@@ -432,7 +448,7 @@ footer {
 }
 
 .file-btn {
-  max-width: 200px;
+  max-width: 80px;
 }
 
 .create-container {
@@ -440,5 +456,124 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(var(--darkest), black);
+}
+
+.start-img {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  fill: black;
+}
+
+.start-sticker {
+  width: 200px;
+}
+
+.box {
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 120px;
+  font-family: serif;
+  color: var(--light);
+  -webkit-animation: box 3s linear infinite;
+          animation: box 3s linear infinite;
+  transform-origin: bottom right;
+}
+
+@-webkit-keyframes box {
+  0% {
+    transform: translate(600px) rotateZ(8deg);
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  25% {
+    transform: translate(-25px) rotateZ(8deg);
+    opacity: 1;
+  }
+
+  28% {
+    transform: translate(-25px) rotateZ(0);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translate(-25px);
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-600px) rotateZ(8deg);
+    opacity: 0;
+  }
+}
+
+@keyframes box {
+  0% {
+    transform: translate(600px) rotateZ(8deg);
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  25% {
+    transform: translate(-25px) rotateZ(8deg);
+    opacity: 1;
+  }
+
+  28% {
+    transform: translate(-25px) rotateZ(0);
+    opacity: 1;
+  }
+
+  75% {
+    transform: translate(-25px);
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  95% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-600px) rotateZ(8deg);
+    opacity: 0;
+  }
 }
 

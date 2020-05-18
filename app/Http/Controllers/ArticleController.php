@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use App\Entry;
+use App\Consumption;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
@@ -14,8 +16,19 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $articles = Article::all();
+        // $articles = Article::with('entries', 'consumptions')->get()->toArray();
+        // $articles = Article::with(['entries'], ['consumptions'])->get();
+        $articles = Article::with('entries', 'consumptions')->get();
+        // $articles = Article::with('entries')->pluck('amount_entry');
+        // $entries = Entry::where('article_id',);
+        // $articles = Article::all();
+        // $entries = Entry::all();
+        // $consumptions = Consumption::all();
 
+        // dd($articles)->toArray();
+        // dd($articles);
+
+        // return view('articles.index', compact('articles', 'entries', 'consumptions'));
         return view('articles.index', compact('articles'));
     }
     /**

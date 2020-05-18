@@ -19,6 +19,7 @@
     max-width: 420px;
     border-left: 3px solid var(--darkest);
     border-right: 3px solid var(--darkest);
+    // transition: transform 0.3s ease;
 }
 
 .bar-title {
@@ -37,7 +38,28 @@
     margin-top: 6px;
     padding: 4px;
     background: var(--light);
+    // background: linear-gradient(
+    //     80deg,
+    //     var(--light) 1px,
+    //     var(--light) 260px,
+    //     var(--lightly) 260px,
+    //     var(--lightly) 420px
+    // );
+    // background: radial-gradient(
+    //     circle at top right,
+    //     var(--lightly) 8px,
+    //     var(--light) 8px
+    // );
+    // transition: background 2s;
 }
+
+// .bar-grid:hover {
+//     background: radial-gradient(
+//         circle at top right,
+//         var(--lightly) 100px,
+//         var(--light) 100px
+//     );
+// }
 
 .bar-grid-create {
     display: grid;

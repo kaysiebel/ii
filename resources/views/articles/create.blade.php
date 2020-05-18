@@ -17,7 +17,7 @@
             @include('includes/sections/create/unitdata')
             @csrf
         </div>
-        <button>new article</button>
+        <button class="btn">new article</button>
     </form>
 </div>
 

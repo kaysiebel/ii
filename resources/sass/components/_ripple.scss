@@ -3,13 +3,6 @@
     transition: background 0.5s;
 }
 
-.accordion:hover {
-    background: var(--light)
-        radial-gradient(circle, transparent 1%, var(--dark) 10%) center/15000%;
-    color: var(--darkest);
-    transform: scale(1, 1.2);
-}
-
 .ripple:active {
     background-color: var(--dark);
     background-size: 100%;

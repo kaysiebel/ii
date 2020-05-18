@@ -13,7 +13,7 @@
     <div class="accordion-panel" style=" display: block;">
         <div class="settings-container">
 
-            <canvas id="myChart" width="332" height="360"></canvas>
+            <canvas class="canvas-l" id="myChart" width="332" height="360"></canvas>
             <script>
                 var ctx = document.getElementById('myChart').getContext('2d');
                 var mixedChart = new Chart(ctx, {

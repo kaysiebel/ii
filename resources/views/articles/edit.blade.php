@@ -2,7 +2,6 @@
 
 @section('content')
 
-
 <div class="bar-container">
     <div class="bar-grid-create acc ripple">
         <img class="bar-img" src="{{ $article->image }}" alt="...">
@@ -19,7 +18,7 @@
             @method('PATCH')
             @csrf
         </div>
-        <button>save article</button>
+        <button class="btn">save article</button>
     </form>
 </div>
 

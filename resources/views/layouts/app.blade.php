@@ -50,6 +50,13 @@
                 active: 0
             });
         })
+        $(document).ready(function() {
+            $('.bar-accordion').accordion({
+                active: false,
+                collapsible: true,
+                heightStyle: "content"
+            });
+        })
     </script>
 
 </body>

@@ -20,7 +20,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     overflow: scroll;
-    background: var(--darkest);
+    background-image: linear-gradient(var(--darkest), var(--black));
     padding: 0 3px 0 3px;
 }
 
@@ -50,6 +50,8 @@ a {
     --lightest: whitesmoke;
     --lighter: mintcream;
     --light: azure;
+    --lightly: #def6fc;
+    --black: #030a10;
     --darkest: #031927;
     --darker: #052e47;
     --dark: #0a5c8f;

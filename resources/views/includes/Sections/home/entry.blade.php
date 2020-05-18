@@ -17,7 +17,7 @@
                 </tr>
                 <tr>
                     <td class="col">01.05.2020</td>
-                    <td class="col col2">{{ $article->entry->first->id }}</td>
+                    <td class="col col2">{{ $article->entries->first->entry_id }}</td>
                 </tr>
                 <tr>
                     <td class="col">02.05.2020</td>
@@ -83,22 +83,22 @@
 
     </div>
 
-    <div class="margin-8">
-        <div class="">
+    <div class="accordion-grid">
+        <div class="accordion-item">
             <form action="/entries" method="POST">
-                <img class="link-item" src="https://image.flaticon.com/icons/svg/189/189689.svg">
+                <!-- <img class="link-item" src="https://image.flaticon.com/icons/svg/189/189689.svg"> -->
                 @csrf
                 <input type="text" placeholder="Stück" name="amount_entry" autocomplete="off">
-                <button>Eingang buchen</button>
+                <button class="btn">Eingang buchen</button>
                 <input type="hidden" name="article_id" value="{{ $article->id }}">
             </form>
         </div>
-        <div>
+        <div class="accordion-item">
             <form action="/consumptions" method="POST">
-                <img class="link-item" src="https://image.flaticon.com/icons/svg/334/334047.svg">
+                <!-- <img class="link-item" src="https://image.flaticon.com/icons/svg/334/334047.svg"> -->
                 @csrf
                 <input type="text" placeholder="Stück" name="amount_consumption" autocomplete="off">
-                <button>Verbrauch buchen</button>
+                <button class="btn">Verbrauch buchen</button>
                 <input type="hidden" name="article_id" value="{{ $article->id }}">
             </form>
         </div>
