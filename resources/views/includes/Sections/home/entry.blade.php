@@ -86,7 +86,6 @@
     <div class="accordion-grid">
         <div class="accordion-item">
             <form action="/entries" method="POST">
-                <!-- <img class="link-item" src="https://image.flaticon.com/icons/svg/189/189689.svg"> -->
                 @csrf
                 <input type="text" placeholder="Stück" name="amount_entry" autocomplete="off">
                 <button class="btn">Eingang buchen</button>
@@ -95,7 +94,6 @@
         </div>
         <div class="accordion-item">
             <form action="/consumptions" method="POST">
-                <!-- <img class="link-item" src="https://image.flaticon.com/icons/svg/334/334047.svg"> -->
                 @csrf
                 <input type="text" placeholder="Stück" name="amount_consumption" autocomplete="off">
                 <button class="btn">Verbrauch buchen</button>

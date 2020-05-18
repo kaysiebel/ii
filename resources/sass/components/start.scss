@@ -1,19 +1,9 @@
-// body {
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     height: 100vh;
-//     background: olive;
-//  }
-
 .start {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     background-image: linear-gradient(var(--darkest), black);
-
-    // background: var(--darkest);
 }
 
 .start-img {
@@ -28,31 +18,18 @@
 }
 
 .box {
-    // z-index: -1;
     position: absolute;
-    //  width: 100px;
-    //   height: 100px;
-    //   background: green;
     user-select: none;
-    // height: 1px;
-    // width: auto-flow;
-    //  background: azure;
-
     font-size: 120px;
     font-family: serif;
     color: var(--light);
     animation: box 3s linear infinite;
-    //  transition: transform 3s ease;
-    //  transition: all 1.5s;
     transform-origin: bottom right;
 }
 
 @keyframes box {
     0% {
-        //  transform: rotateZ(45deg);
         transform: translate(600px) rotateZ(8deg);
-        //  background: blue;
-        //  transform: rotateZ(45deg);
         opacity: 0;
     }
 
@@ -87,7 +64,6 @@
         opacity: 0;
     }
     100% {
-        //   transform: scale(1.6);
         transform: translate(-600px) rotateZ(8deg);
         opacity: 0;
     }

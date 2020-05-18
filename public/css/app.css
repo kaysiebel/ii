@@ -240,7 +240,8 @@ footer {
 }
 
 .table-large {
-  width: 100%;
+  margin: 16px 8px;
+  width: 96%;
   font-size: 1.5rem;
 }
 
@@ -289,6 +290,7 @@ footer {
   max-width: 420px;
   border-left: 3px solid var(--darkest);
   border-right: 3px solid var(--darkest);
+  background: var(--darkest);
 }
 
 .bar-title {
@@ -417,7 +419,7 @@ footer {
 .btn {
   min-width: 100px;
   padding: 1px 12px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--light);
   background: linear-gradient(var(--darker) 30%, var(--dark) 70%);
   border: 2px solid var(--darker);

@@ -4,16 +4,14 @@
 }
 
 .btn {
-    // height: 24px;
     min-width: 100px;
     padding: 1px 12px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--light);
     background: linear-gradient(var(--darker) 30%, var(--dark) 70%);
     border: 2px solid var(--darker);
     border-radius: 90px;
     cursor: pointer;
-    // width: 100%;
 }
 
 .btn:active {

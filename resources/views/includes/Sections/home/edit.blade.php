@@ -3,14 +3,12 @@
     <div class="accordion-grid ripple-light">
 
         <div class="accordion-item">
-            <!-- <p>Artikel bearbeiten</p> -->
             <a href="/articles/{{ $article->id }}/edit">
                 <button class="btn">edit</button>
             </a>
         </div>
 
         <div class="accordion-item">
-            <!-- <p>Artikel Löschen</p> -->
             <form action="/articles/{{ $article->id }}" method="POST">
                 @method('DELETE')
                 @csrf

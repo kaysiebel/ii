@@ -15,10 +15,6 @@
     transform: scale(1, 1.2);
 }
 
-// .main-accordion{
-
-// }
-
 .accordion-panel {
     font-size: 1.2rem;
     color: var(--darker);
@@ -31,12 +27,6 @@
         var(--lightly) 420px
     );
 
-    // background: radial-gradient(
-    //     circle at top right,
-    //     var(--lightly) 260px,
-    //     var(--light) 260px
-    // );
-    //
     display: none;
     overflow: hidden;
 }
@@ -53,17 +43,10 @@
     font-size: 1.3rem;
     border: 4px solid var(--light);
     background: var(--light);
-    // background-color: var(--light);
-    // background: radial-gradient(
-    //     circle at top right,
-    //     var(--dark) 108px,
-    //     var(--light) 208px
-    // );
 }
 
 .accordion-grid {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // background: var(--light);
 }

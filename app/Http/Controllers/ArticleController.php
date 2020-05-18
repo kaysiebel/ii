@@ -16,19 +16,8 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        // $articles = Article::with('entries', 'consumptions')->get()->toArray();
-        // $articles = Article::with(['entries'], ['consumptions'])->get();
         $articles = Article::with('entries', 'consumptions')->get();
-        // $articles = Article::with('entries')->pluck('amount_entry');
-        // $entries = Entry::where('article_id',);
-        // $articles = Article::all();
-        // $entries = Entry::all();
-        // $consumptions = Consumption::all();
 
-        // dd($articles)->toArray();
-        // dd($articles);
-
-        // return view('articles.index', compact('articles', 'entries', 'consumptions'));
         return view('articles.index', compact('articles'));
     }
     /**
@@ -93,9 +82,6 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)
     {
-        // return view('articles/update', [
-        //     'article' => $article
-        // ]);
         return view('articles.edit', compact('article'));
     }
 

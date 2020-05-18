@@ -55,7 +55,6 @@ class EntryController extends Controller
      */
     public function show(Entry $entry)
     {
-        // return view('entries.show', compact('entries'));
         $entry = Entry::find($entry);
         return view('entries.show', compact('entry'));
     }

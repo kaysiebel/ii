@@ -6,7 +6,7 @@
     <div class="bar-grid-create acc ripple">
         <img class="bar-img" src="{{ $article->image }}" alt="...">
         <div class="bar-header">
-            <p class="bar-title">EDIT {{ $article->name }}</p>
+            <p class="bar-title">Artikeldaten ändern für "{{ $article->name }}"</p>
         </div>
     </div>
 

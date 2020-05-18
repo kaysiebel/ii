@@ -8,7 +8,7 @@
             <p class="bar-title">+ Eingang +</p>
         </div>
     </div>
-    {{ $article->entry->first->id }}
+
     <div class="accordion-panel" style=" display: block;">
         @include('includes/mininav')
 

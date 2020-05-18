@@ -13,8 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-
 Route::get('/articles',             'ArticleController@index')->name('index');
 Route::get('/stock',                'ArticleController@stock')->name('stock');
 Route::get('/articles/create',      'ArticleController@create')->name('create');
@@ -24,7 +22,6 @@ Route::get('/articles/{article}',      'ArticleController@show')->name('show');
 Route::get('/articles/{article}/edit',      'ArticleController@edit');
 Route::patch('/articles/{article}',      'ArticleController@update');
 Route::delete('/articles/{article}',      'ArticleController@destroy');
-// Route::resource('/articles', 'ArticleController');
 
 Route::post('/consumptions',        'ConsumptionController@store');
 
