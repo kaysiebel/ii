@@ -11,34 +11,21 @@
             </div>
 
             <table class="table">
+
                 <tr>
                     <th class="table-header">Datum</th>
                     <th class="table-header">Menge</th>
                 </tr>
+
+                @foreach($article->entries as $entry)
+
                 <tr>
-                    <td class="col">01.05.2020</td>
-                    <td class="col col2">{{ $article->entries->first->entry_id }}</td>
+                    <td class="col">{{ $entry->created_at }}</td>
+                    <td class="col col2">{{ $entry->amount_entry }}</td>
                 </tr>
-                <tr>
-                    <td class="col">02.05.2020</td>
-                    <td class="col col2">2000</td>
-                </tr>
-                <tr>
-                    <td class="col">04.05.2020</td>
-                    <td class="col col2">4000</td>
-                </tr>
-                <tr>
-                    <td class="col">05.05.2020</td>
-                    <td class="col col2">1000</td>
-                </tr>
-                <tr>
-                    <td class="col">08.05.2020</td>
-                    <td class="col col2">4000</td>
-                </tr>
-                <tr>
-                    <td class="col">10.05.2020</td>
-                    <td class="col col2">2000</td>
-                </tr>
+
+                @endforeach
+
             </table>
         </div>
 
@@ -54,30 +41,16 @@
                     <th class="table-header">Datum</th>
                     <th class="table-header">Menge</th>
                 </tr>
+
+                @foreach($article->consumptions as $consumption)
+
                 <tr>
-                    <td class="col">01.05.2020</td>
-                    <td class="col col2">4000</td>
+                    <td class="col">{{ $consumption->created_at }}</td>
+                    <td class="col col2">{{ $consumption->amount_consumption }}</td>
                 </tr>
-                <tr>
-                    <td class="col">02.05.2020</td>
-                    <td class="col col2">2000</td>
-                </tr>
-                <tr>
-                    <td class="col">04.05.2020</td>
-                    <td class="col col2">4000</td>
-                </tr>
-                <tr>
-                    <td class="col">05.05.2020</td>
-                    <td class="col col2">1000</td>
-                </tr>
-                <tr>
-                    <td class="col">08.05.2020</td>
-                    <td class="col col2">4000</td>
-                </tr>
-                <tr>
-                    <td class="col">10.05.2020</td>
-                    <td class="col col2">2000</td>
-                </tr>
+
+                @endforeach
+
             </table>
         </div>
 
