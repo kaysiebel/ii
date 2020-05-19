@@ -36,10 +36,6 @@ main {
   color: var(--red);
 }
 
-a:visited {
-  color: var(--light);
-}
-
 a {
   text-decoration: none;
 }
@@ -171,6 +167,13 @@ footer {
 }
 
 .footer-item:hover {
+  scale: 1.1;
+  background-image: linear-gradient(transparent, #03192780 30%);
+  opacity: 1;
+  transition: 0.2s;
+}
+
+.footer-item:active {
   scale: 1.1;
   background-image: linear-gradient(transparent, #03192780 30%);
   opacity: 1;

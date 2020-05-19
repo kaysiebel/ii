@@ -13,25 +13,30 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/articles',             'ArticleController@index')->name('index');
-Route::get('/stock',                'ArticleController@stock')->name('stock');
-Route::get('/articles/create',      'ArticleController@create')->name('create');
-Route::post('/articles',            'ArticleController@store');
-Route::get('/articles/{article}',      'ArticleController@show')->name('show');
+Route::get('/articles',                              'ArticleController@index')->name('index');
+Route::get('/stock',                                 'ArticleController@stock')->name('stock');
+Route::get('/articles/create',                       'ArticleController@create')->name('create');
+Route::post('/articles',                             'ArticleController@store');
+Route::get('/articles/{article}',                    'ArticleController@show')->name('show');
 
-Route::get('/articles/{article}/edit',      'ArticleController@edit');
-Route::patch('/articles/{article}',      'ArticleController@update');
-Route::delete('/articles/{article}',      'ArticleController@destroy');
+Route::get('/articles/{article}/entries',            'ArticleController@entries')->name('entries');
+Route::get('/articles/{article}/consumptions',       'ArticleController@consumptions')->name('consumptions');
 
-Route::post('/consumptions',        'ConsumptionController@store');
+Route::get('/articles/{article}/edit',               'ArticleController@edit');
+Route::patch('/articles/{article}',                  'ArticleController@update');
+Route::delete('/articles/{article}',                 'ArticleController@destroy');
 
-Route::post('/entries',             'EntryController@store');
-Route::get('/entries/index',             'EntryController@index');
-Route::get('/entries/{entry}',      'EntryController@show');
 
-Route::get('/entries/{entry}/edit',      'EntryController@edit');
-Route::patch('/entries/{entry}',      'EntryController@update');
-Route::delete('/entries/{entry}',      'EntryController@destroy');
+Route::post('/entries',                            'EntryController@store');
+Route::get('/entries/{entry}/edit',                'EntryController@edit');
+Route::patch('/entries/{entry}',                   'EntryController@update');
+Route::delete('/entries/{entry}',                  'EntryController@destroy');
+
+Route::post('/consumptions',                       'ConsumptionController@store');
+Route::get('/consumptions/{consumption}/edit',     'ConsumptionController@edit');
+Route::patch('/consumptions/{consumption}',        'ConsumptionController@update');
+Route::delete('/consumptions/{consumption}',       'ConsumptionController@destroy');
+
 
 Route::get('/', function () {
     return view('start');
@@ -45,13 +50,13 @@ Route::get('/test', function () {
     return view('test');
 })->name('test');
 
-Route::get('/entries', function () {
-    return view('entries');
-})->name('enries');
+// Route::get('/entries', function () {
+//     return view('entries');
+// })->name('enries');
 
-Route::get('/consumption', function () {
-    return view('consumption');
-})->name('consumption');
+// Route::get('/consumption', function () {
+//     return view('consumption');
+// })->name('consumption');
 
 Route::get('/search', function () {
     return view('search');
@@ -60,3 +65,7 @@ Route::get('/search', function () {
 Route::get('/settings', function () {
     return view('settings');
 })->name('settings');
+
+Route::get('/landing', function () {
+    return view('landing');
+})->name('landing');

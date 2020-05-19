@@ -5,7 +5,7 @@
 <div class="bar-container">
     <div class="bar-full">
         <div class="bar-header">
-            <p class="bar-title">Bestands- Übersicht</p>
+            <p class="bar-title">Bestands- Kontrolle</p>
         </div>
     </div>
 

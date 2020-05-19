@@ -15,9 +15,7 @@ class EntryController extends Controller
      */
     public function index()
     {
-        $entries = Entry::all();
-
-        return view('entries.index', compact('entries'));
+        //
     }
 
     /**
@@ -44,7 +42,7 @@ class EntryController extends Controller
         $entry = Entry::create($data);
         $article->entries()->save($entry);
 
-        return redirect()->route('index');
+        return redirect()->route('landing');
     }
 
     /**
@@ -55,8 +53,7 @@ class EntryController extends Controller
      */
     public function show(Entry $entry)
     {
-        $entry = Entry::find($entry);
-        return view('entries.show', compact('entry'));
+        //
     }
 
     /**
@@ -85,7 +82,7 @@ class EntryController extends Controller
         $entry->update($data);
         $article->entries()->update($entry);
 
-        return redirect()->route('index');
+        return redirect()->route('landing');
     }
 
     /**
@@ -98,7 +95,7 @@ class EntryController extends Controller
     {
         $entry->delete();
 
-        return redirect('/entries');
+        return redirect('/articles');
     }
 
     private function validateData()

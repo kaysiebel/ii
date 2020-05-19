@@ -58,7 +58,9 @@ class ArticleController extends Controller
         }
         $article->create($data);
 
-        return redirect('/articles');
+        // return redirect('/articles');
+        // return redirect::back();
+        return back();
     }
 
     /**
@@ -70,8 +72,20 @@ class ArticleController extends Controller
     public function show(Article $article)
     {
         $article = Article::find($article);
-        // $article = Article::where('id', $article)->firstOrFail(); <- doesn't work :(
         return view('articles.show', compact('article'));
+        // $article = Article::where('id', $article)->firstOrFail(); <- doesn't work :(
+    }
+
+    public function entries(Article $article)
+    {
+        $article = Article::find($article);
+        return view('articles.entries', compact('article'));
+    }
+
+    public function consumptions(Article $article)
+    {
+        $article = Article::find($article);
+        return view('articles.consumptions', compact('article'));
     }
 
     /**

@@ -16,7 +16,7 @@ class ConsumptionController extends Controller
      */
     public function index()
     {
-        return view('consumptions.create');
+        //
     }
 
     /**
@@ -64,7 +64,7 @@ class ConsumptionController extends Controller
      */
     public function edit(Consumption $consumption)
     {
-        //
+        return view('consumptions.edit', compact('consumption'));
     }
 
     /**
@@ -76,7 +76,13 @@ class ConsumptionController extends Controller
      */
     public function update(Request $request, Consumption $consumption)
     {
-        //
+        $data = $this->validateData();
+        $article_id = $request->input('article_id');
+        $article = Article::find($article_id);
+        $consumption->update($data);
+        $article->entries()->update($consumption);
+
+        return redirect('/articles');
     }
 
     /**
@@ -87,7 +93,9 @@ class ConsumptionController extends Controller
      */
     public function destroy(Consumption $consumption)
     {
-        //
+        $consumption->delete();
+
+        return redirect('/articles');
     }
 
     private function validateData()

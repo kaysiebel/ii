@@ -23,24 +23,24 @@
             </tr>
 
             <tr>
-                <td class="col">{{$entry->created_at}}</td>
-                <td class="col col2">{{ $entry->amount_entry }}</td>
+                <td class="col">{{$consumption->created_at}}</td>
+                <td class="col col2">{{ $consumption->amount_consumption }}</td>
             </tr>
 
         </table>
 
-        <form action="/entries/{{ $entry->id }}" class="mininav" method="post" enctype="multipart/form-data">
+        <form action="/consumptions/{{ $consumption->id }}" class="mininav" method="post" enctype="multipart/form-data">
             @method('PATCH')
             @csrf
-            <input type="hidden" name="article_id" value="{{ $entry->article_id }}">
+            <input type="hidden" name="article_id" value="{{ $consumption->article_id }}">
             <button class="btn">Daten ändern</button>
-            <input class="create-input" type="text" name="name" placeholder="erforderlich" autocomplete="off" value="{{ old('$entry->amount_entry') ?? $entry->amount_entry }}">
+            <input class="create-input" type="text" name="name" placeholder="erforderlich" autocomplete="off" value="{{ old('$consumption->amount_consumption') ?? $consumption->amount_consumption }}">
         </form>
 
-        <form action="/entries/{{ $entry->id }}" class="mininav" method="post" enctype="multipart/form-data">
+        <form action="/consumptions/{{ $consumption->id }}" class="mininav" method="post" enctype="multipart/form-data">
             @method('DELETE')
             @csrf
-            <input type="hidden" name="article_id" value="{{ $entry->article_id }}">
+            <input type="hidden" name="article_id" value="{{ $consumption->article_id }}">
             <button class="btn">Eingang löschen</button>
         </form>
 

@@ -5,7 +5,7 @@
 
         <div class="table-container">
             <div class="link ripple">
-                <a class="info" href="/entries">
+                <a class="info" href="/articles/{{ $article->id }}/entries">
                     + Eingänge +
                 </a>
             </div>
@@ -31,7 +31,7 @@
 
         <div class="table-container">
             <div class="link ripple">
-                <a class="info ripple" href="/consumption">
+                <a class="info ripple" href="/articles/{{ $article->id }}/consumptions">
                     - Verbrauch -
                 </a>
             </div>
