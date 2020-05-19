@@ -6,6 +6,7 @@
     outline: none;
     color: var(--light);
     background-image: linear-gradient(var(--darker) 30%, var(--dark));
+    border-radius: 4px;
 }
 
 .accordion:hover {
@@ -26,7 +27,6 @@
         var(--lightly) 260px,
         var(--lightly) 420px
     );
-
     display: none;
     overflow: hidden;
 }
@@ -35,14 +35,20 @@
     display: grid;
     align-items: center;
     padding: 0 8px;
-    margin: 12;
+    margin: 12px;
     font-size: 1.1rem;
+}
+
+.accordion-bottom {
+    border-bottom-right-radius: 6px;
 }
 
 .panel {
     font-size: 1.3rem;
-    border: 4px solid var(--light);
+    padding: 6px 4px 4px 4px;
     background: var(--light);
+    margin-bottom: 8px;
+    background-image: linear-gradient(var(--darkest), var(--lightly) 1%);
 }
 
 .accordion-grid {

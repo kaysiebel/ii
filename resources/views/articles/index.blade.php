@@ -9,7 +9,7 @@
         <img class="bar-img" src="{{ $article->image }} " alt="...">
         <div class="bar-header">
             <p class="bar-title">{{ $article->name }}</p>
-            <p class="bar-text">IST- Bestand: {{ $article->piece_start_stock }}</p>
+            <p class="bar-text">Ist- Bestand: {{ $article->piece_start_stock }}</p>
         </div>
         <div class="dot-container">
             <div class="bar-dot">&nbsp;</div>

@@ -61,7 +61,7 @@
             <form action="/entries" method="POST">
                 @csrf
                 <input type="text" placeholder="Stück" name="amount_entry" autocomplete="off">
-                <button class="btn">Eingang buchen</button>
+                <button class="btn margin-4">Eingang buchen</button>
                 <input type="hidden" name="article_id" value="{{ $article->id }}">
             </form>
         </div>
@@ -69,7 +69,7 @@
             <form action="/consumptions" method="POST">
                 @csrf
                 <input type="text" placeholder="Stück" name="amount_consumption" autocomplete="off">
-                <button class="btn">Verbrauch buchen</button>
+                <button class="btn margin-4">Verbrauch buchen</button>
                 <input type="hidden" name="article_id" value="{{ $article->id }}">
             </form>
         </div>
