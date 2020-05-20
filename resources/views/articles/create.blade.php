@@ -11,14 +11,13 @@
     </div>
 
     <form action="/articles" method="post" enctype="multipart/form-data">
-        @csrf
         <div class="main-accordion panel" style="display: block;">
             @include('includes/sections/create/articledata')
             @include('includes/sections/create/piecedata')
             @include('includes/sections/create/unitdata')
-            <div></div>
-            <button class="btn">new article</button>
         </div>
+        <button class="btn">new article</button>
+        @csrf
     </form>
 </div>
 

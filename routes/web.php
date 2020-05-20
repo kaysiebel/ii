@@ -50,14 +50,6 @@ Route::get('/test', function () {
     return view('test');
 })->name('test');
 
-// Route::get('/entries', function () {
-//     return view('entries');
-// })->name('enries');
-
-// Route::get('/consumption', function () {
-//     return view('consumption');
-// })->name('consumption');
-
 Route::get('/search', function () {
     return view('search');
 })->name('search');
