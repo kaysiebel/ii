@@ -6,6 +6,7 @@ use App\Article;
 use App\Entry;
 use App\Consumption;
 use Illuminate\Http\Request;
+use App\Charts\Statistic;
 
 class ArticleController extends Controller
 {
@@ -31,7 +32,23 @@ class ArticleController extends Controller
 
         return view('stock', compact('articles'));
     }
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function chart()
+    {
+        $articles = Article::with('entries', 'consumptions')->get();
 
+        $chart = new Statistic;
+
+        $chart->labels(['one', 'two', 'three']);
+
+        $chart->dataset('myDataset', 'line', [1, 2, 3]);
+
+        return view('test', compact('chart'));
+    }
     /**
      * Show the form for creating a new resource.
      *

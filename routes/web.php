@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/chart',                              'ArticleController@chart')->name('chart');
+
 Route::get('/articles',                              'ArticleController@index')->name('index');
 Route::get('/stock',                                 'ArticleController@stock')->name('stock');
 Route::get('/articles/create',                       'ArticleController@create')->name('create');
