@@ -3,6 +3,7 @@
 @section('content')
 
 <div class="bar-container bar-container-create">
+
     <div class="bar-grid-create acc ripple">
         <img class="bar-img" src="https://openclipart.org/image/800px/svg_to_png/320195/tropicalhouse-1831.png" alt="...">
         <div class="bar-header">
@@ -16,9 +17,10 @@
             @include('includes/sections/create/piecedata')
             @include('includes/sections/create/unitdata')
         </div>
-        <button class="btn">new article</button>
+        <button class="btn">neuen Artikel anlegen</button>
         @csrf
     </form>
+
 </div>
 
 @endsection

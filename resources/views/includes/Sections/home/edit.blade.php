@@ -4,7 +4,7 @@
 
         <div class="accordion-item">
             <a href="/articles/{{ $article->id }}/edit">
-                <button class="btn">edit</button>
+                <button class="btn">editieren</button>
             </a>
         </div>
 
@@ -12,7 +12,7 @@
             <form action="/articles/{{ $article->id }}" method="POST">
                 @method('DELETE')
                 @csrf
-                <button class="btn margin-top-16" type="submit">Delete</button>
+                <button class="btn margin-top-16" type="submit">löschen</button>
             </form>
         </div>
 

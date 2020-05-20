@@ -18,7 +18,7 @@
             @method('PATCH')
             @csrf
         </div>
-        <button class="btn">save article</button>
+        <button class="btn">Artikeldaten speichern</button>
     </form>
 </div>
 

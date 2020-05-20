@@ -42,7 +42,7 @@ class EntryController extends Controller
         $entry = Entry::create($data);
         $article->entries()->save($entry);
 
-        return redirect()->route('landing');
+        return redirect()->route('index');
     }
 
     /**
@@ -82,7 +82,7 @@ class EntryController extends Controller
         $entry->update($data);
         $article->entries()->update($entry);
 
-        return redirect()->route('landing');
+        return redirect()->route('index');
     }
 
     /**
@@ -95,7 +95,7 @@ class EntryController extends Controller
     {
         $entry->delete();
 
-        return redirect('/articles');
+        return redirect()->route('index');
     }
 
     private function validateData()

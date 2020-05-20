@@ -27,7 +27,7 @@ class ArticleController extends Controller
      */
     public function stock()
     {
-        $articles = \App\Article::all();
+        $articles = Article::all();
 
         return view('stock', compact('articles'));
     }
@@ -58,9 +58,7 @@ class ArticleController extends Controller
         }
         $article->create($data);
 
-        // return redirect('/articles');
-        // return redirect::back();
-        return back();
+        return redirect()->route('index');
     }
 
     /**
@@ -115,7 +113,7 @@ class ArticleController extends Controller
         }
         $article->update($data);
 
-        return redirect('/articles');
+        return redirect()->route('index');
     }
 
     /**
@@ -128,7 +126,7 @@ class ArticleController extends Controller
     {
         $article->delete();
 
-        return redirect('/articles');
+        return redirect()->route('index');
     }
 
     private function validateData()

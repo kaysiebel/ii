@@ -5,6 +5,7 @@
 @foreach($article as $article)
 
 <div class="bar-container">
+
     <div class="bar-grid ripple">
         <img class="bar-img" src="{{ $article->image }} " alt="...">
         <div class="bar-header">
@@ -36,6 +37,7 @@
                 <input type="hidden" name="article_id" value="{{ $article->id }}">
                 <button class="btn margin-4">Eingang buchen</button>
             </form>
+
         </div>
 
         <table class="table table-large">
