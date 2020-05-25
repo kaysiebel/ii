@@ -14,7 +14,7 @@ class CreateEntriesTable extends Migration
     public function up()
     {
         Schema::create('entries', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->id();
             $table->foreignId('article_id')->constrained()->onDelete('cascade');
             $table->timestamps();
             $table->decimal('amount_entry', 10, 3)->nullable();

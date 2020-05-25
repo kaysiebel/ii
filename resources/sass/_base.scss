@@ -41,6 +41,13 @@ main {
     background-image: linear-gradient(var(--darker) 30%, var(--dark));
 }
 
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
 a {
     text-decoration: none;
     color: var(--dark);

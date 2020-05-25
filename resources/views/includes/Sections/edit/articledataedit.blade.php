@@ -1,7 +1,7 @@
 <div class="accordion ripple">Artikel- Angaben</div>
 <div class="accordion-panel">
 
-    <div class="create-grid ripple-light">
+    <div class="create-grid ripple-light margin-top-16">
         <div class="accordion-item">
             <label class="file-lable">Artikel- Bild</label>
         </div>

@@ -5,7 +5,7 @@
 <div class="bar-container">
 
     <div class="bar-grid-create ripple">
-        <img class="bar-img" src="https://openclipart.org/image/800px/svg_to_png/320195/tropicalhouse-1831.png" alt="...">
+        <img class="bar-img" src="{{ $article->imageUrl() }}" alt="...">
         <div class="bar-header">
             <p class="bar-title">Hier können neue Artikel angelegt werden</p>
         </div>

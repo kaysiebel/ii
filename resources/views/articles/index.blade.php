@@ -9,7 +9,7 @@
     <div class="bar-grid acc ripple">
         <div>
             <a href="{{ url("/articles/{$article->id}") }}">
-                <img class="bar-img" src="{{ $article->image }}" alt="...">
+                <img class="bar-img" src="{{ $article->imageUrl() }}" alt="...">
             </a>
         </div>
         <div class="bar-header">

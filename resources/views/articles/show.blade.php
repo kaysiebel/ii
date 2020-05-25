@@ -7,7 +7,7 @@
 <div class="bar-container">
 
     <div class="bar-grid ripple">
-        <img class="bar-img" src="{{ $article->image }} " alt="...">
+        <img class="bar-img" src="{{ $article->imageUrl() }} " alt="...">
         <div class="bar-header">
             <p class="bar-title">{{ $article->name }}</p>
             <p class="bar-text">IST- Bestand: {{ $article->piece_start_stock }}</p>

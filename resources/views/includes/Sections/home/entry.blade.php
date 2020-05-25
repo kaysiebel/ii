@@ -64,18 +64,18 @@
     <div class="accordion-grid-center">
 
         <div class="accordion-item">
-            <form action="{{ route('entry.store') }}" method="POST">
+            <form class="form" action="{{ route('entry.store') }}" method="POST">
                 @csrf
-                <input class="" type="text" placeholder="Stück" name="amount_entry" autocomplete="off">
+                <input class="create-input width-small margin-4" type="text" placeholder="Stück" name="amount_entry" autocomplete="off">
                 <button class="btn margin-4">Eingang buchen</button>
                 <input type="hidden" name="article_id" value="{{ $article->id }}">
             </form>
         </div>
 
         <div class="accordion-item">
-            <form action="{{ route('consumption.store') }}" method="POST">
+            <form class="form" action="{{ route('consumption.store') }}" method="POST">
                 @csrf
-                <input class="" type="text" placeholder="Stück" name="amount_consumption" autocomplete="off">
+                <input class="create-input width-small margin-4" type="text" placeholder="Stück" name="amount_consumption" autocomplete="off">
                 <button class="btn margin-4">Verbrauch buchen</button>
                 <input type="hidden" name="article_id" value="{{ $article->id }}">
             </form>

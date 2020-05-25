@@ -5,7 +5,7 @@
 <div class="bar-container">
 
     <div class="bar-grid-create ripple">
-        <img class="bar-img" src="{{ $article->image }}" alt="...">
+        <img class="bar-img" src="{{ $article->imageUrl() }} " alt="...">
         <div class="bar-header">
             <p class="bar-title">Artikeldaten ändern für "{{ $article->name }}"</p>
         </div>
