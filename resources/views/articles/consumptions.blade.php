@@ -24,19 +24,19 @@
 
     <div class="panel">
 
-        <div class="mininav">
-            <div class="margin-8">
+        <form action="{{ route('consumption.store') }}" method="POST">
+            @csrf
+
+            <div class="mininav margin-8">
                 <a href="javascript:history.back()">
                     <img class="link-item" src="https://image.flaticon.com/icons/png/512/318/318276.png"></a>
-            </div>
 
-            <form action="/consumptions" method="POST">
-                @csrf
-                <input type="text" placeholder="Stück" name="amount_consumption" autocomplete="off">
+                <input class="create-input width-small" type="text" placeholder="Stück" name="amount_consumption" autocomplete="off">
                 <input type="hidden" name="article_id" value="{{ $article->id }}">
                 <button class="btn margin-4">Verbrauch buchen</button>
-            </form>
-        </div>
+            </div>
+
+        </form>
 
         <table class="table table-large">
 
@@ -46,12 +46,14 @@
             </tr>
 
             @foreach($article->consumptions as $consumption)
+            @if($consumption->amount_consumption > 0)
 
             <tr>
                 <td class="col">{{ $consumption->created_at }}</td>
-                <td class="col col2"><a href="/consumptions/{{ $consumption->id }}/edit">{{ $consumption->amount_consumption }}</a></td>
+                <td class="col col2"><a href="{{ url("/consumptions/{$consumption->id}/edit") }}">{{ $consumption->amount_consumption }}</a></td>
             </tr>
 
+            @endif
             @endforeach
 
         </table>

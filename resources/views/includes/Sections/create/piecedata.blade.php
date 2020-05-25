@@ -1,7 +1,7 @@
 <div class="accordion ripple">Stück- Angaben</div>
 <div class="accordion-panel">
 
-    <div class="create-grid-small ripple-light">
+    <div class="create-grid-small ripple-light margin-top-16">
         <div class="accordion-item">
             <label class="create-label" for="piece_min_stock">Mindest- Bestand</label>
         </div>

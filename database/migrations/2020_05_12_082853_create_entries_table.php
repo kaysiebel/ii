@@ -17,7 +17,7 @@ class CreateEntriesTable extends Migration
             $table->bigIncrements('id');
             $table->foreignId('article_id')->constrained()->onDelete('cascade');
             $table->timestamps();
-            $table->decimal('amount_entry', 10, 3);
+            $table->decimal('amount_entry', 10, 3)->nullable();
         });
     }
 

@@ -5,18 +5,21 @@
 @foreach($article as $article)
 
 <div class="bar-container">
-    <div class="bar-grid acc ripple">
+
+    <div class="bar-grid ripple">
         <img class="bar-img" src="{{ $article->image }} " alt="...">
         <div class="bar-header">
             <p class="bar-title">{{ $article->name }}</p>
             <p class="bar-text">IST- Bestand: {{ $article->piece_start_stock }}</p>
         </div>
+
         <div class="dot-container">
             <div class="bar-dot">&nbsp;</div>
         </div>
+
     </div>
 
-    <div class="main-accordion panel" style="display: none;">
+    <div class="main-accordion block">
         @include('includes/sections/home/overview')
         @include('includes/sections/home/piece')
         @include('includes/sections/home/unit')

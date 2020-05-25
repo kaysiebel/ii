@@ -4,13 +4,13 @@
 
 <div class="bar-container">
 
-    <div class="bar-full acc ripple active">
+    <div class="bar-full ripple active">
         <div class="bar-header">
             <p class="bar-title">Statistik</p>
         </div>
     </div>
 
-    <div class="accordion-panel" style=" display: block;">
+    <div class="accordion-panel block">
         <div class="settings-container">
 
             <canvas class="canvas-l" id="myChart" width="332" height="360"></canvas>

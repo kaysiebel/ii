@@ -10,6 +10,18 @@
     background: var(--light);
 }
 
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+.red {
+    color: var(--red);
+}
+
 .width-small {
     width: 100px;
 }
@@ -74,4 +86,8 @@
 
 .padding-12 {
     padding: 12px;
+}
+
+.padding-top-16 {
+    padding-top: 16px;
 }

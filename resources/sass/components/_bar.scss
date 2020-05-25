@@ -1,27 +1,25 @@
 .dot-container {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     height: 100%;
 }
 
 .bar-dot {
-    height: 28px;
-    width: 28px;
+    height: 18px;
+    width: 18px;
     border-radius: 90px;
     border: 2px solid var(--darkest);
     background: var(--green);
-}
-
-.bar-container-create {
-    max-height: 90px;
 }
 
 .bar-container {
     width: 100%;
     min-width: 348px;
     max-width: 420px;
+    height: fit-content;
     margin: 3px 3px;
+    background: var(--light);
     background-image: linear-gradient(
         80deg,
         var(--light) 1px,
@@ -34,8 +32,8 @@
 }
 
 .bar-title {
-    font-size: 1.5rem;
-    margin: 0;
+    font-size: 1.3rem;
+    margin: 2px 0 0 0;
 }
 
 .bar-text {
@@ -44,23 +42,21 @@
 
 .bar-grid {
     display: grid;
-    grid-template-columns: 20% auto 40px;
+    grid-template-columns: 20% auto 22px;
     grid-auto-rows: 64px;
-    padding: 4px;
+    padding: 6px;
 }
 
 .bar-grid-create {
     display: grid;
     grid-template-columns: 20% 80%;
-    margin-top: 6px;
-    padding: 4px;
+    padding: 6px;
 }
 
 .bar-full {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 6px;
     padding: 4px;
     font-size: 1.2rem;
     color: var(--light);

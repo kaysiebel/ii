@@ -1,5 +1,5 @@
 <div class="accordion ripple active">Überblick</div>
-<div class="accordion-panel" style="display: block;">
+<div class="accordion-panel">
 
     <div class="accordion-grid ripple-light">
         <p class="accordion-item">

@@ -9,6 +9,13 @@
     border-radius: 4px;
 }
 
+.main-accordion {
+    font-size: 1.3rem;
+    padding: 6px 4px 4px 4px;
+    margin-bottom: 8px;
+    background-image: linear-gradient(var(--darkest), transparent 4px);
+}
+
 .accordion:hover {
     background: var(--light)
         radial-gradient(circle, transparent 1%, var(--dark) 10%) center/15000%;
@@ -19,7 +26,6 @@
 .accordion-panel {
     font-size: 1.2rem;
     color: var(--darker);
-    background-color: var(--light);
     background-image: linear-gradient(
         80deg,
         var(--light) 1px,
@@ -34,25 +40,22 @@
 .accordion-item {
     display: grid;
     align-items: center;
-    padding: 0 8px;
     margin: 12px;
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 
 .accordion-bottom {
     border-bottom-right-radius: 6px;
 }
 
-.panel {
-    font-size: 1.3rem;
-    padding: 6px 4px 4px 4px;
-    background: var(--light);
-    margin-bottom: 8px;
-    background-image: linear-gradient(var(--darkest), var(--lightly) 1%);
-}
-
 .accordion-grid {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-grid-center {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }

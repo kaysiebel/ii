@@ -7,6 +7,7 @@ use App\Entry;
 use App\Consumption;
 use Illuminate\Http\Request;
 use App\Charts\Statistic;
+use Illuminate\Support\Facades\DB;
 
 class ArticleController extends Controller
 {
@@ -26,29 +27,13 @@ class ArticleController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function stock()
+    public function stock(Article $article)
     {
-        $articles = Article::all();
+        $articles = Article::orderBy('name')->get();
 
         return view('stock', compact('articles'));
     }
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function chart()
-    {
-        $articles = Article::with('entries', 'consumptions')->get();
 
-        $chart = new Statistic;
-
-        $chart->labels(['one', 'two', 'three']);
-
-        $chart->dataset('myDataset', 'line', [1, 2, 3]);
-
-        return view('test', compact('chart'));
-    }
     /**
      * Show the form for creating a new resource.
      *
@@ -58,6 +43,7 @@ class ArticleController extends Controller
     {
         $article = new Article();
         return view('articles.create', compact('article'));
+        // return route('create', compact('article'));
     }
 
     /**
@@ -84,11 +70,32 @@ class ArticleController extends Controller
      * @param  \App\Article  $article
      * @return \Illuminate\Http\Response
      */
-    public function show(Article $article)
+
+    public function show(Entry $entry, Article $article, Consumption $consumption)
     {
         $article = Article::find($article);
-        return view('articles.show', compact('article'));
-        // $article = Article::where('id', $article)->firstOrFail(); <- doesn't work :(
+
+        $articleEntries = $entry->orderBy('created_at')
+            ->get()
+            ->pluck('amount_entry', 'created_at')
+            ->take(6);
+
+        $articleConsumptions = $consumption->orderBy('created_at')
+            ->get()
+            ->pluck('amount_consumption', 'created_at')
+            ->take(6);
+
+        $chart = new Statistic;
+        $chart->labels($articleConsumptions->keys());
+        $chart->dataset('Eingänge', 'bar', $articleEntries->values())
+            ->backgroundColor('green');
+        $chart->dataset('Verbräuche', 'bar', $articleConsumptions->values())
+            ->backgroundColor('red');
+
+        return view(
+            'articles.show',
+            compact('article', 'articleEntries', 'articleConsumptions', 'chart')
+        );
     }
 
     public function entries(Article $article)

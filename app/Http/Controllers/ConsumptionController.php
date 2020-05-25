@@ -80,9 +80,9 @@ class ConsumptionController extends Controller
         $article_id = $request->input('article_id');
         $article = Article::find($article_id);
         $consumption->update($data);
-        $article->entries()->update($consumption);
+        $article->consumptions()->update($consumption);
 
-        return redirect('/articles');
+        return redirect()->route('index');
     }
 
     /**
@@ -95,7 +95,7 @@ class ConsumptionController extends Controller
     {
         $consumption->delete();
 
-        return redirect('/articles');
+        return redirect()->route('index');
     }
 
     private function validateData()

@@ -8,7 +8,11 @@
     @foreach($articles as $article)
 
     <tr>
-        <td class="col">{{ $article->name }}</td>
+        <td class="col">
+            <a href="{{ url("/articles/{$article->id}") }}">
+                {{ $article->name }}
+            </a>
+        </td>
         <td class="col col2">{{ $article->piece_start_stock }}</td>
     </tr>
 

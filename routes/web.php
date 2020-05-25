@@ -13,31 +13,32 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/chart',                              'ArticleController@chart')->name('chart');
+Route::get('/chart',                                'ArticleController@chart')->name('chart');
 
+// Route::resource('/articles', 'ArticleController');
 Route::get('/articles',                              'ArticleController@index')->name('index');
 Route::get('/stock',                                 'ArticleController@stock')->name('stock');
 Route::get('/articles/create',                       'ArticleController@create')->name('create');
 Route::post('/articles',                             'ArticleController@store');
 Route::get('/articles/{article}',                    'ArticleController@show')->name('show');
 
+Route::get('/articles/{article}/edit',               'ArticleController@edit')->name('edit');
+Route::patch('/articles/{article}',                  'ArticleController@update')->name('update');
+Route::delete('/articles/{article}',                 'ArticleController@destroy')->name('destroy');
+
 Route::get('/articles/{article}/entries',            'ArticleController@entries')->name('entries');
 Route::get('/articles/{article}/consumptions',       'ArticleController@consumptions')->name('consumptions');
 
-Route::get('/articles/{article}/edit',               'ArticleController@edit');
-Route::patch('/articles/{article}',                  'ArticleController@update');
-Route::delete('/articles/{article}',                 'ArticleController@destroy');
 
+Route::post('/entries',                            'EntryController@store')->name('entry.store');
+Route::get('/entries/{entry}/edit',                'EntryController@edit')->name('entry.edit');
+Route::patch('/entries/{entry}',                   'EntryController@update')->name('entry.update');
+Route::delete('/entries/{entry}',                  'EntryController@destroy')->name('entry.destroy');
 
-Route::post('/entries',                            'EntryController@store');
-Route::get('/entries/{entry}/edit',                'EntryController@edit');
-Route::patch('/entries/{entry}',                   'EntryController@update');
-Route::delete('/entries/{entry}',                  'EntryController@destroy');
-
-Route::post('/consumptions',                       'ConsumptionController@store');
-Route::get('/consumptions/{consumption}/edit',     'ConsumptionController@edit');
-Route::patch('/consumptions/{consumption}',        'ConsumptionController@update');
-Route::delete('/consumptions/{consumption}',       'ConsumptionController@destroy');
+Route::post('/consumptions',                       'ConsumptionController@store')->name('consumption.store');
+Route::get('/consumptions/{consumption}/edit',     'ConsumptionController@edit')->name('consumption.edit');
+Route::patch('/consumptions/{consumption}',        'ConsumptionController@update')->name('consumption.update');
+Route::delete('/consumptions/{consumption}',       'ConsumptionController@destroy')->name('consumption.destroy');
 
 
 Route::get('/', function () {

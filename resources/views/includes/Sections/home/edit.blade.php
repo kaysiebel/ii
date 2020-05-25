@@ -1,4 +1,4 @@
-<div class="accordion accordion-bottom ripple">Verwaltung</div>
+<div class="accordion ripple">Verwaltung</div>
 <div class="accordion-panel">
     <div class="accordion-grid ripple-light">
 

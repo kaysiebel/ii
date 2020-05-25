@@ -21,12 +21,13 @@ main {
     justify-content: center;
     overflow: scroll;
     background-image: linear-gradient(var(--darkest), var(--black));
-    padding: 6px;
+    padding: 4px;
 }
 
 .mininav {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .link-item {
@@ -34,16 +35,19 @@ main {
     width: 30px;
 }
 
-.red {
-    color: var(--red);
+.input {
+    height: 36px;
+    color: var(--light);
+    background-image: linear-gradient(var(--darker) 30%, var(--dark));
 }
-
-// a:visited {
-//     color: var(--light);
-// }
 
 a {
     text-decoration: none;
+    color: var(--dark);
+}
+
+a:visited {
+    color: var(--dark);
 }
 
 :root {

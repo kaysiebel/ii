@@ -1,7 +1,7 @@
 .create-label {
     font-size: 1.2rem;
     text-align: right;
-    margin-right: 20px;
+    margin-right: 16px;
 }
 
 .create-input {
@@ -16,7 +16,7 @@
     grid-template-columns: 40% 60%;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    margin: -4px;
 }
 
 .create-grid-small {
@@ -24,7 +24,7 @@
     grid-template-columns: 60% 40%;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    margin: -10px;
 }
 
 .file-label {

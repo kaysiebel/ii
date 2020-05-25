@@ -10,10 +10,17 @@
     </div>
     <div class="panel">
 
-        <div class="mininav margin-8">
-            <a href="javascript:history.back()">
-                <img class="link-item" src="https://image.flaticon.com/icons/png/512/318/318276.png"></a>
-        </div>
+        <form action="{{ route('entry.destroy', $entry) }}" method="post">
+            @method('DELETE')
+            @csrf
+            <div class="mininav margin-8">
+                <a href="javascript:history.back()">
+                    <img class="link-item" src="https://image.flaticon.com/icons/png/512/318/318276.png"></a>
+
+                <input type="hidden" name="article_id" value="{{ $entry->article_id }}">
+                <button class="btn">Eingang löschen</button>
+            </div>
+        </form>
 
         <table class="table table-large">
 
@@ -29,19 +36,12 @@
 
         </table>
 
-        <form action="/entries/{{ $entry->id }}" class="mininav" method="post" enctype="multipart/form-data">
+        <form action="{{ route('entry.update', $entry) }}" class="mininav" method="post">
             @method('PATCH')
             @csrf
             <input type="hidden" name="article_id" value="{{ $entry->article_id }}">
             <button class="btn">Daten ändern</button>
             <input class="create-input" type="text" name="name" placeholder="erforderlich" autocomplete="off" value="{{ old('$entry->amount_entry') ?? $entry->amount_entry }}">
-        </form>
-
-        <form action="/entries/{{ $entry->id }}" class="mininav" method="post" enctype="multipart/form-data">
-            @method('DELETE')
-            @csrf
-            <input type="hidden" name="article_id" value="{{ $entry->article_id }}">
-            <button class="btn">Eingang löschen</button>
         </form>
 
     </div>

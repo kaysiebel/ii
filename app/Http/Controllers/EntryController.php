@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Entry;
 use App\Article;
+use App\Consumption;
 use Illuminate\Http\Request;
 
 class EntryController extends Controller
@@ -17,7 +18,6 @@ class EntryController extends Controller
     {
         //
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -34,13 +34,15 @@ class EntryController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Consumption $consumption)
     {
         $data = $this->validateData();
         $article_id = $request->input('article_id');
         $article = Article::find($article_id);
         $entry = Entry::create($data);
         $article->entries()->save($entry);
+        $consumption = Consumption::create(['amount_consumption' => '0', 'article_id' => $article_id]);
+        $article->consumptions()->save($consumption);
 
         return redirect()->route('index');
     }

@@ -10,7 +10,7 @@
         </div>
     </div>
 
-    <div class="accordion-panel" style=" display: block;">
+    <div class="accordion-panel block">
         @include('includes/sections/stocktable')
     </div>
 
