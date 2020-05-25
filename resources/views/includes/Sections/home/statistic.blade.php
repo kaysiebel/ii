@@ -2,6 +2,7 @@
 <div class="accordion-panel">
 
     <a href="{{ url("/statistic") }}">
+        {{ $article->id}}
         <div class="canvas-sm">
             {!! $chart->container() !!}
 

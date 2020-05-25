@@ -13,7 +13,7 @@ class Article extends Model
         if ($this->image) {
             return Storage::url($this->image);
         }
-        return 'https://via.placeholder.com/92x136';
+        return 'https://www.citizencider.com/wp-content/uploads/2019/01/placeholder.jpg';
     }
 
     protected $guarded = [];

@@ -33,7 +33,7 @@
 
         <div class="table-container">
             <div class="link ripple">
-                <a class="info ripple" href="{{ url("/articles/{$article->id}/consumptions") }}">
+                <a class="info" href="{{ url("/articles/{$article->id}/consumptions") }}">
                     - Verbrauch -
                 </a>
             </div>

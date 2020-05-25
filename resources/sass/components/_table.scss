@@ -44,6 +44,7 @@
 .info {
     padding: 6px;
     border-radius: 4px;
+    font-size: 1.1rem;
     text-align: center;
     color: var(--light) !important;
     background-image: linear-gradient(var(--darker) 20%, var(--dark));
@@ -52,6 +53,7 @@
 .info-large {
     color: var(--light) !important;
     background: var(--dark);
+    font-size: 1.1rem;
     text-align: center;
     margin-top: 8px;
     width: auto;

@@ -73,17 +73,16 @@ class ArticleController extends Controller
 
     public function show(Entry $entry, Article $article, Consumption $consumption)
     {
-        $article = Article::find($article);
 
-        $articleEntries = $entry->orderBy('created_at')
-            ->get()
-            ->pluck('amount_entry', 'created_at')
-            ->take(6);
+        $articleEntries = $article->entries()
+            ->orderBy('created_at')
+            ->take(6)
+            ->pluck('amount_entry', 'created_at');
 
-        $articleConsumptions = $consumption->orderBy('created_at')
-            ->get()
-            ->pluck('amount_consumption', 'created_at')
-            ->take(6);
+        $articleConsumptions = $article->consumptions()
+            ->orderBy('created_at')
+            ->take(6)
+            ->pluck('amount_consumption', 'created_at');
 
         $chart = new Statistic;
         $chart->labels($articleConsumptions->keys());
@@ -91,6 +90,8 @@ class ArticleController extends Controller
             ->backgroundColor('green');
         $chart->dataset('Verbräuche', 'bar', $articleConsumptions->values())
             ->backgroundColor('red');
+
+        $article = Article::find($article);
 
         return view(
             'articles.show',
