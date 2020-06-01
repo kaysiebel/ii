@@ -2,8 +2,6 @@
 
 @section('content')
 
-
-
 <div class="bar-container">
 
     <div class="bar-grid ripple">
@@ -29,7 +27,5 @@
     </div>
 
 </div>
-
-
 
 @endsection

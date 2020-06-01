@@ -2,8 +2,6 @@
 
 @section('content')
 
-@foreach($article as $article)
-
 <div class="bar-container">
 
     <div class="bar-grid-create ripple">
@@ -27,7 +25,5 @@
     </form>
 
 </div>
-
-@endforeach
 
 @endsection

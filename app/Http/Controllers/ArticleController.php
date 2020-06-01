@@ -126,7 +126,6 @@ class ArticleController extends Controller
      */
     public function edit(Article $article)
     {
-        $article = Article::find($article);
         return view('articles.edit', compact('article'));
     }
 
