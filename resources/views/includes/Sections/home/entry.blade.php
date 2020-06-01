@@ -21,7 +21,7 @@
                 @if($entry->amount_entry > 0)
 
                 <tr>
-                    <td class="col">{{ $entry->created_at }}</td>
+                    <td class="col col-sm">{{ $entry->created_at }}</td>
                     <td class="col col2">{{ $entry->amount_entry }}</td>
                 </tr>
 
@@ -49,7 +49,7 @@
                 @if($consumption->amount_consumption > 0)
 
                 <tr>
-                    <td class="col">{{ $consumption->created_at }}</td>
+                    <td class="col col-sm">{{ $consumption->created_at }}</td>
                     <td class="col col2">{{ $consumption->amount_consumption }}</td>
                 </tr>
 

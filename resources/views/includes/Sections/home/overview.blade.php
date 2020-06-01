@@ -5,7 +5,7 @@
         <p class="accordion-item">
             Bestell- Bestand</p>
         <p class="accordion-item">
-            {{ $article->piece_order_stock }}</p>
+            {{ $article->piece_order_stock }} Stk</p>
     </div>
 
     <div class="accordion-grid ripple-light">

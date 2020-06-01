@@ -5,7 +5,7 @@
         <p class="accordion-item">
             Soll- Bestand</p>
         <p class="accordion-item">
-            {{ $article->piece_start_stock }} Stk</p>
+            {{ (float)$article->piece_start_stock }} Stk</p>
     </div>
 
     <div class="accordion-grid ripple-light">

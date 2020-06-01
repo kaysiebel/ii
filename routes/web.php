@@ -13,22 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/chart',                                'ArticleController@chart')->name('chart');
-
-// Route::resource('/articles', 'ArticleController');
-Route::get('/articles',                              'ArticleController@index')->name('index');
-Route::get('/stock',                                 'ArticleController@stock')->name('stock');
-Route::get('/articles/create',                       'ArticleController@create')->name('create');
-Route::post('/articles',                             'ArticleController@store');
-Route::get('/articles/{article}',                    'ArticleController@show')->name('show');
-
-Route::get('/articles/{article}/edit',               'ArticleController@edit')->name('edit');
-Route::patch('/articles/{article}',                  'ArticleController@update')->name('update');
-Route::delete('/articles/{article}',                 'ArticleController@destroy')->name('destroy');
+Route::resource('/articles', 'ArticleController');
 
 Route::get('/articles/{article}/entries',            'ArticleController@entries')->name('entries');
 Route::get('/articles/{article}/consumptions',       'ArticleController@consumptions')->name('consumptions');
-
 
 Route::post('/entries',                            'EntryController@store')->name('entry.store');
 Route::get('/entries/{entry}/edit',                'EntryController@edit')->name('entry.edit');
@@ -40,6 +28,12 @@ Route::get('/consumptions/{consumption}/edit',     'ConsumptionController@edit')
 Route::patch('/consumptions/{consumption}',        'ConsumptionController@update')->name('consumption.update');
 Route::delete('/consumptions/{consumption}',       'ConsumptionController@destroy')->name('consumption.destroy');
 
+Route::get('/stock',                               'ArticleController@stock')->name('stock');
+Route::get('/searchresult',                        'SearchController@index')->name('searchresult');
+
+Route::get('/search', function () {
+    return view('search');
+})->name('search');
 
 Route::get('/', function () {
     return view('start');
@@ -52,10 +46,6 @@ Route::get('/statistic', function () {
 Route::get('/test', function () {
     return view('test');
 })->name('test');
-
-Route::get('/search', function () {
-    return view('search');
-})->name('search');
 
 Route::get('/settings', function () {
     return view('settings');

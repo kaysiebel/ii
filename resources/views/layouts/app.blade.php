@@ -9,7 +9,6 @@
     <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.min.js'></script>
 
     <title>i!</title>
-
 </head>
 
 <body>
@@ -24,41 +23,8 @@
 
     @include('includes/footer')
 
-    <script>
-        let acc = document.getElementsByClassName("acc");
-        let i;
-
-        for (i = 0; i < acc.length; i++) {
-
-            acc[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                let panel = this.nextElementSibling;
-
-                if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                } else {
-                    panel.style.display = "block";
-                }
-            });
-        }
-
-        $(document).ready(function() {
-            $('.main-accordion').accordion({
-                active: false,
-                collapsible: true,
-                heightStyle: "content",
-                active: 0
-            });
-        })
-        $(document).ready(function() {
-            $('.bar-accordion').accordion({
-                active: false,
-                collapsible: true,
-                heightStyle: "content"
-            });
-        })
-    </script>
-
 </body>
+
+<script src="{{ asset('js/app.js') }}"></script>
 
 </html>

@@ -41,7 +41,7 @@
             @csrf
             <input type="hidden" name="article_id" value="{{ $consumption->article_id }}">
             <button class="btn">Daten ändern</button>
-            <input class="create-input" type="text" name="name" placeholder="erforderlich" autocomplete="off" value="{{ old('$consumption->amount_consumption') ?? $consumption->amount_consumption }}">
+            <input class="create-input" type="text" name="amount_consumption" placeholder="erforderlich" autocomplete="off" value="{{ old('$consumption->amount_consumption') ?? $consumption->amount_consumption }}">
         </form>
 
     </div>

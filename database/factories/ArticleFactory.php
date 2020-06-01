@@ -8,10 +8,10 @@ use Faker\Generator as Faker;
 $factory->define(Article::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
-        'piece_start_stock' => $faker->numberBetween(1000, 99000),
-        'piece_min_stock' => $faker->numberBetween(1000, 99000),
-        'piece_max_stock' => $faker->numberBetween(1000, 99000),
-        'piece_order_stock' => $faker->numberBetween(1000, 99000),
+        'piece_start_stock' => $faker->numberBetween(50000, 99000),
+        'piece_min_stock' => $faker->numberBetween(5000, 9000),
+        'piece_max_stock' => $faker->numberBetween(100000, 120000),
+        'piece_order_stock' => $faker->numberBetween(10000, 20000),
         'piece_weight' => $faker->numberBetween(1, 110),
         'unit_start_stock' => $faker->numberBetween(1000, 99000),
         'unit_min_stock' => $faker->numberBetween(1000, 99000),

@@ -2,8 +2,6 @@
 
 @section('content')
 
-@foreach($article as $article)
-
 <div class="bar-container">
     <div class="bar-grid ripple">
         <img class="bar-img" src="{{ $article->imageUrl() }} " alt="...">
@@ -60,7 +58,5 @@
     </div>
 
 </div>
-
-@endforeach
 
 @endsection

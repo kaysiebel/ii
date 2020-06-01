@@ -2,8 +2,6 @@
 
 @section('content')
 
-@foreach($article as $article)
-
 <div class="bar-container">
 
     <div class="bar-grid ripple">
@@ -62,7 +60,5 @@
     </div>
 
 </div>
-
-@endforeach
 
 @endsection

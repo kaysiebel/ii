@@ -8,6 +8,7 @@ use App\Consumption;
 use Illuminate\Http\Request;
 use App\Charts\Statistic;
 use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 
 class ArticleController extends Controller
 {
@@ -61,7 +62,7 @@ class ArticleController extends Controller
         }
         $article->create($data);
 
-        return redirect()->route('index');
+        return redirect()->route('articles.index');
     }
 
     /**
@@ -71,9 +72,8 @@ class ArticleController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function show(Entry $entry, Article $article, Consumption $consumption)
+    public function show(Article $article)
     {
-
         $articleEntries = $article->entries()
             ->orderBy('created_at')
             ->take(6)
@@ -84,14 +84,21 @@ class ArticleController extends Controller
             ->take(6)
             ->pluck('amount_consumption', 'created_at');
 
-        $chart = new Statistic;
-        $chart->labels($articleConsumptions->keys());
-        $chart->dataset('Eingänge', 'bar', $articleEntries->values())
-            ->backgroundColor('green');
-        $chart->dataset('Verbräuche', 'bar', $articleConsumptions->values())
-            ->backgroundColor('red');
+        $dateConsumptions = $articleConsumptions
+            ->mapWithKeys(function ($item, $key) {
+                return [
+                    $item => Carbon::parse($key)->format('d.m.'),
+                ];
+            });
 
-        $article = Article::find($article);
+        $chart = new Statistic;
+        $chart->labels($dateConsumptions->values());
+        $chart->dataset('Eingänge', 'bar', $articleEntries->values())
+            ->backgroundColor('rgba(150, 188, 58, 0.6')
+            ->color('rgba(150, 188, 58, 1)');
+        $chart->dataset('Verbräuche', 'bar', $articleConsumptions->values())
+            ->backgroundColor('rgba(220, 0, 0, 0.6')
+            ->color('rgba(220, 0, 0, 1)');
 
         return view(
             'articles.show',
@@ -101,13 +108,13 @@ class ArticleController extends Controller
 
     public function entries(Article $article)
     {
-        $article = Article::find($article);
+        // $article = Article::find($article);
         return view('articles.entries', compact('article'));
     }
 
     public function consumptions(Article $article)
     {
-        $article = Article::find($article);
+        // $article = Article::find($article);
         return view('articles.consumptions', compact('article'));
     }
 
@@ -139,7 +146,7 @@ class ArticleController extends Controller
         }
         $article->update($data);
 
-        return redirect()->route('index');
+        return redirect()->route('articles.index');
     }
 
     /**
@@ -152,26 +159,26 @@ class ArticleController extends Controller
     {
         $article->delete();
 
-        return redirect()->route('index');
+        return redirect()->route('articles.index');
     }
 
     private function validateData()
     {
         return request()->validate([
             'name' => 'required|min:3',
-            'piece_start_stock' => 'required|numeric|between:0,9999999.99',
-            'piece_min_stock' => 'numeric|between:0,99999.99',
-            'piece_max_stock' => 'numeric|between:0,99999.99',
-            'piece_order_stock' => 'numeric|between:0,99999.99',
-            'piece_weight' => 'numeric|between:0,99999.99',
-            'unit_start_stock' => 'numeric|between:0,9999999.99',
-            'unit_min_stock' => 'numeric|between:0,99999.99',
-            'unit_max_stock' => 'numeric|between:0,99999.99',
-            'unit_order_stock' => 'numeric|between:0,99999.99',
-            'unit_weight' => 'numeric|between:0,99999.99',
-            'unit_size' => 'numeric|between:0,9999.99',
-            'location' => 'min:3',
-            'location_maxweight' => 'numeric|between:0,99999.99',
+            'piece_start_stock' => 'required|numeric|between:0,9999999.999',
+            'piece_min_stock' => 'nullable|numeric|between:0,9999999.999',
+            'piece_max_stock' => 'nullable|numeric|between:0,9999999.999',
+            'piece_order_stock' => 'nullable|numeric|between:0,9999999.999',
+            'piece_weight' => 'nullable|numeric|between:0,9999999.999',
+            'unit_start_stock' => 'nullable|numeric|between:0,9999999.999',
+            'unit_min_stock' => 'nullable|numeric|between:0,99999.999',
+            'unit_max_stock' => 'nullable|numeric|between:0,99999.999',
+            'unit_order_stock' => 'nullable|numeric|between:0,99999.999',
+            'unit_weight' => 'nullable|numeric|between:0,99999.999',
+            'unit_size' => 'nullable|numeric|between:0,9999.999',
+            'location' => 'nullable|min:3',
+            'location_maxweight' => 'nullable|numeric|between:0,99999.999',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048'
         ]);
     }

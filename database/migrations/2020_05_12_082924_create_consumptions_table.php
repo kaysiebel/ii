@@ -17,7 +17,7 @@ class CreateConsumptionsTable extends Migration
             $table->id();
             $table->foreignId('article_id')->constrained()->onDelete('cascade');
             $table->timestamps();
-            $table->decimal('amount_consumption', 10, 3)->nullable();
+            $table->float('amount_consumption', 10, 3)->nullable();
         });
     }
 

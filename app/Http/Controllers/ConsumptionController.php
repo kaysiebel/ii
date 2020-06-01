@@ -42,7 +42,7 @@ class ConsumptionController extends Controller
         $consumption = Consumption::create($data);
         $article->consumptions()->save($consumption);
 
-        return redirect()->route('index');
+        return redirect()->route('articles.index');
     }
 
     /**
@@ -82,26 +82,25 @@ class ConsumptionController extends Controller
         $consumption->update($data);
         $article->consumptions()->update($consumption);
 
-        return redirect()->route('index');
+        return redirect()->route('articles.show', $article);
     }
-
     /**
      * Remove the specified resource from storage.
      *
      * @param  \App\Consumption  $consumption
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Consumption $consumption)
+    public function destroy(Consumption $consumption, Article $article)
     {
         $consumption->delete();
 
-        return redirect()->route('index');
+        return redirect()->route('articles.show', $article);
     }
 
     private function validateData()
     {
         return request()->validate([
-            'amount_consumption' => 'numeric|between:0,99999.99',
+            'amount_consumption' => 'numeric|between:0,99999.999',
             'article_id' => 'numeric'
         ]);
     }

@@ -1,3 +1,18 @@
+$(document).ready(function() {
+    $(".main-accordion").accordion({
+        active: false,
+        collapsible: true,
+        heightStyle: "content",
+        active: 0
+    });
+});
+$(document).ready(function() {
+    $(".bar-accordion").accordion({
+        active: false,
+        collapsible: true,
+        heightStyle: "content"
+    });
+});
 let acc = document.getElementsByClassName("acc");
 let i;
 
@@ -13,12 +28,3 @@ for (i = 0; i < acc.length; i++) {
         }
     });
 }
-
-$(document).ready(function() {
-    $(".main-accordion").accordion({
-        active: false,
-        collapsible: true,
-        heightStyle: "content",
-        active: 0
-    });
-});

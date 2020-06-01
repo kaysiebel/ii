@@ -8,7 +8,7 @@ use Carbon\Carbon;
 
 $factory->define(Entry::class, function (Faker $faker) {
     return [
-        'amount_entry' => $faker->numberBetween(100, 1000),
+        'amount_entry' => $faker->numberBetween(1000, 10000),
         'article_id' => $faker->numberBetween(1, 20),
         'created_at' => Carbon::now()
             ->subDays(rand(1, 10))

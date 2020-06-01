@@ -103,7 +103,7 @@ class EntryController extends Controller
     private function validateData()
     {
         return request()->validate([
-            'amount_entry' => 'numeric|between:0,99999.99',
+            'amount_entry' => 'numeric|between:0,99999.999',
             'article_id' => 'numeric'
         ]);
     }
