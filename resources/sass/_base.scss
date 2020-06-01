@@ -19,6 +19,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-content: flex-start;
     overflow: scroll;
     background-image: linear-gradient(var(--darkest), var(--black));
     padding: 4px;

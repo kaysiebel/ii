@@ -490,6 +490,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: flex-start;
   overflow: scroll;
   background-image: linear-gradient(var(--darkest), var(--black));
   padding: 4px;
@@ -624,6 +625,10 @@ a:visited {
 
 .margin-top-16 {
   margin-top: 16px;
+}
+
+.margin-bottom-16 {
+  margin-bottom: 16px;
 }
 
 .padding-4 {
