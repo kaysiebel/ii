@@ -41,10 +41,8 @@ class EntryController extends Controller
         $article = Article::find($article_id);
         $entry = Entry::create($data);
         $article->entries()->save($entry);
-        $consumption = Consumption::create(['amount_consumption' => '0', 'article_id' => $article_id]);
-        $article->consumptions()->save($consumption);
 
-        return redirect()->route('index');
+        return redirect()->route('articles.index');
     }
 
     /**
@@ -84,7 +82,7 @@ class EntryController extends Controller
         $entry->update($data);
         $article->entries()->update($entry);
 
-        return redirect()->route('index');
+        return redirect()->route('articles.index');
     }
 
     /**
@@ -97,7 +95,7 @@ class EntryController extends Controller
     {
         $entry->delete();
 
-        return redirect()->route('index');
+        return redirect()->route('articles.index');
     }
 
     private function validateData()

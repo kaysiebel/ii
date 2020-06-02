@@ -39,18 +39,6 @@ Route::get('/', function () {
     return view('start');
 })->name('start');
 
-Route::get('/statistic', function () {
-    return view('statistic');
-})->name('statistic');
-
-Route::get('/test', function () {
-    return view('test');
-})->name('test');
-
 Route::get('/settings', function () {
     return view('settings');
 })->name('settings');
-
-Route::get('/landing', function () {
-    return view('landing');
-})->name('landing');

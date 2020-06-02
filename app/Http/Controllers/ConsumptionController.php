@@ -82,7 +82,7 @@ class ConsumptionController extends Controller
         $consumption->update($data);
         $article->consumptions()->update($consumption);
 
-        return redirect()->route('articles.show', $article);
+        return redirect()->route('articles.index');
     }
     /**
      * Remove the specified resource from storage.
@@ -94,7 +94,7 @@ class ConsumptionController extends Controller
     {
         $consumption->delete();
 
-        return redirect()->route('articles.show', $article);
+        return redirect()->route('articles.index');
     }
 
     private function validateData()
