@@ -84,7 +84,6 @@ class EntryController extends Controller
 
         return redirect()->route('articles.index');
     }
-
     /**
      * Remove the specified resource from storage.
      *
