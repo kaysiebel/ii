@@ -40,8 +40,9 @@
             @method('PATCH')
             @csrf
             <input type="hidden" name="article_id" value="{{ $entry->article_id }}">
+            <input type="hidden" name="entry_id" value="{{ $entry->id }}">
             <button class="btn">Daten ändern</button>
-            <input class="create-input" type="text" name="name" placeholder="erforderlich" autocomplete="off" value="{{ old('$entry->amount_entry') ?? $entry->amount_entry }}">
+            <input class="create-input" type="text" name="amount_entry" placeholder="erforderlich" autocomplete="off" value="{{ old('$entry->amount_entry') ?? $entry->amount_entry }}">
         </form>
 
     </div>

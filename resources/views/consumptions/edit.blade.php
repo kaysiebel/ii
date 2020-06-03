@@ -40,6 +40,7 @@
             @method('PATCH')
             @csrf
             <input type="hidden" name="article_id" value="{{ $consumption->article_id }}">
+            <input type="hidden" name="consumption_id" value="{{ $consumption->id }}">
             <button class="btn">Daten ändern</button>
             <input class="create-input" type="text" name="amount_consumption" placeholder="erforderlich" autocomplete="off" value="{{ old('$consumption->amount_consumption') ?? $consumption->amount_consumption }}">
         </form>

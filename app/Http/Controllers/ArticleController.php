@@ -43,8 +43,7 @@ class ArticleController extends Controller
     public function create()
     {
         $article = new Article();
-        return view('articles.create', compact('article'));
-        // return route('create', compact('article'));
+        return view('articles.create', compact('article'));;
     }
 
     /**
@@ -108,13 +107,11 @@ class ArticleController extends Controller
 
     public function entries(Article $article)
     {
-        // $article = Article::find($article);
         return view('articles.entries', compact('article'));
     }
 
     public function consumptions(Article $article)
     {
-        // $article = Article::find($article);
         return view('articles.consumptions', compact('article'));
     }
 

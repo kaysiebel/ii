@@ -74,13 +74,12 @@ class EntryController extends Controller
      * @param  \App\Entry  $entry
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Entry $entry)
+    public function update(Request $request)
     {
         $data = $this->validateData();
-        $article_id = $request->input('article_id');
-        $article = Article::find($article_id);
+        $entry_id = $request->input('entry_id');
+        $entry = Entry::find($entry_id);
         $entry->update($data);
-        $article->entries()->update($entry);
 
         return redirect()->route('articles.index');
     }

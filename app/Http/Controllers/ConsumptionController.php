@@ -77,10 +77,9 @@ class ConsumptionController extends Controller
     public function update(Request $request, Consumption $consumption)
     {
         $data = $this->validateData();
-        $article_id = $request->input('article_id');
-        $article = Article::find($article_id);
+        $consumption_id = $request->input('consumption_id');
+        $consumption = Consumption::find($consumption_id);
         $consumption->update($data);
-        $article->consumptions()->update($consumption);
 
         return redirect()->route('articles.index');
     }
