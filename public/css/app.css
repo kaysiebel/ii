@@ -497,7 +497,7 @@ body {
   grid-template-rows: 48px auto 48px;
   color: var(--darker);
   height: 100vh;
-  max-width: 460px;
+  width: 375px;
   margin: 0;
 }
 
